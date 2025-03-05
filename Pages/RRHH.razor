@@ -1,0 +1,48 @@
+﻿@page "/rrhh"
+@inject IJSRuntime JS
+
+<PageTitle>Recursos Humanos</PageTitle>
+
+
+<h1>Personal de Planta</h1> 
+
+<p>
+    En el año 2024, el Tribunal de Cuentas de Mendoza contó con <strong><i>275 agentes colaboradores</i></strong>,  273 pertenecen a la planta de personal, incluyendo a las autoridades, y 2 contratos de locación de servicios.
+    <br /><br />
+    Del total 193 son profesionales en variadas disciplinas <cite>( sólo se contemplan títulos universitarios de grado )</cite> que desarrollan sus actividades en los diferentes sectores del organismo, a saber: arquitectos, analistas, ingenieros, contadores, abogados, procuradores, licenciados y otros. 
+
+</p>
+
+<div style="height: 100vh;" id="personal" class="mt-5"></div>
+
+<p class="mt-5">
+
+    Los 82 restantes, para alcanzar un total de 275, realizan tareas administrativas y de servicios generales.
+</p>
+
+<NavLink type="button" class="text-black mt-md-5" href="/">  <img class="me-2" width="32" height="32" src="https://img.icons8.com/windows/32/000000/return.png" alt="return" /> VOLVER</NavLink>
+
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            // Llama a CuadroFallos() solo en la primera renderización
+            await Planta();
+        }
+    }
+
+    private async Task Planta()
+    {
+        try
+        {
+            await JS.InvokeVoidAsync("Recursos");
+           
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error: {ex.Message}");
+        }
+    }
+}

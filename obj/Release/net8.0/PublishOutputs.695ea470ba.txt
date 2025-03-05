@@ -1,0 +1,1 @@
+C:\memoria\2023\version 2\Memoria-2023\obj\Release\net8.0\browser-wasm\PubTmp\Out\web.config

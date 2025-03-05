@@ -1,0 +1,132 @@
+﻿@page "/cuentas"
+@inject IJSRuntime JS
+@inject HttpClient Http
+
+<PageTitle>Cuentas Falladas en 2024</PageTitle>
+<div id="top"></div>
+
+
+
+<h1 class="text-center mb-4">172 Cuentas Falladas en 2024</h1>
+<p>
+    Un Fallo es una resolución que aprueba o no las rendiciones de los Organismos a cargo de fondos públicos
+    provinciales o municipales; puede aplicar multas o cargos si la administración de dichos fondos no fue llevada de
+    acuerdo a las leyes vigentes.
+    <br><br>
+    En el siguiente gráfico se detallan las 172 cuentas falladas durante el año 2024, de la cuales 136 corresponden al
+    ejercicio 2022 y 36 corresponden al ejercicio 2021. <br><br>
+    De conformidad con lo dispuesto por el Art. Nº 69 de la Ley Nº 9.292, se presenta el estado de las cuentas
+    falladas.
+</p>
+
+
+
+<div class="mt-5 p-3">
+    <canvas id="cuadro-fallos-2"></canvas>
+</div>
+
+
+<div class="overflow-auto mb-5" style="height:600px">
+    <table class="table table-sm table-responsive table-hover mt-5 tabla-aud-esp text-uppercase">
+        <thead class="table-group-divider">
+            <tr>
+                <th>Expediente</th>
+                <th>Año</th>
+                <th>Organismo</th>
+                <th>Fallo</th>
+                <th>Fecha</th>
+                <th>Área</th>
+            </tr>
+        </thead>
+        <tbody>
+           @if(cuentas != null )
+            {
+                @foreach (var cuenta in cuentas)
+                {
+                        <tr>
+                            <td>@cuenta.NroExp</td>
+                            <td>@cuenta.Anio</td>
+                            <td>@cuenta.Organismo</td>
+                            <td>@cuenta.NroFallo</td>
+                            <td class="fs-6">@cuenta.Fecha</td>
+                            <td>@cuenta.Area</td>
+                        </tr>
+                }
+               
+            }
+        </tbody>
+    </table>
+
+    
+
+</div>
+
+<h2 class="mb-3 mt-5">Consulta de fallos</h2>
+<h4 class="mb-3">Acá podés ingresar el número de fallo que quieras buscar</h4>
+<iframe id="miIframe" frameborder="0" tabindex="-1" sandbox="allow-scripts allow-same-origin" loading="lazy"
+        src="https://www.tribcuentasmendoza.gob.ar/tcnet/digesto/filtrodigesto/FiltroNormativaWeb_2.aspx?TipNorId=9"
+        style="width: 100%; height: 340px;background: none !important;"></iframe>
+<NavLink type="button" class="text-black mt-md-5" href="/">  <img class="me-2" width="32" height="32" src="https://img.icons8.com/windows/32/000000/return.png" alt="return" /> VOLVER</NavLink>
+
+
+@code {
+
+
+    private Fallo[]? cuentas;
+
+    protected override async Task OnInitializedAsync()
+    {
+        cuentas = await Http.GetFromJsonAsync<Fallo[]>("sample-data/cuentas.json");
+    }
+
+    public class Fallo
+    {
+        public string? NroExp { get; set; }
+        public int? Anio { get; set; }
+        public string? Organismo { get; set; }
+        public int? NroFallo { get; set; }
+        public string? Fecha { get; set; }
+        public string? Area { get; set; }
+    }
+
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await ScrollToTop();
+            await CuadroFallos();
+
+        }
+    }
+
+
+    private async Task ScrollToTop()
+    {
+        try
+        {
+            await JS.InvokeVoidAsync("scrollToElement", "#top");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error {ex.Message}");
+        }
+
+    }
+
+    private async Task CuadroFallos()
+    {
+        try
+        {
+            await JS.InvokeVoidAsync("cuadroFallos2");
+
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error {ex.Message}");
+        }
+
+
+    }
+}
+

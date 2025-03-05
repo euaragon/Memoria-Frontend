@@ -1,0 +1,6 @@
+C:\memoria\2023\version 2\Memoria-2023\obj\Release\net6.0\Memoria-2023.csproj.AssemblyReference.cache
+C:\memoria\2023\version 2\Memoria-2023\obj\Release\net6.0\Memoria-2023.GeneratedMSBuildEditorConfig.editorconfig
+C:\memoria\2023\version 2\Memoria-2023\obj\Release\net6.0\Memoria-2023.AssemblyInfoInputs.cache
+C:\memoria\2023\version 2\Memoria-2023\obj\Release\net6.0\Memoria-2023.AssemblyInfo.cs
+C:\memoria\2023\version 2\Memoria-2023\obj\Release\net6.0\Memoria-2023.csproj.CoreCompileInputs.cache
+C:\memoria\2023\version 2\Memoria-2023\obj\Release\net6.0\Memoria-2023.MvcApplicationPartsAssemblyInfo.cache

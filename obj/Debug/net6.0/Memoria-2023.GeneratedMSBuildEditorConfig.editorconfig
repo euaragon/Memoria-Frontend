@@ -1,0 +1,99 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Memoria-2023
+build_property.RootNamespace = Memoria-2023
+build_property.ProjectDir = C:\memoria\2023\version 2\Memoria-2023\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\memoria\2023\version 2\Memoria-2023
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/memoria/2023/version 2/Memoria-2023/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/memoria/2023/version 2/Memoria-2023/Pages/Actividades.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWN0aXZpZGFkZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/memoria/2023/version 2/Memoria-2023/Pages/AuditoriaExterna.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXVkaXRvcmlhRXh0ZXJuYS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/memoria/2023/version 2/Memoria-2023/Pages/AuditoriasEspeciales.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXVkaXRvcmlhc0VzcGVjaWFsZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/memoria/2023/version 2/Memoria-2023/Pages/Calidad.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FsaWRhZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/memoria/2023/version 2/Memoria-2023/Pages/Comunicacion.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tdW5pY2FjaW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/memoria/2023/version 2/Memoria-2023/Pages/Consultiva.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29uc3VsdGl2YS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/memoria/2023/version 2/Memoria-2023/Pages/Cuentas.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VlbnRhcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/memoria/2023/version 2/Memoria-2023/Pages/Fiscalizadora.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmlzY2FsaXphZG9yYS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/memoria/2023/version 2/Memoria-2023/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/memoria/2023/version 2/Memoria-2023/Pages/Jurisdiccional.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSnVyaXNkaWNjaW9uYWwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/memoria/2023/version 2/Memoria-2023/Pages/Organigrama.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JnYW5pZ3JhbWEucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/memoria/2023/version 2/Memoria-2023/Pages/Procesos.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvY2Vzb3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/memoria/2023/version 2/Memoria-2023/Pages/QuienesSomos.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUXVpZW5lc1NvbW9zLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/memoria/2023/version 2/Memoria-2023/Pages/Reglamentaria.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnbGFtZW50YXJpYS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/memoria/2023/version 2/Memoria-2023/Pages/RRHH.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUlJISC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/memoria/2023/version 2/Memoria-2023/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/memoria/2023/version 2/Memoria-2023/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/memoria/2023/version 2/Memoria-2023/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-7n928iwix4
+
+[C:/memoria/2023/version 2/Memoria-2023/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-peovttsxq9

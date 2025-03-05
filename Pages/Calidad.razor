@@ -1,0 +1,227 @@
+﻿@page "/calidad"
+@inject IJSRuntime JS
+
+<PageTitle>Calidad</PageTitle>
+
+
+<h1 class="mb-1">Sistema de Calidad</h1>
+<h3 class="mb-3">Proceso de Mejora Contínua</h3>
+
+<p>
+    El Tribunal de Cuentas, ha elegido para su Sistema de gestión, el Modelo de las Normas ISO 9001:2015, así como
+    también el del Marco de Medición de Desempeño para Entidades Fiscalizadoras Superiores (MDEFS) de INTOSAI
+    (Organización Internacional de Entidades Fiscalizadoras Superiores). Ambos son Modelos Internacionales que plantean
+    para las organizaciones desafíos de gestión alineados a la eficiencia y la eficacia de las Instituciones con una
+    mirada puesta en la Mejora Continua. <br /><br />
+    En marzo de 2024, se aprueba la Auditoría de seguimiento, manteniendo vigente el Certificado ISO 9001:2015 obtenido
+    en mismo mes del año 2022. En lo que se refiere al Certificado de sus procesos, el Tribunal posee la totalidad de
+    sus procesos bajo Normas Internacionales ISO 9001.<br /><br />
+    En este proceso de mejora permanente, y en función de la necesidad de continuar trabajando en un contexto lleno de
+    cambios y desafíos, el Tribunal construyó un Plan de Mejora Continua con objetivos y acciones estratégicas claras,
+    basados en el Los OBJETIVOS DE LA CALIDAD se encuentran plasmados en el Acuerdo 6506. El Plan de Acción 2024 se
+    aprobó por Acuerdo 6584.<br /><br />
+    Como ha sido mencionado en los párrafos precedentes, se trabaja enmarcados en la Mejora continua, para lo cual se
+    trabaja en la renovación de los documentos del Sistema de gestión, que enmarcan el desarrollo de las tareas y
+    actividades de todas los Sectores del Tribunal. En este sentido durante 2024, se implementó un Procedimiento que
+    ordena y gestiona los cambios de impacto en el Sistema de gestión del Tribunal (PSC 6.3). Por otro lado, se trabajó
+    en la elaboración consensuada de la Instrucción de trabajo de Nómina, aspecto muy importante para que se lleve a
+    cabo en forma adecuada el Juicio de cuentas, como también la Fiscalización. Por otra parte, y como parte de
+    adaptación a los cambios del contexto, se desarrollaron documentación para llevar ejecutar procedimientos de
+    auditoría a entes privados del sector público.
+
+</p>
+
+<h1 class="mb-1 mt-5">Medición del Desempeño de los Procesos </h1>
+<h3 class="mb-3">Supervisión y monitoreo del sistema de control interno</h3>
+<p>
+    Para la supervisión del Sistema de Gestión, el Tribunal de cuentas, posee diversos mecanismos, entre los que se
+    destaca, las Auditorías externas relacionadas a Modelos internacionales de Gestión (Normas IS0)<br /><br />
+    Además, como parte del sistema de control interno, la Dirección de Auditoría Interna y Control de Procesos del
+    Tribunal, trabaja con un cuerpo de Auditores internos formado por agentes del mismo tribunal, analizando el
+    desempeño de los procesos de distintos sectores y proponiendo mejoras a los mismos. Por otra parte, se lleva a cabo
+    el monitoreo permanente a través del SIGESCO, (Sistema de Gestión y Control del Tribunal), el cual arroja
+    indicadores en forma automática. Durante el año 2024, se realizaron diversos informes sobre la gestión de la
+    institución, relacionados con los costos de los procesos, subprocesos, seguimiento de las planificaciones,
+    cumplimiento de metas físicas, informes de encuesta a funcionarios, cumplimiento de la fiscalización, etc, los
+    cuales contribuyen a la toma de decisiones de la Alta Dirección. Estos informes, quedan plasmados, en un Informe de
+    Revisión Anual de todo el organismo, el cual se realizó en un período intermedio a setiembre de 2024, y luego al
+    final del año.<br /><br />
+    Si consideramos que el producto final del Tribunal es el Fallo de la cuenta, el que resume tanto los procesos de
+    Fiscalización como de Juicio de Cuentas, se expone uno de los indicadores vinculados al tiempo de emisión de los
+    fallos. De acuerdo a la normativa legal el Tribunal tiene un año para fallar las cuentas desde su presentación, pero
+    existe una meta interna de 8 meses (aproximadamente 240 días) para poder fallar las cuentas, la cual se refleja en
+    el cronograma del Juicio de Cuentas vigente para SIGESCO.<br /><br />
+    Se muestra a continuación una mejora en el cumplimiento de la meta por parte del Tribunal, reflejada en un mayor
+    porcentaje de cuentas falladas en 240 días o menos.
+
+</p>
+
+<div>
+    <canvas style="height: 100vh;" class="mt-5 mb-5" id="calidad"></canvas>
+    <small>(*) Los fallos de los organismos que rindieron cuentas del ejercicio 2022, aún no se encuentran concluidos,
+        motivo por el cual el dato es provisorio,
+        conforme a los fallos emitidos hasta 31-12-23 respecto de rendiciones de cuentas 2022.</small>
+</div>
+
+
+<div class="mt-5">
+    <h3>Grupos de Mejora</h3>
+
+    <p>
+        Son equipos de trabajo dedicados a la mejora constante de la calidad. La idea del trabajo en grupo se basa en el
+        reconocimiento de que la calidad es competencia de todos y que quienes mejor conocen los procesos de trabajo son
+        quienes los realizan diariamente. <br /><br />
+        Los Grupos de Mejora tienen como misión identificar, analizar y proponer soluciones a ineficiencias del propio
+        trabajo o actividad. Generalmente son equipos "temporales" que se concentran en el análisis que realizan de sus
+        propios procesos de trabajo y las propuestas que logran llevar adelante para mejorar dichos procesos.
+
+    </p>
+
+    <p class="d-flex gap-4 mt-5 flex-wrap justify-content-center">
+
+
+        <BSButton Color="BSColor.Primary" Target="costeo"> COSTEO Y PLANIFICACIÓN</BSButton>
+
+        <BSCollapse DataId="costeo">
+            <BSCard CardType="CardType.Card">
+                <p>
+                    Se trabajó en la propuesta de vinculación de los procedimientos de Auditoría y Riesgos, divididos por
+                    estado y por Rubro. <br />
+                    Se trabajó en la mejora del Análisis de la materialidad y redefinición de los componentes del riesgo por
+                    cuenta (Conocimiento del Ente).<br />
+                    Se presenta en forma permanente información a las autoridades de la situación de la planificación y el
+                    llenado de Costeo de las actividades de la organización.
+
+                </p>
+            </BSCard>
+        </BSCollapse>
+
+
+        <BSButton Color="BSColor.Primary" Target="auditoria"> MANUAL DE AUDITORÍA</BSButton>
+        <BSCollapse DataId="auditoria">
+            <BSCard CardType="CardType.Card">
+                <p>
+                    Se realiza una revisión permanente de la estructura y contenido del manual de auditoría conforme a las
+                    normas legales y profesionales vigentes. Se ha realizado la revisión y actualización de Normas
+                    Generales-Normativa Provincial e Internacional.<br />
+                    Se actualizó la normativa, y se verificaron las instrucciones de trabajo relacionadas en cada uno de los
+                    apartados y por tipo de ente auditado<br />
+                    Se ha verificado la existencia de modificaciones y revisiones por parte de la INTOSAI de las normas
+                    internacionales de auditoria ISSAI.<br />
+                    Se trabajó en a la incorporación al Manual de Auditoría de los check list aplicables a entes privados
+                    del sector público. Se realizó curso de capacitación en el C.P.C.E. MZA por parte de algunos miembros
+                    del grupo que tienen a su cargo la auditoría de entes privados.<br />
+                    Se elaboró proyecto de modificación del Dictamen de Auditoría con el Acuerdo 6581. Se dieron cursos en
+                    la plataforma MOODLE.<br />
+                    Se realizó para el personal con formato Taller capacitación sobre Anexo XIV-<br />
+                    Se trabajó en el análisis y propuesta de modificaciones al Acuerdo 4033 (Informe Complementario) y se
+                    elevó la correspondiente propuesta a las autoridades.
+                </p>
+            </BSCard>
+        </BSCollapse>
+
+
+        <BSButton Class="text-uppercase" Color="BSColor.Primary" Target="tecno">  Auditoría de las Tecnologías de la Información</BSButton>
+         <BSCollapse DataId="tecno">
+        <BSCard CardType="CardType.Card">
+                <p>
+                    Se realizó la migración y puesta a punto de los procesos “ROBOTS”<br />
+                    Se trabajó en el armado de Guías de los controles automáticos de LRF, sueldos, Cuentas por cobrar y
+                    Rendiciones mensuales y anuales.<br />
+                    Se trabajó en la actualización de las Instrucciones de Trabajo aplicables a Análisis de riesgos y
+                    Seguridad de los sistemas informáticos, aplicables a las auditorías a sistemas de los
+                    cuentadantes.<br />
+                    Se trabajó en la unificación de Rutinas para el control de los anexos contables que remiten los
+                    cuentadantes en las presentaciones mensuales / periódica.<br />
+                    Se trabajó en la mejora de los Controles al informe preliminar, para poder realizarlos con mayor
+                    periodicidad.
+                </p>
+            </BSCard>
+        </BSCollapse>
+
+
+
+
+
+        <BSButton Class="text-uppercase" Color="BSColor.Primary" Target="higiene">  Higiene y Salud Ocupacional</BSButton>
+        <BSCollapse DataId="higiene">
+            <BSCard CardType="CardType.Card">
+                <p>
+                    Se realizaron 2 simulacros de sismos, uno en forma conjunta con Defensa Civil del Gobierno de Mendoza y
+                    uno sorpresivo para el personal del Tribunal.<br />
+                    Se trabaja en forma permanente, mediante los Brigadistas de cada piso, en la renovación de los
+                    botiquines correspondientes.<br />
+                    Se realizó conjuntamente con el Ministerio de Salud el programa de vacunación institucional, se aplicó
+                    la dosis de Sarampión y COVID-19 a 37 agentes del HTC. Por otra parte, se realizó conjuntamente con el
+                    Decano de la Facultad de Cs. Médicas de la Universidad del Aconcagua, Dr. Ángel Pellegrino, un convenio
+                    para que los agentes del tribunal sean inoculados con distintas vacunas a 35 agentes del HTC.<br />
+                    Se realizó conjuntamente con el cuerpo de Brigadistas de Casa de Gobierno un taller para evaluación de
+                    personas con discapacidad en la nave cultural.<br />
+                    Se realizó el día 22/04 curso taller sobre cesación tabáquica, brindado por el Dr. Lucas Romero.
+                    (OSEP)<br />
+                    El día 12 de mayo se realizó un curso sobre Primeros Auxilios Psicológicos, organizado por Defensa Civil
+                    de la Provincia en el Casino de Mendoza, donde participó el cuerpo de Brigadistas del HTC. (Sector
+                    Capacitación)<br />
+                    Se adquirieron 2 desfibriladores, uno para cada uno de los edificios.<br />
+                    Se organizó conjuntamente con el Grupo de Mejora de Responsabilidad Social y con el Centro de
+                    Hemoterapia de la Provincia la primera campaña de donación de sangre.<br />
+
+                </p>
+            </BSCard>
+        </BSCollapse>
+
+
+        <BSButton Class="text-uppercase" Color="BSColor.Primary" Target="social"> Responsabilidad Social</BSButton>
+        <BSCollapse DataId="social">
+            <BSCard CardType="CardType.Card">
+                <p>
+                    El Tribunal de Cuentas participó, a través del Grupo de Mejora "Responsabilidad Social", de una nueva
+                    edición del "Proyecto Mochi". Se pudieron armar 31 kits con distintos útiles y materiales escolares. 15
+                    de esos kits fueron destinados a alumnos de 1°, 2° y 3° grado y 16 kits a alumnos de 4°, 5°, 6° y 7°.
+                    Junto a esto, se adquirieron 31 mochilas con sus respectivas cartucheras.<br />
+                    Se realiza una Colecta de ayuda permanente a merendero. “Milagros de Dios”. Se aportan alimentos, ropa,
+                    útiles escolares.<br />
+                    Se recolectó calzado e indumentaria para chicos en edad escolar de familias carenciadas, entregándose al
+                    Merendero Milagro de Dios.<br />
+                    Continuidad de Becas FONBEC, promoción y fortalecimiento.<br />
+                    Para el Día del niño, se recolectaron juguetes y dinero para organizar un festejo en el Merendero
+                    Milagro de Dios.<br />
+                    Se trabaja en la recolección y traslado de papel por piso en tachos verdes con ACUNAR.<br />
+                    Se juntan tapitas plásticas, pilas y baterías por cada piso del edificio, para luego entregar a ACUNAR,
+                    con quien se tiene un Convenio.<br />
+                    Se realiza reciclado de papel de la documentación prescripta de archivo de las áreas en Giol y de
+                    archivos calle Catamarca.<br />
+
+
+                </p>
+            </BSCard>
+        </BSCollapse>
+
+    </p>
+</div>
+
+    <NavLink type="button" class="text-black mt-md-5" href="/">  <img class="me-2" width="32" height="32" src="https://img.icons8.com/windows/32/000000/return.png" alt="return" /> VOLVER</NavLink>
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            // Llama a CuadroFallos() solo en la primera renderización
+            await Quality();
+        }
+    }
+
+    private async Task Quality()
+    {
+        try
+        {
+            await JS.InvokeVoidAsync("Calidad");
+
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error {ex.Message}");
+        }
+    }
+}

@@ -1,0 +1,90 @@
+﻿@using BlazorStrap
+@inject IBlazorStrap BlazorStrap 
+
+<header>
+
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light box-shadow mb-3 pt-0 pb-0 container-fluid justify-content-between">
+        <NavLink id="logo" class="logo navbar-brand pt-0 " href="/"> </NavLink>
+
+        <BSButton Class="me-5 d-flex gap-3 align-items-center" @onclick="OpenCanvas">
+            <h6 class="m-0">MENÚ</h6>
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path fill="#333333" d="M3 18v-2h18v2zm0-5v-2h18v2zm0-5V6h18v2z" /></svg>
+        </BSButton>
+
+
+      
+
+    </nav>
+    <BSOffCanvas @ref="_offCanvas" ShowBackdrop=true AllowScroll=true DisableEscapeKey=false Placement="Placement.Right">
+    <Header><h5>MEMORIA 2024</h5></Header>
+        <Content>
+        <div class="d-flex flex-column flex-grow-1">
+            <a href="/">INICIO</a>
+            <hr />
+            <a href="cuentas">CUENTAS FALLADAS</a>
+            <hr />
+            <BSDropdown>
+                <Toggler><BSToggle IsButton="false" Color="BSColor.Secondary" class="mt-3">INSTITUCIONAL</BSToggle></Toggler>
+                <Content>
+                    <BSDropdownItem><a href="organigrama">ORGANIGRAMA</a></BSDropdownItem>
+                    <BSDropdownItem><a href="quienes-somos">QUIENES SOMOS</a></BSDropdownItem>
+                    <BSDropdownItem><a href="rrhh">RECURSOS HUMANOS</a></BSDropdownItem>
+                    <BSDropdownItem><a href="auditoria-externa">AUDITORÍA EXTERNA</a></BSDropdownItem>
+                    <BSDropdownItem><a href="comunicacion">ESTRATEGIAS DE DIFUSIÓN</a></BSDropdownItem>
+                    <BSDropdownItem><a href="actividades">ACTIVIDADES</a></BSDropdownItem>
+                </Content>
+            </BSDropdown>
+            <hr />
+            <BSDropdown>
+                <Toggler><BSToggle IsButton="false" Color="BSColor.Secondary" class="mt-3">FUNCIONES</BSToggle></Toggler>
+                <Content>
+                    <BSDropdownItem><a href="funcion-fiscalizadora">FISCALIZADORA</a></BSDropdownItem>
+                    <BSDropdownItem><a href="funcion-jurisdiccional">JURISDICCIONAL</a></BSDropdownItem>
+                    <BSDropdownItem><a href="funcion-reglamentaria">REGLAMENTARIA</a></BSDropdownItem>
+                    <BSDropdownItem><a href="funcion-consultiva">CONSULTIVA</a></BSDropdownItem>
+                </Content>
+            </BSDropdown>
+            <hr />
+            <BSDropdown>
+                <Toggler><BSToggle IsButton="false" Color="BSColor.Secondary" class="mt-3">SISTEMA DE GESTIÓN</BSToggle></Toggler>
+                <Content>
+                    <BSDropdownItem><a href="procesos">PROCESOS</a></BSDropdownItem>
+                    <BSDropdownItem><a href="calidad">CALIDAD</a></BSDropdownItem>
+                </Content>
+            </BSDropdown>
+                <hr />
+        </div>
+        
+        <div class="d-flex flex-column fs-6 ">
+            <p>Memorias anteriores...</p>
+            <BSListGroup>
+                <BSListGroupItem><a href="https://www.tribcuentasmendoza.gob.ar/Memoria/2023/" target="_blank">2023</a></BSListGroupItem>
+                <BSListGroupItem><a href="https://www.tribcuentasmendoza.gob.ar/Memoria/2022/" target="_blank">2022</a></BSListGroupItem>
+                <BSListGroupItem><a href="https://www.tribcuentasmendoza.gob.ar/Memoria/2021/" target="_blank">2021</a></BSListGroupItem>
+                <BSListGroupItem><a href="https://www.tribcuentasmendoza.gob.ar/Memoria/2020/" target="_blank">2020</a></BSListGroupItem>
+                <BSListGroupItem><a href="https://www.tribcuentasmendoza.gob.ar/Memoria/2019/" target="_blank">2019</a></BSListGroupItem>
+                <BSListGroupItem><a href="https://www.tribcuentasmendoza.gob.ar/Memoria/2018/" target="_blank">2018</a></BSListGroupItem>
+                <BSListGroupItem><a href="https://www.tribcuentasmendoza.gob.ar/Memoria/2017/" target="_blank">2017</a></BSListGroupItem>
+            </BSListGroup>
+        </div>
+    </Content>
+</BSOffCanvas>
+
+
+</header>
+
+
+
+@code {
+    private BSOffCanvas? _offCanvas;
+
+    private async Task OpenCanvas()
+    {
+        if (_offCanvas != null)
+            await _offCanvas.ToggleAsync();
+
+    }
+
+    }
+
+

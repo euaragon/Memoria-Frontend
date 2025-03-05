@@ -1,0 +1,54 @@
+﻿@page "/auditorias-especiales"
+@inject HttpClient Http
+
+<PageTitle>Auditorías Especiales</PageTitle>
+
+<h1>Auditorías Especiales</h1>
+
+
+<table class="table table-hover mt-5 tabla-aud-esp">
+    <thead class="table-group-divider">
+        <tr>
+            <th>Organismo Auditado</th>
+            <th>Tema</th>
+            <th>Tipo de Auditoría</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (auditorias != null)
+        {
+            @foreach (var auditoria in auditorias)
+            {
+                <tr>
+                    <td>@auditoria.OrganismoAuditado</td>
+                    <td>@auditoria.Tema</td>
+                    <td>@auditoria.TipoDeAuditoria</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+<NavLink type="button" class="text-black mt-md-5" href="funcion-fiscalizadora">  <img class="me-2" width="32" height="32" src="https://img.icons8.com/windows/32/000000/return.png" alt="return" /> VOLVER</NavLink>
+
+
+
+@code {
+    private audExt[]? auditorias;
+
+    protected override async Task OnInitializedAsync()
+    {
+        auditorias = await Http.GetFromJsonAsync<audExt[]>("sample-data/audExt.json");
+        Console.Write(auditorias);
+    }
+
+    public class audExt
+    {
+        public string? OrganismoAuditado { get; set; }
+        public string? Tema { get; set; }
+        public string? TipoDeAuditoria { get; set; }
+    }
+}
+
+
+

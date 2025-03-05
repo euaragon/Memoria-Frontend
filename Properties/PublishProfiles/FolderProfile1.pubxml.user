@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\inetpub\wwwroot\memoria</_PublishTargetUrl>
+    <History>True|2024-04-30T13:02:23.6566951Z;False|2024-04-30T10:00:20.0993319-03:00;True|2024-04-29T11:35:18.9491198-03:00;True|2024-04-29T11:33:38.5148991-03:00;True|2024-04-29T10:40:04.2530311-03:00;True|2024-04-29T10:38:46.1148787-03:00;True|2024-04-29T10:37:40.1416781-03:00;True|2024-04-29T10:31:04.2267811-03:00;True|2024-04-29T10:30:26.1563145-03:00;True|2024-04-29T10:18:54.1117506-03:00;True|2024-04-29T10:09:21.1926061-03:00;True|2024-04-29T10:06:43.3482230-03:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

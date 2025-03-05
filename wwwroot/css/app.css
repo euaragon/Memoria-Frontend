@@ -1,0 +1,155 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+html {
+    font-size: 12px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-image: linear-gradient(180deg, #fff1eb 0%, #ace0f9 100%);
+    font-family: "Ubuntu", sans-serif;
+    color: #282122 !important;
+}
+
+.hidden {
+    display: none;
+}
+
+.logo {
+    background: url("/img/tribunal-de-cuentas.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 270px;
+    height: 110px;
+    position: relative;
+    top: -1px;
+}
+
+.dark-mode {
+    background: url("img/fondo-memoria-dark.png") !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    font-family: "Ubuntu", sans-serif;
+    color: #dcdcdc !important;
+    margin-bottom: 60px;
+}
+
+    .dark-mode .logo {
+        background: url("img/tribunal-de-cuentas-claro.png") !important;
+        background-position: center;
+        background-repeat: no-repeat !important;
+        width: 270px;
+        height: 110px;
+        left: 20px;
+    }
+
+    .dark-mode .nav-link {
+        color: #dcdcdc !important;
+    }
+
+.button-close {
+    background: none;
+    border: none;
+}
+
+.dark-mode .offcanvas {
+    background: #282122;
+}
+
+.dark-mode .list-group-item {
+    background: #282122;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.darkmode-btn {
+    width: fit-content;
+}
+
+.dark-mode .tabla-aud-esp {
+    color: #dcdcdc !important;
+}
+
+.dark-mode #chartdiv {
+    color: #dcdcdc !important;
+}
+
+link-ppal {
+    color: #282122 !important;
+}
+
+.dark-mode a {
+    color: #dcdcdc !important;
+}
+
+a {
+    text-decoration: none;
+    color: #282122;
+    position: relative;
+}
+
+    a:hover {
+        opacity: 0.9;
+        top: -1.5px;
+    }
+
+.text-dark {
+    color: #282122 !important;
+}
+
+
+.contador {
+    background: rgba(1, 32, 54, 0.35);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 10px;
+}
+
+.bg-black {
+    background: #282122 !important;
+}
+
+.darkmode-btn {
+    background: #282122;
+    margin: 0 10px;
+}
+
+.dark-mode #chartdiv {
+    color: #dcdcdc !important;
+}
+
+#chartdiv {
+    width: 100%;
+    height: 600px;
+}
+
+/* organigrama */
+
+.boc-light {
+    background: transparent !important;
+}
+
+#tree {
+    width: 100%;
+    height: 100%;
+}
+
+.card{
+    background: none;
+    border: none;
+}
+
+iframe{
+    background-image:none !important;
+}

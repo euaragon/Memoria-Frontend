@@ -1,0 +1,90 @@
+﻿@page "/"
+@inject IJSRuntime JS
+
+<PageTitle>MEMORIA 2024</PageTitle>
+
+
+<h1 class="mb-3 fw-bold fs-1">Reflexiones Clave: Nuestra Memoria Anual</h1>
+
+<div class="container-fluid p-0">
+    <div class=" clearfix text-center">
+        <img class="col-md float-md-end mb-3 ms-5" src="img/nestor-pares.png" alt="Dr. Néstor Parés" />
+        <p class="text-start ">
+            En cumplimiento de <i> los artículos Nº 15 inc. e) y Nº 69  de la Ley Nº 9.292</i>, se presenta la Memoria Anual del ejercicio 2024, en la que se detallan las actividades principales realizadas por esta Institución, así como el estado de las cuentas rendidas por los administradores responsables de los fondos públicos de la Provincia y sus municipalidades.
+            <br /><br />
+            El acto de rendir cuentas es fundamental para garantizar la transparencia en la gestión gubernamental, en consonancia con los principios de un sistema republicano de gobierno. Nuestra intención es que este informe sea de utilidad tanto para las autoridades y entidades del sector público, como para futuras administraciones, organismos internacionales y cualquier persona interesada en comprender el manejo de los fondos públicos y el trabajo realizado por esta Institución.
+            <br /><br />
+            Uno de los objetivos fijados por el Tribunal de Cuentas de Mendoza es el fortalecimiento del proceso de fiscalización. Este proceso se desarrolla en forma concomitante a la ejecución presupuestaria permitiendo a los funcionarios responsables realizar correcciones necesarias para evitar posibles observaciones al cierre del ejercicio.
+            <br /><br />
+            El Tribunal de Cuentas de nuestra provincia <i>ha demostrado un compromiso sólido con la capacitación continua , la mejora constante, el profesionalismo y la búsqueda incesante de la excelencia en sus funciones. </i> A través de programas de formación especializados, el Tribunal ha fortalecido las habilidades de su personal, asegurando que estén debidamente preparados para abordar los desafíos complejos inherentes a su labor. Esta dedicación a la excelencia profesional se refleja en su enfoque riguroso en la fiscalización y control de los recursos públicos, contribuyendo así a la transparencia y la eficiencia en la gestión gubernamental. En resumen, el Tribunal de Cuentas se erige como un ejemplo destacado de institución comprometida con los más altos estándares de calidad y rendición de cuentas.
+            <br /><br />
+            Todos los datos recopilados en esta memoria anual contribuyen a mejorar la gestión patrimonial del Estado y aumentar el conocimiento público sobre las funciones que la Constitución provincial y las leyes asignan a este Órgano de Control Extrapoder. 
+            <br /><br />
+            Estamos a disposición para cualquier consulta adicional sobre la información presentada.
+
+        </p>
+
+        <img class="w-25 h-25" src="img/firma-nestor-pares.png" alt="firma Nestor Parés">
+<h4 class="fw-bold m-0">Dr. Néstor Parés</h4>
+<p class="m-0">PRESIDENTE HTC</p>
+    </div>
+</div>
+
+<div class="row d-flex flex-wrap align-items-lg-stretch mt-5 mb-5">
+     <canvas class="col w-25 h-25" id="cuadro-fallos"></canvas>
+    <div class="col d-flex flex-column justify-content-center">
+    <h2>MEMORIA 2024</h2>
+        <p>
+            De conformidad con lo dispuesto por el Art. Nº 69 de la Ley Nº 9.292 se presenta el estado de las cuentas
+            falladas. <br /><br />
+            Un Fallo es una resolución del Tribunal de Cuentas, que aprueba o no las rendiciones de los organismos a cargo de fondos públicos provinciales o municipales, puede aplicar multas o cargos si la administración de dichos fondos no fue llevaba de acuerdo a las leyes vigentes.
+        </p>
+        <a class="btn btn-primary" href="cuentas" > ver más... </a>
+    </div>
+</div>
+
+<div class="row d-flex  align-items-start mt-5  gap-5">
+
+
+    <a class=" link-ppal col d-flex flex-column align-items-center  text-center gap-3" href="quienes-somos">
+        <img src="img/quienes-somos.png" alt="Quienes Somos" /> QUIÉNES SOMOS
+    </a>
+
+    <a class="link-ppal col d-flex flex-column align-items-center  text-center gap-3" href="funcion-jurisdiccional">
+        <img src="img/balanza.png" alt="Juicio de Cuentas" /> FUNCIÓN JURISDICCIONAL DEL TRIBUNAL
+    </a>
+
+    <a class="link-ppal col d-flex flex-column align-items-center  text-center gap-3" href="procesos">
+        <img src="img/gestion.png" alt="Sistema de Gestión" />  NUESTRO SISTEMA DE GESTIÓN
+    </a>
+
+    <a class="link-ppal col d-flex flex-column align-items-center text-center gap-3" href="actividades">
+        <img src="img/actividades.png" alt="Actividades" /> ACTIVIDADES
+    </a>
+
+</div>
+
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            // Llama a CuadroFallos() solo en la primera renderización
+            await CuadroFallos();
+        }
+    }
+
+    private async Task CuadroFallos()
+    {
+        try
+        {
+            await JS.InvokeVoidAsync("cuadroFallos");
+            Console.WriteLine("La función cuadroFallos se ejecutó correctamente.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error al ejecutar cuadroFallos: {ex.Message}");
+        }
+    }
+}

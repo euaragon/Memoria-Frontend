@@ -1,0 +1,281 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\bin\\Debug\\net6.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\obj\\Debug\\net6.0\\build-gz\\+R9uMv4y.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Memoria-2023.styles.css",
+      "PackagePath": "staticwebassets\\Memoria-2023.styles.css"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\css\\open-iconic\\README.md",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\img\\BID.png",
+      "PackagePath": "staticwebassets\\img\\BID.png"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\img\\GRS\\debug.log",
+      "PackagePath": "staticwebassets\\img\\GRS\\debug.log"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\img\\GRS\\mochi-1.jpg",
+      "PackagePath": "staticwebassets\\img\\GRS\\mochi-1.jpg"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\img\\GRS\\mochi-2.jpg",
+      "PackagePath": "staticwebassets\\img\\GRS\\mochi-2.jpg"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\img\\GRS\\resp-soc-1.jpg",
+      "PackagePath": "staticwebassets\\img\\GRS\\resp-soc-1.jpg"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\img\\GRS\\resp-soc-2.jpg",
+      "PackagePath": "staticwebassets\\img\\GRS\\resp-soc-2.jpg"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\img\\actividades.png",
+      "PackagePath": "staticwebassets\\img\\actividades.png"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\img\\auditorias-especiales.jpg",
+      "PackagePath": "staticwebassets\\img\\auditorias-especiales.jpg"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\img\\autoridades\\angelini.jpg",
+      "PackagePath": "staticwebassets\\img\\autoridades\\angelini.jpg"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\img\\autoridades\\caputto.jpg",
+      "PackagePath": "staticwebassets\\img\\autoridades\\caputto.jpg"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\img\\autoridades\\muñoz.jpg",
+      "PackagePath": "staticwebassets\\img\\autoridades\\muñoz.jpg"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\img\\autoridades\\pares.jpg",
+      "PackagePath": "staticwebassets\\img\\autoridades\\pares.jpg"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\img\\autoridades\\pettignano.jpg",
+      "PackagePath": "staticwebassets\\img\\autoridades\\pettignano.jpg"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\img\\autoridades\\tribunal.jpg",
+      "PackagePath": "staticwebassets\\img\\autoridades\\tribunal.jpg"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\img\\balanza.png",
+      "PackagePath": "staticwebassets\\img\\balanza.png"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\img\\cuentas.png",
+      "PackagePath": "staticwebassets\\img\\cuentas.png"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\img\\debug.log",
+      "PackagePath": "staticwebassets\\img\\debug.log"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\img\\fallos-cuentas.jpg",
+      "PackagePath": "staticwebassets\\img\\fallos-cuentas.jpg"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\img\\firma-nestor-pares.png",
+      "PackagePath": "staticwebassets\\img\\firma-nestor-pares.png"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\img\\fondo-memoria-dark.png",
+      "PackagePath": "staticwebassets\\img\\fondo-memoria-dark.png"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\img\\fondo-memoria.jpg",
+      "PackagePath": "staticwebassets\\img\\fondo-memoria.jpg"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\img\\fondo-memoria.png",
+      "PackagePath": "staticwebassets\\img\\fondo-memoria.png"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\img\\gestion.png",
+      "PackagePath": "staticwebassets\\img\\gestion.png"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\img\\jornadas.jpg",
+      "PackagePath": "staticwebassets\\img\\jornadas.jpg"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\img\\jurisdiccional\\juicio-de-cuentas-dark.png",
+      "PackagePath": "staticwebassets\\img\\jurisdiccional\\juicio-de-cuentas-dark.png"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\img\\jurisdiccional\\juicio-de-cuentas.png",
+      "PackagePath": "staticwebassets\\img\\jurisdiccional\\juicio-de-cuentas.png"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\img\\nestor-pares.png",
+      "PackagePath": "staticwebassets\\img\\nestor-pares.png"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\img\\organigrama.jpg",
+      "PackagePath": "staticwebassets\\img\\organigrama.jpg"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\img\\organigrama.png",
+      "PackagePath": "staticwebassets\\img\\organigrama.png"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\img\\procesos.png",
+      "PackagePath": "staticwebassets\\img\\procesos.png"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\img\\quienes-somos.png",
+      "PackagePath": "staticwebassets\\img\\quienes-somos.png"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\img\\red-federal.jpg",
+      "PackagePath": "staticwebassets\\img\\red-federal.jpg"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\img\\responsabilidad-social.png",
+      "PackagePath": "staticwebassets\\img\\responsabilidad-social.png"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\img\\riera.png",
+      "PackagePath": "staticwebassets\\img\\riera.png"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\img\\tribunal-de-cuentas-claro.png",
+      "PackagePath": "staticwebassets\\img\\tribunal-de-cuentas-claro.png"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\img\\tribunal-de-cuentas.png",
+      "PackagePath": "staticwebassets\\img\\tribunal-de-cuentas.png"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\img\\twitter.jpg",
+      "PackagePath": "staticwebassets\\img\\twitter.jpg"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\img\\version-teatro\\actrices.jpg",
+      "PackagePath": "staticwebassets\\img\\version-teatro\\actrices.jpg"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\img\\version-teatro\\afiche.jpg",
+      "PackagePath": "staticwebassets\\img\\version-teatro\\afiche.jpg"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\img\\version-teatro\\agasajo.jpg",
+      "PackagePath": "staticwebassets\\img\\version-teatro\\agasajo.jpg"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\img\\version-teatro\\diego rios.jpg",
+      "PackagePath": "staticwebassets\\img\\version-teatro\\diego rios.jpg"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\img\\version-teatro\\resolucion.jpg",
+      "PackagePath": "staticwebassets\\img\\version-teatro\\resolucion.jpg"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\img\\version-teatro\\staff.jpg",
+      "PackagePath": "staticwebassets\\img\\version-teatro\\staff.jpg"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\js\\orgchart.js",
+      "PackagePath": "staticwebassets\\js\\orgchart.js"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\sample-data\\audExt.json",
+      "PackagePath": "staticwebassets\\sample-data\\audExt.json"
+    },
+    {
+      "Id": "C:\\memoria\\2023\\version 2\\Memoria-2023\\wwwroot\\sample-data\\cuentas.json",
+      "PackagePath": "staticwebassets\\sample-data\\cuentas.json"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Memoria-2023.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Memoria-2023.props",
+      "PackagePath": "build\\Memoria-2023.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Memoria-2023.props",
+      "PackagePath": "buildMultiTargeting\\Memoria-2023.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Memoria-2023.props",
+      "PackagePath": "buildTransitive\\Memoria-2023.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
