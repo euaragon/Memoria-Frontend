@@ -1,0 +1,1 @@
+C:\Users\earagon.TRIBUNAL\Desktop\Memoria version Blazor\Memoria2024.BlazorApi\obj\Release\net8.0\browser-wasm\PubTmp\Out\web.config

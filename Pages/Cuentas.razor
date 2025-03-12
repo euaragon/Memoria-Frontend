@@ -1,11 +1,10 @@
 ﻿@page "/cuentas"
 @inject IJSRuntime JS
 @inject HttpClient Http
+@inject NavigationManager NavigationManager
 
 <PageTitle>Cuentas Falladas en 2024</PageTitle>
 <div id="top"></div>
-
-
 
 <h1 class="text-center mb-4">172 Cuentas Falladas en 2024</h1>
 <p>
@@ -19,14 +18,11 @@
     falladas.
 </p>
 
-
-
 <div class="mt-5 p-3">
     <canvas id="cuadro-fallos-2"></canvas>
 </div>
 
-
-<div class="overflow-auto mb-5" style="height:600px">
+<div class="overflow-auto mb-5" >
     <table class="table table-sm table-responsive table-hover mt-5 tabla-aud-esp text-uppercase">
         <thead class="table-group-divider">
             <tr>
@@ -39,26 +35,31 @@
             </tr>
         </thead>
         <tbody>
-           @if(cuentas != null )
+            @if (cuentas != null)
             {
-                @foreach (var cuenta in cuentas)
+                @foreach (var cuenta in GetCurrentPageItems())
                 {
-                        <tr>
-                            <td>@cuenta.NroExp</td>
-                            <td>@cuenta.Anio</td>
-                            <td>@cuenta.Organismo</td>
-                            <td>@cuenta.NroFallo</td>
-                            <td class="fs-6">@cuenta.Fecha</td>
-                            <td>@cuenta.Area</td>
-                        </tr>
+                    <tr>
+                        <td>@cuenta.NroExp</td>
+                        <td>@cuenta.Anio</td>
+                        <td>@cuenta.Organismo</td>
+                        <td>@cuenta.NroFallo</td>
+                        <td class="fs-6">@cuenta.Fecha</td>
+                        <td>@cuenta.Area</td>
+                    </tr>
                 }
-               
             }
         </tbody>
     </table>
 
-    
 
+</div>
+
+
+<div class="d-flex justify-content-center mt-3 align-items-center gap-5">
+    <button class="btn bg-primary text-light" @onclick="PreviousPage" disabled="@(currentPage == 1)">Anterior</button>
+    <span class="mx-2">Página @currentPage de @totalPages</span>
+    <button class="btn bg-primary text-light" @onclick="NextPage" disabled="@(currentPage == totalPages)">Siguiente</button>
 </div>
 
 <h2 class="mb-3 mt-5">Consulta de fallos</h2>
@@ -66,17 +67,51 @@
 <iframe id="miIframe" frameborder="0" tabindex="-1" sandbox="allow-scripts allow-same-origin" loading="lazy"
         src="https://www.tribcuentasmendoza.gob.ar/tcnet/digesto/filtrodigesto/FiltroNormativaWeb_2.aspx?TipNorId=9"
         style="width: 100%; height: 340px;background: none !important;"></iframe>
-<NavLink type="button" class="text-black mt-md-5" href="/">  <img class="me-2" width="32" height="32" src="https://img.icons8.com/windows/32/000000/return.png" alt="return" /> VOLVER</NavLink>
-
+<NavLink type="button" class="text-black mt-md-5" href="/"> <img class="me-2" width="32" height="32" src="https://img.icons8.com/windows/32/000000/return.png" alt="return" /> VOLVER</NavLink>
 
 @code {
-
-
     private Fallo[]? cuentas;
+    private int currentPage = 1;
+    private int pageSize = 10;
+    private int totalPages;
 
     protected override async Task OnInitializedAsync()
     {
         cuentas = await Http.GetFromJsonAsync<Fallo[]>("sample-data/cuentas.json");
+
+        if (cuentas == null)
+        {
+            Console.WriteLine("Error: Los datos del JSON no se cargaron correctamente.");
+        }
+        else
+        {
+            Console.WriteLine($"Datos cargados: {cuentas.Length} elementos.");
+            totalPages = (int)Math.Ceiling((double)cuentas.Length / pageSize);
+        }
+    }
+
+    private Fallo[] GetCurrentPageItems()
+    {
+        if (cuentas == null) return Array.Empty<Fallo>();
+
+        var startIndex = (currentPage - 1) * pageSize;
+        return cuentas.Skip(startIndex).Take(pageSize).ToArray();
+    }
+
+    private void PreviousPage()
+    {
+        if (currentPage > 1)
+        {
+            currentPage--;
+        }
+    }
+
+    private void NextPage()
+    {
+        if (currentPage < totalPages)
+        {
+            currentPage++;
+        }
     }
 
     public class Fallo
@@ -89,17 +124,14 @@
         public string? Area { get; set; }
     }
 
-
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (firstRender)
         {
             await ScrollToTop();
             await CuadroFallos();
-
         }
     }
-
 
     private async Task ScrollToTop()
     {
@@ -111,7 +143,6 @@
         {
             Console.WriteLine($"Error {ex.Message}");
         }
-
     }
 
     private async Task CuadroFallos()
@@ -119,14 +150,10 @@
         try
         {
             await JS.InvokeVoidAsync("cuadroFallos2");
-
         }
         catch (Exception ex)
         {
             Console.WriteLine($"Error {ex.Message}");
         }
-
-
     }
 }
-

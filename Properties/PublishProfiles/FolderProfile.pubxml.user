@@ -4,7 +4,8 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 -->
 <Project>
   <PropertyGroup>
-    <History>False|2024-04-26T12:19:43.1122579Z;</History>
+    <History>True|2025-03-07T14:21:39.8879120Z;True|2025-03-07T11:15:13.2722947-03:00;False|2024-04-26T09:19:43.1122579-03:00;</History>
     <LastFailureDetails />
+    <_PublishTargetUrl>C:\inetpub\wwwroot\memoria-2024</_PublishTargetUrl>
   </PropertyGroup>
 </Project>

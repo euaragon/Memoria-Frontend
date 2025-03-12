@@ -13,91 +13,91 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = Memoria-2023
 build_property.RootNamespace = Memoria-2023
-build_property.ProjectDir = C:\Users\earagon.TRIBUNAL\Desktop\Memoria version Blazor\Memoria-2023\
+build_property.ProjectDir = C:\Users\earagon.TRIBUNAL\Desktop\Memoria version Blazor\Memoria2024.BlazorApi\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = false
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\earagon.TRIBUNAL\Desktop\Memoria version Blazor\Memoria-2023
+build_property.MSBuildProjectDirectory = C:\Users\earagon.TRIBUNAL\Desktop\Memoria version Blazor\Memoria2024.BlazorApi
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/earagon.TRIBUNAL/Desktop/Memoria version Blazor/Memoria-2023/App.razor]
+[C:/Users/earagon.TRIBUNAL/Desktop/Memoria version Blazor/Memoria2024.BlazorApi/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/earagon.TRIBUNAL/Desktop/Memoria version Blazor/Memoria-2023/Pages/Actividades.razor]
+[C:/Users/earagon.TRIBUNAL/Desktop/Memoria version Blazor/Memoria2024.BlazorApi/Pages/Actividades.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWN0aXZpZGFkZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/earagon.TRIBUNAL/Desktop/Memoria version Blazor/Memoria-2023/Pages/AuditoriaExterna.razor]
+[C:/Users/earagon.TRIBUNAL/Desktop/Memoria version Blazor/Memoria2024.BlazorApi/Pages/AuditoriaExterna.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXVkaXRvcmlhRXh0ZXJuYS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/earagon.TRIBUNAL/Desktop/Memoria version Blazor/Memoria-2023/Pages/AuditoriasEspeciales.razor]
+[C:/Users/earagon.TRIBUNAL/Desktop/Memoria version Blazor/Memoria2024.BlazorApi/Pages/AuditoriasEspeciales.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXVkaXRvcmlhc0VzcGVjaWFsZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/earagon.TRIBUNAL/Desktop/Memoria version Blazor/Memoria-2023/Pages/Calidad.razor]
+[C:/Users/earagon.TRIBUNAL/Desktop/Memoria version Blazor/Memoria2024.BlazorApi/Pages/Calidad.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FsaWRhZC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/earagon.TRIBUNAL/Desktop/Memoria version Blazor/Memoria-2023/Pages/Comunicacion.razor]
+[C:/Users/earagon.TRIBUNAL/Desktop/Memoria version Blazor/Memoria2024.BlazorApi/Pages/Comunicacion.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tdW5pY2FjaW9uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/earagon.TRIBUNAL/Desktop/Memoria version Blazor/Memoria-2023/Pages/Consultiva.razor]
+[C:/Users/earagon.TRIBUNAL/Desktop/Memoria version Blazor/Memoria2024.BlazorApi/Pages/Consultiva.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29uc3VsdGl2YS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/earagon.TRIBUNAL/Desktop/Memoria version Blazor/Memoria-2023/Pages/Cuentas.razor]
+[C:/Users/earagon.TRIBUNAL/Desktop/Memoria version Blazor/Memoria2024.BlazorApi/Pages/Cuentas.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VlbnRhcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/earagon.TRIBUNAL/Desktop/Memoria version Blazor/Memoria-2023/Pages/Fiscalizadora.razor]
+[C:/Users/earagon.TRIBUNAL/Desktop/Memoria version Blazor/Memoria2024.BlazorApi/Pages/Fiscalizadora.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmlzY2FsaXphZG9yYS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/earagon.TRIBUNAL/Desktop/Memoria version Blazor/Memoria-2023/Pages/Index.razor]
+[C:/Users/earagon.TRIBUNAL/Desktop/Memoria version Blazor/Memoria2024.BlazorApi/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/earagon.TRIBUNAL/Desktop/Memoria version Blazor/Memoria-2023/Pages/Jurisdiccional.razor]
+[C:/Users/earagon.TRIBUNAL/Desktop/Memoria version Blazor/Memoria2024.BlazorApi/Pages/Jurisdiccional.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSnVyaXNkaWNjaW9uYWwucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/earagon.TRIBUNAL/Desktop/Memoria version Blazor/Memoria-2023/Pages/Organigrama.razor]
+[C:/Users/earagon.TRIBUNAL/Desktop/Memoria version Blazor/Memoria2024.BlazorApi/Pages/Organigrama.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JnYW5pZ3JhbWEucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/earagon.TRIBUNAL/Desktop/Memoria version Blazor/Memoria-2023/Pages/Procesos.razor]
+[C:/Users/earagon.TRIBUNAL/Desktop/Memoria version Blazor/Memoria2024.BlazorApi/Pages/Procesos.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvY2Vzb3MucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/earagon.TRIBUNAL/Desktop/Memoria version Blazor/Memoria-2023/Pages/QuienesSomos.razor]
+[C:/Users/earagon.TRIBUNAL/Desktop/Memoria version Blazor/Memoria2024.BlazorApi/Pages/QuienesSomos.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUXVpZW5lc1NvbW9zLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/earagon.TRIBUNAL/Desktop/Memoria version Blazor/Memoria-2023/Pages/Reglamentaria.razor]
+[C:/Users/earagon.TRIBUNAL/Desktop/Memoria version Blazor/Memoria2024.BlazorApi/Pages/Reglamentaria.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnbGFtZW50YXJpYS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/earagon.TRIBUNAL/Desktop/Memoria version Blazor/Memoria-2023/Pages/RRHH.razor]
+[C:/Users/earagon.TRIBUNAL/Desktop/Memoria version Blazor/Memoria2024.BlazorApi/Pages/RRHH.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUlJISC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/earagon.TRIBUNAL/Desktop/Memoria version Blazor/Memoria-2023/Shared/SurveyPrompt.razor]
+[C:/Users/earagon.TRIBUNAL/Desktop/Memoria version Blazor/Memoria2024.BlazorApi/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/earagon.TRIBUNAL/Desktop/Memoria version Blazor/Memoria-2023/_Imports.razor]
+[C:/Users/earagon.TRIBUNAL/Desktop/Memoria version Blazor/Memoria2024.BlazorApi/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/earagon.TRIBUNAL/Desktop/Memoria version Blazor/Memoria-2023/Shared/MainLayout.razor]
+[C:/Users/earagon.TRIBUNAL/Desktop/Memoria version Blazor/Memoria2024.BlazorApi/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-7n928iwix4
 
-[C:/Users/earagon.TRIBUNAL/Desktop/Memoria version Blazor/Memoria-2023/Shared/NavMenu.razor]
+[C:/Users/earagon.TRIBUNAL/Desktop/Memoria version Blazor/Memoria2024.BlazorApi/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-peovttsxq9

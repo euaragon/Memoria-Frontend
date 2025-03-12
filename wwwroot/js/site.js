@@ -1,27 +1,12 @@
-﻿document.addEventListener("click", function (event) {
+﻿
+
+
+document.addEventListener("click", function (event) {
     let offCanvas = document.querySelector(".offcanvas.show");
     if (offCanvas && !offCanvas.contains(event.target)) {
         DotNet.invokeMethodAsync("TuProyecto", "CloseCanvas");
     }
 });
-
-window.onload = function () {
-    setTimeout(() => {
-        document.activeElement?.blur(); // Quita el foco del iframe si lo tiene
-    }, 100);
-};
-function scrollToTop() {
-    window.scrollTo(0, 0); 
-}
-
-window.scrollToElement = function (selector) {
-    setTimeout(() => {
-        const element = document.querySelector(selector);
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-    }, 100); // Agregamos un delay para que Blazor termine de renderizar
-};
 
 
 function cuadroFallos() {

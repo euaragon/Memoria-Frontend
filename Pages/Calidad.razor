@@ -65,7 +65,7 @@
 
 
 <div class="mt-5">
-    <h3>Grupos de Mejora</h3>
+    <h1>Grupos de Mejora</h1>
 
     <p>
         Son equipos de trabajo dedicados a la mejora constante de la calidad. La idea del trabajo en grupo se basa en el
@@ -77,10 +77,11 @@
 
     </p>
 
-    <p class="d-flex gap-4 mt-5 flex-wrap justify-content-center">
+   
 
 
-        <BSButton Color="BSColor.Primary" Target="costeo"> COSTEO Y PLANIFICACIÓN</BSButton>
+       <div class="text-start d-flex flex-column gap-3 mt-3">
+        <BSLink Color="BSColor.Primary" Target="costeo" Class="fs-4 text-primary"> COSTEO Y PLANIFICACIÓN</BSLink>
 
         <BSCollapse DataId="costeo">
             <BSCard CardType="CardType.Card">
@@ -97,7 +98,7 @@
         </BSCollapse>
 
 
-        <BSButton Color="BSColor.Primary" Target="auditoria"> MANUAL DE AUDITORÍA</BSButton>
+        <BSLink Color="BSColor.Primary" Target="auditoria" Class="fs-4 text-primary"> MANUAL DE AUDITORÍA</BSLink>
         <BSCollapse DataId="auditoria">
             <BSCard CardType="CardType.Card">
                 <p>
@@ -120,10 +121,10 @@
             </BSCard>
         </BSCollapse>
 
-
-        <BSButton Class="text-uppercase" Color="BSColor.Primary" Target="tecno">  Auditoría de las Tecnologías de la Información</BSButton>
-         <BSCollapse DataId="tecno">
-        <BSCard CardType="CardType.Card">
+         
+        <BSLink Class="text-uppercase fs-4 text-primary" Color="BSColor.Primary" Target="tecno">  Auditoría de las Tecnologías de la Información</BSLink>
+        <BSCollapse DataId="tecno">
+            <BSCard CardType="CardType.Card">
                 <p>
                     Se realizó la migración y puesta a punto de los procesos “ROBOTS”<br />
                     Se trabajó en el armado de Guías de los controles automáticos de LRF, sueldos, Cuentas por cobrar y
@@ -143,7 +144,7 @@
 
 
 
-        <BSButton Class="text-uppercase" Color="BSColor.Primary" Target="higiene">  Higiene y Salud Ocupacional</BSButton>
+        <BSLink Class="text-uppercase fs-4 text-primary" Color="BSColor.Primary" Target="higiene">  Higiene y Salud Ocupacional</BSLink>
         <BSCollapse DataId="higiene">
             <BSCard CardType="CardType.Card">
                 <p>
@@ -171,7 +172,7 @@
         </BSCollapse>
 
 
-        <BSButton Class="text-uppercase" Color="BSColor.Primary" Target="social"> Responsabilidad Social</BSButton>
+        <BSLink Class="text-uppercase fs-4 text-primary" Color="BSColor.Primary" Target="social"> Responsabilidad Social</BSLink>
         <BSCollapse DataId="social">
             <BSCard CardType="CardType.Card">
                 <p>
@@ -196,8 +197,9 @@
                 </p>
             </BSCard>
         </BSCollapse>
+       </div>
 
-    </p>
+   
 </div>
 
     <NavLink type="button" class="text-black mt-md-5" href="/">  <img class="me-2" width="32" height="32" src="https://img.icons8.com/windows/32/000000/return.png" alt="return" /> VOLVER</NavLink>
