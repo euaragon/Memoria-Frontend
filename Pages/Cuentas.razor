@@ -74,6 +74,21 @@
         public string? Fecha { get; set; }
     }
 
+    public class FalloFueraCronograma
+    {
+        public string? Expediente { get; set; }
+        public int? Anio { get; set; }
+        public string? Organismo { get; set; }
+        public int? Nro { get; set; }
+        public string? Fecha { get; set; }
+    }
+
+    public class CuentasData
+    {
+        public Fallo[]? registros_principales { get; set; }
+        public FalloFueraCronograma[]? registros_adicionales { get; set; }
+    }
+
     protected override async Task OnInitializedAsync()
     {
         cuentas = await Http.GetFromJsonAsync<Fallo[]>("sample-data/cuentas.json");
