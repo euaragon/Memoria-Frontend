@@ -6,7 +6,7 @@
 <PageTitle>Cuentas Falladas en 2024</PageTitle>
 <div id="top"></div>
 
-<h1 class="text-center mb-4">172 Cuentas Falladas en 2024</h1>
+<h1 class="text-center mb-4">@tituloFallos</h1>
 <p>
     Un Fallo es una resolución que aprueba o no las rendiciones de los Organismos a cargo de fondos públicos
     provinciales o municipales; puede aplicar multas o cargos si la administración de dichos fondos no fue llevada de
@@ -40,12 +40,12 @@
                 @foreach (var cuenta in GetCurrentPageItems())
                 {
                     <tr>
-                        <td>@cuenta.NroExp</td>
-                        <td>@cuenta.Anio</td>
+                        <td>@cuenta.Expediente</td>
+                        <td>@cuenta.Año</td>
                         <td>@cuenta.Organismo</td>
-                        <td>@cuenta.NroFallo</td>
+                        <td>@cuenta.Nro</td>
                         <td class="fs-6">@cuenta.Fecha</td>
-                        <td>@cuenta.Area</td>
+                        
                     </tr>
                 }
             }
@@ -62,11 +62,7 @@
     <button class="btn bg-primary text-light" @onclick="NextPage" disabled="@(currentPage == totalPages)">Siguiente</button>
 </div>
 
-<h2 class="mb-3 mt-5">Consulta de fallos</h2>
-<h4 class="mb-3">Acá podés ingresar el número de fallo que quieras buscar</h4>
-<iframe id="miIframe" frameborder="0" tabindex="-1" sandbox="allow-scripts allow-same-origin" loading="lazy"
-        src="https://www.tribcuentasmendoza.gob.ar/tcnet/digesto/filtrodigesto/FiltroNormativaWeb_2.aspx?TipNorId=9"
-        style="width: 100%; height: 340px;background: none !important;"></iframe>
+
 <NavLink type="button" class="text-black mt-md-5" href="/"> <img class="me-2" width="32" height="32" src="https://img.icons8.com/windows/32/000000/return.png" alt="return" /> VOLVER</NavLink>
 
 @code {
@@ -74,6 +70,7 @@
     private int currentPage = 1;
     private int pageSize = 10;
     private int totalPages;
+    private string? tituloFallos; 
 
     protected override async Task OnInitializedAsync()
     {
@@ -87,6 +84,9 @@
         {
             Console.WriteLine($"Datos cargados: {cuentas.Length} elementos.");
             totalPages = (int)Math.Ceiling((double)cuentas.Length / pageSize);
+
+            int cantidadFallos = cuentas.Length;
+            tituloFallos = $"{cantidadFallos} Cuentas Falladas en 2024";
         }
     }
 
@@ -116,12 +116,12 @@
 
     public class Fallo
     {
-        public string? NroExp { get; set; }
-        public int? Anio { get; set; }
+        public string? Expediente { get; set; }
+        public int? Año { get; set; }
         public string? Organismo { get; set; }
-        public int? NroFallo { get; set; }
+        public int? Nro { get; set; }
         public string? Fecha { get; set; }
-        public string? Area { get; set; }
+       
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)

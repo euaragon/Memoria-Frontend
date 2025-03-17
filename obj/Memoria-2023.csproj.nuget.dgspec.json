@@ -53,22 +53,6 @@
               "target": "Package",
               "version": "[5.2.103.122024, )"
             },
-            "Blazorise": {
-              "target": "Package",
-              "version": "[1.7.5, )"
-            },
-            "Blazorise.Bootstrap": {
-              "target": "Package",
-              "version": "[1.7.5, )"
-            },
-            "Blazorise.Bootstrap5": {
-              "target": "Package",
-              "version": "[1.7.5, )"
-            },
-            "Blazorise.Icons.FontAwesome": {
-              "target": "Package",
-              "version": "[1.7.5, )"
-            },
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
               "version": "[8.0.4, )"

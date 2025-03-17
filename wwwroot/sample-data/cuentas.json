@@ -1,1378 +1,178 @@
 [
   {
-    "nroExp": "00353",
-    "anio": 2021,
-    "organismo": "MS - MINISTERIO DE SEGURIDAD",
-    "nroFallo": 17826,
-    "fecha": "08-02-2024",
-    "area": "Gobierno"
-  },
-  {
-    "nroExp": "00219",
-    "anio": 2021,
-    "organismo": "HOSPITAL CENTRAL",
-    "nroFallo": 17827,
-    "fecha": "08-02-2024",
-    "area": "descentralizadas II"
-  },
-  {
-    "nroExp": "00326",
-    "anio": 2021,
-    "organismo": "aysam sapem",
-    "nroFallo": 17828,
-    "fecha": "08-02-2024",
-    "area": "descentralizadas ii"
-  },
-  {
-    "nroExp": "00254",
-    "anio": 2021,
-    "organismo": "municipalidad de guaymallén",
-    "nroFallo": 17829,
-    "fecha": "08-02-2024",
-    "area": "municipalidades"
-  },
-  {
-    "nroExp": "00254",
-    "anio": 2021,
-    "organismo": "municipalidad de mendoza",
-    "nroFallo": 17829,
-    "fecha": "08-02-2024",
-    "area": "municipalidades"
-  },
-  {
-    "nroExp": "00257",
-    "anio": 2021,
-    "organismo": "municipalidad de las heras",
-    "nroFallo": 17830,
-    "fecha": "08-02-2024",
-    "area": "municipalidades"
-  },
-  {
-    "nroExp": "00202",
-    "anio": 2021,
-    "organismo": "PROGRAMA FEDERAL INCLUIR SALUD",
-    "nroFallo": 17832,
-    "fecha": "17-02-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2021,
-    "organismo": "DRNR - DIRECCION DE RECURSOS NATURALES RENOVABLES",
-    "nroFallo": 17833,
-    "fecha": "15-02-2024",
-    "area": "gobierno"
-  },
-  {
-    "nroExp": "00377",
-    "anio": 2021,
-    "organismo": "ATM - ADMINISTRACIÓN TRIBUTARIA MENDOZA",
-    "nroFallo": 17834,
-    "fecha": "15-02-2024",
-    "area": "recursos"
-  },
-  {
-    "nroExp": "00253",
-    "anio": 2021,
-    "organismo": "municipalidad de godoy cruz",
-    "nroFallo": 17835,
-    "fecha": "15-02-2024",
-    "area": "municipalidades"
-  },
-  {
-    "nroExp": "00264",
-    "anio": 2021,
-    "organismo": "municipalidad de san martín",
-    "nroFallo": 17836,
-    "fecha": "15-02-2024",
-    "area": "municipalidades"
-  },
-  {
-    "nroExp": "00223",
-    "anio": 2021,
-    "organismo": "OSEP - OBRA SOCIAL DE EMPLEADOS PUBLICOS",
-    "nroFallo": 17837,
-    "fecha": "15-02-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00217",
-    "anio": 2021,
-    "organismo": "FIP - FONDO DE INFRAESTRUCTURA PROVINCIAL",
-    "nroFallo": 17839,
-    "fecha": "01-03-2024",
-    "area": "descentralizadas ii"
-  },
-  {
-    "nroExp": "00258",
-    "anio": 2021,
-    "organismo": "municipalidad de lavalle",
-    "nroFallo": 17840,
-    "fecha": "09-03-2024",
-    "area": "municipalidades"
-  },
-  {
-    "nroExp": "00322",
-    "anio": 2021,
-    "organismo": "FAAAPM-FID. DE ASIST. A LA ACTIVIDAD AGROINDUSTRIAL DE LA PROV. DE MZA. ",
-    "nroFallo": 17841,
-    "fecha": "09-03-2024",
-    "area": "recursos"
-  },
-  {
-    "nroExp": "00312",
-    "anio": 2021,
-    "organismo": "UFI - UNIDAD DE FINANCIAMIENTO INTERNACIONAL",
-    "nroFallo": 17842,
-    "fecha": "09-03-2024",
-    "area": "descentralizadas ii"
-  },
-  {
-    "nroExp": "00305",
-    "anio": 2021,
-    "organismo": "IPJYC - INSTITUTO PROVINCIAL DE JUEGOS Y CASINOS",
-    "nroFallo": 17843,
-    "fecha": "09-03-2024",
-    "area": "descentralizadas ii"
-  },
-  {
-    "nroExp": "00310",
-    "anio": 2021,
-    "organismo": "IPV - INSTITUTO PROVINCIAL DE LA VIVIENDA",
-    "nroFallo": 17844,
-    "fecha": "09-03-2024",
-    "area": "descentralizadas ii"
-  },
-  {
-    "nroExp": "00263",
-    "anio": 2021,
-    "organismo": "municipalidad de san carlos",
-    "nroFallo": 17845,
-    "fecha": "09-03-2024",
-    "area": "municipalidades"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2021,
-    "organismo": "ministerio de cultura y turismo",
-    "nroFallo": 17846,
-    "fecha": "09-03-2024",
-    "area": "gobierno"
-  },
-  {
-    "nroExp": "00303",
-    "anio": 2021,
-    "organismo": "UCPP - DGE - UNIDAD COORDINADORA PROGRAMAS Y PROYECTOS",
-    "nroFallo": 17847,
-    "fecha": "22-03-2024",
-    "area": "descentralizadas ii"
-  },
-  {
-    "nroExp": "00265",
-    "anio": 2021,
-    "organismo": "municipalidad de san rafael",
-    "nroFallo": 17848,
-    "fecha": "22-03-2024",
-    "area": "municipalidades"
-  },
-  {
-    "nroExp": "00306",
-    "anio": 2021,
-    "organismo": "DGI - DEPARTAMENTO GENERAL DE IRRIGACIÓN",
-    "nroFallo": 17849,
-    "fecha": "22-03-2024",
-    "area": "descentralizadas ii"
-  },
-  {
-    "nroExp": "00218",
-    "anio": 2021,
-    "organismo": "DIRECCIÓN GENERAL DE PROTECCIÓN DE DERECHOS DE NIÑOS, NIÑAS Y ADOLESCENTES",
-    "nroFallo": 17850,
-    "fecha": "29-03-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00271",
-    "anio": 2021,
-    "organismo": "lavalle sapem",
-    "nroFallo": 17851,
-    "fecha": "05-04-2024",
-    "area": "municipalidades"
-  },
-  {
-    "nroExp": "00259",
-    "anio": 2021,
-    "organismo": "municipalidad de luján de cuyo",
-    "nroFallo": 17852,
-    "fecha": "12-04-2024",
-    "area": "municipalidades"
-  },
-  {
-    "nroExp": "00315",
-    "anio": 2021,
-    "organismo": "ISCAMEN - INSTITUTO DE SANIDAD Y CALIDAD AGROPECUARIA MENDOZA",
-    "nroFallo": 17853,
-    "fecha": "12-04-2024",
-    "area": "descentralizadas ii"
-  },
-  {
-    "nroExp": "00313",
-    "anio": 2021,
-    "organismo": "epas - ente provincial de agua y saneamiento",
-    "nroFallo": 17854,
-    "fecha": "19-04-2024",
-    "area": "descentralizadas ii"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2021,
-    "organismo": "CGP - CONTADURIA GENERAL DE LA PROVINCIA",
-    "nroFallo": 17855,
-    "fecha": "19-04-2024",
-    "area": "gobierno"
-  },
-  {
-    "nroExp": "00308",
-    "anio": 2021,
-    "organismo": "dge - dirección general de escuelas",
-    "nroFallo": 17856,
-    "fecha": "19-04-2024",
-    "area": "descentralizadas ii"
-  },
-  {
-    "nroExp": "00272",
-    "anio": 2021,
-    "organismo": "INVERSORA PASIP S.A.\r\n",
-    "nroFallo": 17857,
-    "fecha": "19-04-2024",
-    "area": "municipalidades"
-  },
-  {
-    "nroExp": "00256",
-    "anio": 2021,
-    "organismo": "municipalidad de la paz",
-    "nroFallo": 17858,
-    "fecha": "26-04-2024",
-    "area": "municipalidades"
-  },
-  {
-    "nroExp": "00323",
-    "anio": 2021,
-    "organismo": "DRPJ - DIRECCIÓN DE RESPONSABILIDAD PENAL JUVENIL",
-    "nroFallo": 17859,
-    "fecha": "03-05-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00309",
-    "anio": 2021,
-    "organismo": "DPV - DIRECCION PROVINCIAL DE VIALIDAD",
-    "nroFallo": 17860,
-    "fecha": "03-05-2024",
-    "area": "descentralizadas ii"
-  },
-  {
-    "nroExp": "00327",
-    "anio": 2021,
-    "organismo": "edemsa",
-    "nroFallo": 17861,
-    "fecha": "03-05-2024",
-    "area": "descentralizadas ii"
-  },
-  {
-    "nroExp": "00322",
-    "anio": 2022,
-    "organismo": "FAFIDA-FID. DE ASIST. FINANCIERA A INSTITUCIONES DEPORTIVAS AMATEUR",
-    "nroFallo": 17862,
-    "fecha": "23-05-2024",
-    "area": "recursos"
-  },
-  {
-    "nroExp": "00322",
-    "anio": 2022,
-    "organismo": "FIDEICOMISO DE GARANTIA INDUSTRIA AUDIOVISUAL",
-    "nroFallo": 17863,
-    "fecha": "31-05-2024",
-    "area": "recursos"
-  },
-  {
-    "nroExp": "00322",
-    "anio": 2022,
-    "organismo": "FAETO-FID. DE ADM. DE LA ESTACIÓN TERMINAL DE ÓMNIBUS",
-    "nroFallo": 2022,
-    "fecha": "17865",
-    "area": "recursos"
-  },
-  {
-    "nroExp": "00322",
-    "anio": 2022,
-    "organismo": "FIDEICOMISO PARA LA RENOVACIÓN DE REDES DISTRIBUIDORAS Y COLECTORAS DE LOS SERVICIOS DE AGUA POTABLE Y CLOACAS",
-    "nroFallo": 17866,
-    "fecha": "",
-    "area": ""
-  },
-  {
-    "nroExp": "00322",
-    "anio": 2022,
-    "organismo": "23 FAFEI - FIDEICOMISO DE ADMINISTRACIÓN PARA EL FOMENTO DE ECONOMÍAS DE IMPACTO",
-    "nroFallo": 17867,
-    "fecha": "14-06-2024",
-    "area": "recursos"
-  },
-  {
-    "nroExp": "00322",
-    "anio": 2022,
-    "organismo": "FASAA-FID. DE ADM. DEL SERVICIO AUDIOVISUAL \"ACEQUIA\"",
-    "nroFallo": 17868,
-    "fecha": "22-06-2024",
-    "area": "recursos"
-  },
-  {
-    "nroExp": "00232",
-    "anio": 2022,
-    "organismo": "hospital el sauce",
-    "nroFallo": 17869,
-    "fecha": "22-06-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00322",
-    "anio": 2022,
-    "organismo": "FAFMM - FIDEICOMISO DE ADM. PARA EL FTO. DE MICROEMPRENDIMIENTOS DE MAIPÚ",
-    "nroFallo": 17870,
-    "fecha": "22-06-2024",
-    "area": "recursos"
-  },
-  {
-    "nroExp": "",
-    "anio": 0,
-    "organismo": "",
-    "nroFallo": 0,
-    "fecha": "",
-    "area": ""
-  },
-  {
-    "nroExp": "00269",
-    "anio": 2022,
-    "organismo": "COINCE: CONSORCIO PUBLICO GESTION INTERMUNICIPAL DE RESIDUOS SOLIDOS DE ZONA CENTRO",
-    "nroFallo": 17871,
-    "fecha": "05-07-2024",
-    "area": "municipalidades"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "hospital eva perón",
-    "nroFallo": 17872,
-    "fecha": "05-07-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "ADSSR - AREA DEPARTAMENTAL DE SALUD SAN RAFAEL",
-    "nroFallo": 17873,
-    "fecha": "05-07-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "COMPLEJO PENITENCIARIO IV - SAN RAFAEL",
-    "nroFallo": 17874,
-    "fecha": "05-07-2024",
-    "area": "gobierno"
-  },
-  {
-    "nroExp": "00322",
-    "anio": 2022,
-    "organismo": "FAAFPVU- FID. DE ADM. P/ LA ASIST. FRA. A PROP.DE VIVIENDA ÚNICA CONEXIÓN GAS NAT. LEY 8496",
-    "nroFallo": 17875,
-    "fecha": "05-07-2024",
-    "area": "recursos"
-  },
-  {
-    "nroExp": "00322",
-    "anio": 2022,
-    "organismo": "FARPPM-FID. DE ADM. PARA LA RECUPERACIÓN PROD. DE LA PROV. DE MZA. ",
-    "nroFallo": 17876,
-    "fecha": "05-07-2024",
-    "area": "recursos"
-  },
-  {
-    "nroExp": "00322",
-    "anio": 2022,
-    "organismo": "FIDEICOMISO PARA LA CONECTIVIDAD PARA EL DESARROLLO DE MZA. (Ex Obras Hídricas)",
-    "nroFallo": 17877,
-    "fecha": "05-07-2024",
-    "area": "recursos"
-  },
-  {
-    "nroExp": "00322",
-    "anio": 2022,
-    "organismo": "FIDEICOMISO DE FOMENTO Y SOSTENIMIENTO DE EMPLEO",
-    "nroFallo": 17878,
-    "fecha": "05-07-2024",
-    "area": "recursos"
-  },
-  {
-    "nroExp": "00322",
-    "anio": 2022,
-    "organismo": "FIDEICOMISO PARA EL DESARROLLO DEL CAPITAL EMPRENDEDOR DE MENDOZA",
-    "nroFallo": 17879,
-    "fecha": "05-07-2024",
-    "area": "recursos"
-  },
-  {
-    "nroExp": "00322",
-    "anio": 2022,
-    "organismo": "FACMRG - FIDEICOMISO DE ADMINISTRACIÓN PARA EL CUIDADO Y MANTENIMIENTO DE RESIDENCIA DE GOBERNACIÓN",
-    "nroFallo": 17880,
-    "fecha": "05-07-2024",
-    "area": "recursos"
-  },
-  {
-    "nroExp": "00322",
-    "anio": 2022,
-    "organismo": "FIDEICOMISO DE ACTIVIDADES HIDROCARBURIFERAS",
-    "nroFallo": 17881,
-    "fecha": "05-07-2024",
-    "area": "recursos"
-  },
-  {
-    "nroExp": "00322",
-    "anio": 2022,
-    "organismo": "FIDEICOMISO DE ACTIVIDADES HIDROCARBURIFERAS",
-    "nroFallo": 17882,
-    "fecha": "05-07-2024",
-    "area": "recursos"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "DAPD - DIRECCION PROVINCIAL ATENCION INTEGRAL A PERSONAS CON DISCAPACIDAD",
-    "nroFallo": 17883,
-    "fecha": "05-07-2024",
-    "area": "gobierno"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "DPA - DIRECCION PROTECCION AMBIENTAL",
-    "nroFallo": 17884,
-    "fecha": "05-07-2024",
-    "area": "gobierno"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "HCS - HONORABLE CAMARA DE SENADORES",
-    "nroFallo": 17885,
-    "fecha": "05-07-2024",
-    "area": "gobierno"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "cm - casa de mendoza",
-    "nroFallo": 17886,
-    "fecha": "05-07-2024",
-    "area": "gobierno"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "HCD - HONORABLE CAMARA DE DIPUTADOS",
-    "nroFallo": 17887,
-    "fecha": "05-07-2024",
-    "area": "gobierno"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "DSE - DIRECCIÓN DE SERVICIOS ELÉCTRICOS",
-    "nroFallo": 17888,
-    "fecha": "05-07-2024",
-    "area": "gobierno"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "DEIE - DIRECCION DE ESTADISTICAS E INVESTIGACIONES ECONOMICAS",
-    "nroFallo": 17889,
-    "fecha": "05-07-2024",
-    "area": "gobierno"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "OFICINA DE INVESTIGACIONES ADMINISTRATIVAS Y ÉTICA PÚBLICA",
-    "nroFallo": 17890,
-    "fecha": "05-07-2024",
-    "area": "gobierno"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "DAABO - DIRECCION ADMINISTRACIÓN ACTIVOS EX-BANCOS OFICIALES",
-    "nroFallo": 17891,
-    "fecha": "05-07-2024",
-    "area": "gobierno"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "fe - fiscalía de estado",
-    "nroFallo": 17892,
-    "fecha": "05-07-2024",
-    "area": "gobierno"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "dm - dirección de minería",
-    "nroFallo": 17893,
-    "fecha": "05-07-2024",
-    "area": "gobierno"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "DIRECCION REGISTRO DEL ESTADO CIVIL Y CAPACIDAD DE LAS PERSONAS",
-    "nroFallo": 17894,
-    "fecha": "05-07-2024",
-    "area": "gobierno"
-  },
-  {
-    "nroExp": "00322",
-    "anio": 2022,
-    "organismo": "FAMC - FIDEICOMISO AGENCIA MENDOCINA DE COMERCIALIZACIÓN",
-    "nroFallo": 17895,
-    "fecha": "05-07-2024",
-    "area": "recursos"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "ADST - AREA DEPARTAMENTAL DE SALUD TUPUNGATO",
-    "nroFallo": 17986,
-    "fecha": "26-07-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "ADSSC - AREA DEPARTAMENTAL DE SALUD SAN CARLOS",
-    "nroFallo": 17897,
-    "fecha": "26-07-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "HOSPITAL REGIONAL CHRABALOWSKI (USPALLATA)",
-    "nroFallo": 17898,
-    "fecha": "26-07-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00231",
-    "anio": 2022,
-    "organismo": "hospital carlos pereyra",
-    "nroFallo": 17899,
-    "fecha": "26-07-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "SUBSECRETARIA DE INFRAESTRUCTURA ELEMENTAL",
-    "nroFallo": 17900,
-    "fecha": "26-07-2024",
-    "area": "gobierno"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "SEM - SUBSECRETARÍA DE ENERGÍA Y MINERÍA",
-    "nroFallo": 17901,
-    "fecha": "26-07-2024",
-    "area": "gobierno"
-  },
-  {
-    "nroExp": "00322",
-    "anio": 2022,
-    "organismo": "FID. DE ADMINISTRACIÓN PROGRAMA MENDOZA ACTIVA",
-    "nroFallo": 17902,
-    "fecha": "26-07-2024",
-    "area": "recursos"
-  },
-  {
-    "nroExp": "00236",
-    "anio": 2022,
-    "organismo": "PROMZA - FUNDACION PROMENDOZA",
-    "nroFallo": 17903,
-    "fecha": "26-07-2024",
-    "area": "DAEC"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "SEC - SERVICIO DE EMERGENCIAS COORDINADO",
-    "nroFallo": 17904,
-    "fecha": "26-07-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00321",
-    "anio": 2022,
-    "organismo": "IDC - INSTITUTO DE DESARROLLO COMERCIAL",
-    "nroFallo": 17905,
-    "fecha": "26-07-2024",
-    "area": "DAEC"
-  },
-  {
-    "nroExp": "00270",
-    "anio": 2022,
-    "organismo": "FUDEPEM - FUNDACION PARA EL DESARROLLO ECONOMICO Y LA PROMOCION EMPRESARIAL DE MALARGÜE",
-    "nroFallo": 17906,
-    "fecha": "26-07-2024",
-    "area": "municipalidades"
-  },
-  {
-    "nroExp": "00225",
-    "anio": 2022,
-    "organismo": "ASOCIACION COOPERADORA HOSPITAL CENTRAL Y PROGRAMAS ESPECIALES",
-    "nroFallo": 17907,
-    "fecha": "02-08-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00225",
-    "anio": 2022,
-    "organismo": "PROGRAMA FEDERAL INCLUIR SALUD",
-    "nroFallo": 17908,
-    "fecha": "02-08-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "ADSLH - AREA DEPARTAMENTAL DE SALUD LAS HERAS",
-    "nroFallo": 17909,
-    "fecha": "02-08-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "OTP - OFICINA TÉCNICA PREVISIONAL",
-    "nroFallo": 17910,
-    "fecha": "02-08-2024",
-    "area": "gobierno"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "HTC - TRIBUNAL DE CUENTAS DE LA PROVINCIA DE MENDOZA",
-    "nroFallo": 17911,
-    "fecha": "02-08-2024",
-    "area": "gobierno"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "ADSSM - AREA DEPARTAMENTAL DE SALUD SAN MARTIN",
-    "nroFallo": 17912,
-    "fecha": "02-08-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "ADSJ - AREA DEPARTAMENTAL DE SALUD JUNIN",
-    "nroFallo": 17913,
-    "fecha": "02-08-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00318",
-    "anio": 2022,
-    "organismo": "CNM - COLEGIO NOTARIAL DE MENDOZA",
-    "nroFallo": 17914,
-    "fecha": "02-08-2024",
-    "area": "DAEC"
-  },
-  {
-    "nroExp": "00204",
-    "anio": 2022,
-    "organismo": "EPRE - ENTE PROVINCIAL REGULADOR ELECTRICO",
-    "nroFallo": 17915,
-    "fecha": "02-08-2024",
-    "area": "descentralizadas ii"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "dem - dirección ecoparque mendoza",
-    "nroFallo": 17916,
-    "fecha": "02-08-2024",
-    "area": "gobierno"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "hospital arturo illia",
-    "nroFallo": 17917,
-    "fecha": "02-08-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "hospital dr. alfredo metraux",
-    "nroFallo": 17918,
-    "fecha": "02-08-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "ADST - AREA DEPARTAMENTAL DE SALUD TUNUYAN",
-    "nroFallo": 17919,
-    "fecha": "02-08-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "hospital regional malargüe",
-    "nroFallo": 17920,
-    "fecha": "02-08-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "hospital ministro dr. ramón carillo",
-    "nroFallo": 17921,
-    "fecha": "02-08-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "ADSC - AREA DEPARTAMENTAL DE SALUD CAPITAL",
-    "nroFallo": 17922,
-    "fecha": "02-08-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "ADSC - AREA DEPARTAMENTAL DE SALUD rivadavia",
-    "nroFallo": 17923,
-    "fecha": "02-08-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "ADSC - AREA DEPARTAMENTAL DE SALUD santa rosa",
-    "nroFallo": 17924,
-    "fecha": "02-08-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "dirección de contingencias climáticas",
-    "nroFallo": 17925,
-    "fecha": "02-08-2024",
-    "area": "gobierno"
-  },
-  {
-    "nroExp": "00322",
-    "anio": 2022,
-    "organismo": "FON-FID. DE OBRAS NIHUIL IV",
-    "nroFallo": 17926,
-    "fecha": "02-08-2024",
-    "area": "recursos"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "ADSLC - AREA DEPARTAMENTAL DE SALUD LUJAN DE CUYO",
-    "nroFallo": 17927,
-    "fecha": "02-08-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "hospital domingio sicoli",
-    "nroFallo": 17928,
-    "fecha": "02-08-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "dirección de fiscalización y control",
-    "nroFallo": 17929,
-    "fecha": "02-08-2024",
-    "area": "gobierno"
-  },
-  {
-    "nroExp": "00322",
-    "anio": 2022,
-    "organismo": "FIDEICOMISO DE ADMINISTRACION Y ASISTENCIA FINANCIERA VITIVINÍCOLA 2009",
-    "nroFallo": 17930,
-    "fecha": "02-08-2024",
-    "area": "recursos"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "SECRETARIA DE AMBIENTE Y ORDENAMIENTO TERRITORIAL",
-    "nroFallo": 17931,
-    "fecha": "16-08-2024",
-    "area": "gobierno"
-  },
-  {
-    "nroExp": "00228",
-    "anio": 2022,
-    "organismo": "hospital alfredo perrupato",
-    "nroFallo": 17932,
-    "fecha": "16-08-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "MHF - MINISTERIO DE HACIENDA Y FINANZAS",
-    "nroFallo": 17933,
-    "fecha": "16-08-2024",
-    "area": "gobierno"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "SSP - SECRETARIA DE SERVICIOS PÚBLICOS",
-    "nroFallo": 17934,
-    "fecha": "16-08-2024",
-    "area": "gobierno"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "ADSM - AREA DEPARTAMENTAL DE SALUD MAIPU",
-    "nroFallo": 17935,
-    "fecha": "16-08-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "MPF - MINISTERIO PÚBLICO FISCAL",
-    "nroFallo": 17936,
-    "fecha": "23-08-2024",
-    "area": "gobierno"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "ADSgc - AREA DEPARTAMENTAL DE SALUD godoy cruz",
-    "nroFallo": 17937,
-    "fecha": "23-08-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "subsecretaría de deportes",
-    "nroFallo": 17938,
-    "fecha": "23-08-2024",
-    "area": "gobierno"
-  },
-  {
-    "nroExp": "00235",
-    "anio": 2022,
-    "organismo": "FIDR - FUNDACION INSTITUTO DE DESARROLLO RURAL",
-    "nroFallo": 17939,
-    "fecha": "23-08-2024",
-    "area": "DAEC"
-  },
-  {
-    "nroExp": "00224",
-    "anio": 2022,
-    "organismo": "hospital general las heras",
-    "nroFallo": 17940,
-    "fecha": "23-08-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "adsm - área departamental de salud malargüe",
-    "nroFallo": 17941,
-    "fecha": "23-08-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00224",
-    "anio": 2022,
-    "organismo": "hospital luis lagomaggiore",
-    "nroFallo": 17942,
-    "fecha": "23-08-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "PJM - PODER JUDICIAL DE MENDOZA - SUPREMA CORTE",
-    "nroFallo": 17943,
-    "fecha": "23-08-2024",
-    "area": "gobierno"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "SUBSECRETARIA DE DESARROLLO SOCIAL",
-    "nroFallo": 17944,
-    "fecha": "23-08-2024",
-    "area": "gobierno"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "STE - SUBSECRETARIA DE TRABAJO Y EMPLEO",
-    "nroFallo": 17945,
-    "fecha": "30-08-2024",
-    "area": "gobierno"
-  },
-  {
-    "nroExp": "00229",
-    "anio": 2022,
-    "organismo": "hospital enfermeros argentinos",
-    "nroFallo": 17946,
-    "fecha": "30-08-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00251",
-    "anio": 2022,
-    "organismo": "municipalidad de la ciudad de mendoza",
-    "nroFallo": 17947,
-    "fecha": "04-09-2024",
-    "area": "municipalidades"
-  },
-  {
-    "nroExp": "00322",
-    "anio": 2022,
-    "organismo": "FAAAPM-FID. DE ASIST. A LA ACTIVIDAD AGROINDUSTRIAL DE LA PROV. DE MZA.",
-    "nroFallo": 17948,
-    "fecha": "04-09-2024",
-    "area": "recursos"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "ADSLP - AREA DEPARTAMENTAL DE SALUD LA PAZ",
-    "nroFallo": 17949,
-    "fecha": "06-09-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "ministerio de gobierno, trabajo y justicia",
-    "nroFallo": 17950,
-    "fecha": "06-09-2024",
-    "area": "gobierno"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "ADSga - AREA DEPARTAMENTAL DE SALUD general alvear",
-    "nroFallo": 17951,
-    "fecha": "11-09-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "fides - fondo de inversión y desarrollo social",
-    "nroFallo": 17952,
-    "fecha": "11-09-2024",
-    "area": "gobierno"
-  },
-  {
-    "nroExp": "00314",
-    "anio": 2022,
-    "organismo": "FVM - FONDO VITIVINíCOLA DE MENDOZA",
-    "nroFallo": 17953,
-    "fecha": "11-09-2024",
-    "area": "descentralizadas ii"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "DPPP - DIRECCIÓN DE PARQUES Y PASEOS PÚBLICOS",
-    "nroFallo": 17954,
-    "fecha": "11-09-2024",
-    "area": "gobierno"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "DGSP - DIRECCIÓN GENERAL DE SERVICIO PENITENCIARIO",
-    "nroFallo": 17955,
-    "fecha": "11-09-2024",
-    "area": "gobierno"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "MINISTERIO DE PLANIFICACIÓN E INFRAESTRUCTURA PÚBLICA",
-    "nroFallo": 17956,
-    "fecha": "11-09-2024",
-    "area": "gobierno"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "DPG - DIRECCION PROVINCIAL DE GANADERIA",
-    "nroFallo": 17957,
-    "fecha": "20-09-2024",
-    "area": "gobierno"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "MINISTERIO DE ECONOMÍA Y ENERGÍA",
-    "nroFallo": 17958,
-    "fecha": "20-09-2024",
-    "area": "gobierno"
-  },
-  {
-    "nroExp": "00254",
-    "anio": 2022,
-    "organismo": "municipalidad de guaymallén",
-    "nroFallo": 17959,
-    "fecha": "27-09-2024",
-    "area": "municipalidades"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "DRNR - DIRECCION DE RECURSOS NATURALES RENOVABLES",
-    "nroFallo": 17960,
-    "fecha": "27-09-2024",
-    "area": "gobierno"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "ADSG - AREA DEPARTAMENTAL DE SALUD GUAYMALLEN",
-    "nroFallo": 17961,
-    "fecha": "04-10-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00254",
-    "anio": 2022,
-    "organismo": "municipalidad de san martín",
-    "nroFallo": 17962,
-    "fecha": "04-10-2024",
-    "area": "municipalidades"
-  },
-  {
-    "nroExp": "00320",
-    "anio": 2022,
-    "organismo": "IDITS - INSTITUTO DE DESARROLLO INDUSTRIAL, TECNOLOGICO Y DE SERVICIOS",
-    "nroFallo": 17963,
-    "fecha": "04-10-2024",
-    "area": "descentralizadas ii"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "dam - dirección de atención adultos mayores",
-    "nroFallo": 17964,
-    "fecha": "11-10-2024",
-    "area": "gobierno"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "hospital josé lencinas",
-    "nroFallo": 17965,
-    "fecha": "11-10-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00226",
-    "anio": 2022,
-    "organismo": "hospital victorio tagarelli",
-    "nroFallo": 17966,
-    "fecha": "11-10-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00226",
-    "anio": 2022,
-    "organismo": "CREA SERVICIOS TECNOLÓGICOS SAPEM",
-    "nroFallo": 17967,
-    "fecha": "11-10-2024",
-    "area": "municipalidades"
-  },
-  {
-    "nroExp": "00312",
-    "anio": 2022,
-    "organismo": "UFI - UNIDAD DE FINANCIAMIENTO INTERNACIONAL",
-    "nroFallo": 17968,
-    "fecha": "25-10-2024",
-    "area": "descentralizadas ii"
-  },
-  {
-    "nroExp": "00201",
-    "anio": 2022,
-    "organismo": "hospital antonio j. scaravelli",
-    "nroFallo": 17969,
-    "fecha": "25-10-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00304",
-    "anio": 2022,
-    "organismo": "CSM - CAJA DE SEGURO MUTUAL",
-    "nroFallo": 17970,
-    "fecha": "25-10-2024",
-    "area": "descentralizadas ii"
-  },
-  {
-    "nroExp": "00227",
-    "anio": 2022,
-    "organismo": "hospital carlos saporiti",
-    "nroFallo": 17971,
-    "fecha": "02-11-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00315",
-    "anio": 2022,
-    "organismo": "ISCAMEN - INSTITUTO DE SANIDAD Y CALIDAD AGROPECUARIA MENDOZA",
-    "nroFallo": 17972,
-    "fecha": "02-11-2024",
-    "area": "descentralizadas ii"
-  },
-  {
-    "nroExp": "00326",
-    "anio": 2022,
-    "organismo": "aysam sapem",
-    "nroFallo": 17973,
-    "fecha": "15-11-2024",
-    "area": "descentralizadas ii"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "hospital arenas raffo",
-    "nroFallo": 17974,
-    "fecha": "15-11-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00230",
-    "anio": 2022,
-    "organismo": "hospital diego paroissien",
-    "nroFallo": 17975,
-    "fecha": "15-11-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00262",
-    "anio": 2022,
-    "organismo": "municipalidad de rivadavia",
-    "nroFallo": 17976,
-    "fecha": "15-11-2024",
-    "area": "municipalidades"
-  },
-  {
-    "nroExp": "00214",
-    "anio": 2022,
-    "organismo": "igs - inspección general de seguridad",
-    "nroFallo": 17977,
-    "fecha": "15-11-2024",
-    "area": "descentralizadas ii"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "ministerio de cultura y turismo",
-    "nroFallo": 17978,
-    "fecha": "15-11-2024",
-    "area": "gobierno"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "hospital héctor elías gailhac",
-    "nroFallo": 17979,
-    "fecha": "15-11-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00302",
-    "anio": 2022,
-    "organismo": "AFTYC - ADMINISTRADORA PROVINCIAL DEL FONDO PARA LA TRANSFORMACIÓN Y EL CRECIMIENTO",
-    "nroFallo": 17980,
-    "fecha": "22-11-2024",
-    "area": "descentralizadas ii"
-  },
-  {
-    "nroExp": "00266",
-    "anio": 2022,
-    "organismo": "municipalidad de santa rosa",
-    "nroFallo": 17981,
-    "fecha": "22-11-2024",
-    "area": "municipalidades"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "otp - oficina técnica previsional",
-    "nroFallo": 17982,
-    "fecha": "22-11-2024",
-    "area": "gobierno"
-  },
-  {
-    "nroExp": "00220",
-    "anio": 2022,
-    "organismo": "hospital humberto notti",
-    "nroFallo": 17983,
-    "fecha": "22-11-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00205",
-    "anio": 2022,
-    "organismo": "hospital teodoro j. schestakow",
-    "nroFallo": 17984,
-    "fecha": "30-11-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00261",
-    "anio": 2022,
-    "organismo": "municipalidad de malargüe",
-    "nroFallo": 17985,
-    "fecha": "30-11-2024",
-    "area": "municipalidades"
-  },
-  {
-    "nroExp": "00325",
-    "anio": 2022,
-    "organismo": "emop - ente de la movilidad provincial",
-    "nroFallo": 17986,
-    "fecha": "30-11-2024",
-    "area": "descentralizadas ii"
-  },
-  {
-    "nroExp": "00252",
-    "anio": 2022,
-    "organismo": "municipalidad de general alvear",
-    "nroFallo": 17987,
-    "fecha": "06-12-2024",
-    "area": "municipalidades"
-  },
-  {
-    "nroExp": "00330",
-    "anio": 2022,
-    "organismo": "FONDO FIDUCIARIO DEL PLAN DE INF. ELÉCTRICA DE ALTA TENSIÓN, ZONAS AISLADAS Y ZONAS A DESARROLAR",
-    "nroFallo": 17988,
-    "fecha": "13-12-2024",
-    "area": "recursos"
-  },
-  {
-    "nroExp": "00219",
-    "anio": 2022,
-    "organismo": "hospital central",
-    "nroFallo": 17989,
-    "fecha": "13-12-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00267",
-    "anio": 2022,
-    "organismo": "municipalidad de tunuyán",
-    "nroFallo": 17990,
-    "fecha": "13-12-2024",
-    "area": "municipalidades"
-  },
-  {
-    "nroExp": "00323",
-    "anio": 2022,
-    "organismo": "DRPJ - DIRECCIÓN DE RESPONSABILIDAD PENAL JUVENIL",
-    "nroFallo": 17991,
-    "fecha": "20-12-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "ADSL - AREA DEPARTAMENTAL DE SALUD LAVALLE",
-    "nroFallo": 17992,
-    "fecha": "20-12-2024",
-    "area": "descentralizadas i"
-  },
-  {
-    "nroExp": "00253",
-    "anio": 2022,
-    "organismo": "municipalidad de godoy cruz",
-    "nroFallo": 17993,
-    "fecha": "20-12-2024",
-    "area": "municipalidades"
-  },
-  {
-    "nroExp": "00234",
-    "anio": 2022,
-    "organismo": "IUSP - FUNDACION INSTITUTO UNIVERSITARIO DE SEGURIDAD PUBLICA",
-    "nroFallo": 17994,
-    "fecha": "20-12-2024",
-    "area": "DAEC"
-  },
-  {
-    "nroExp": "00328",
-    "anio": 2022,
-    "organismo": "sociedad de transporte de mendoza",
-    "nroFallo": 17995,
-    "fecha": "27-12-2024",
-    "area": "descentralizadas ii"
-  },
-  {
-    "nroExp": "00217",
-    "anio": 2022,
-    "organismo": "FIP - FONDO DE INFRAESTRUCTURA PROVINCIAL",
-    "nroFallo": 17996,
-    "fecha": "27-12-2024",
-    "area": "descentralizadas ii"
-  },
-  {
-    "nroExp": "00324",
-    "anio": 2022,
-    "organismo": "emetur - ente mendoza turismo",
-    "nroFallo": 17998,
-    "fecha": "27-12-2024",
-    "area": "descentralizadas ii"
-  },
-  {
-    "nroExp": "00353",
-    "anio": 2022,
-    "organismo": "cgp - contaduría general de la provincia",
-    "nroFallo": 17999,
-    "fecha": "27-12-2024",
-    "area": "gobierno"
+    "Expediente": "00223*",
+    "Año": 2022,
+    "Organismo": "OSEP - OBRA SOCIAL DE EMPLEADOS PUBLICOS",
+    "Tipo": "Fallo",
+    "Nro": 18000,
+    "Fecha": "07/02/2024",
+    "Multa": "No",
+    "Cargo": "No",
+    "Abogados": [ "INZIRILLO, MARIA LAURA", "RIVERA, VERONICA ALEJANDRA", "SCHEIBLER, KARIN IVANA" ]
+  },
+  {
+    "Expediente": "00260*",
+    "Año": 2022,
+    "Organismo": "MUNICIPALIDAD DE MAIPU",
+    "Tipo": "Fallo",
+    "Nro": 18001,
+    "Fecha": "21/02/2024",
+    "Multa": "No",
+    "Cargo": "No",
+    "Abogados": [ "GALEOTA, CARINA JESICA", "NUÑEZ, GABRIELA GRISELDA", "SCHEIBLER, KARIN IVANA" ]
+  },
+  {
+    "Expediente": "00278*",
+    "Año": 2022,
+    "Organismo": "COINES - CONSORCIO PÚBLICO DE GESTIÓN INTERMUNICIPAL DE RESIDUOS SÓLIDOS URBANOS DE LA ZONA ESTE",
+    "Tipo": "Fallo",
+    "Nro": 18002,
+    "Fecha": "21/02/2024",
+    "Multa": "No",
+    "Cargo": "No",
+    "Abogado": [ "INZIRILLO, MARIA LAURA" ]
+  },
+  {
+    "Expediente": "00255*",
+    "Año": 2022,
+    "Organismo": "MUNICIPALIDAD DE JUNIN",
+    "Tipo": "Fallo",
+    "Nro": 18003,
+    "Fecha": "21/02/2024",
+    "Multa": "No",
+    "Cargo": "No",
+    "Abogado": [ "ATENCIO, MARIA MERCEDES" ]
+  },
+  {
+    "Expediente": "00256*",
+    "Año": 2022,
+    "Organismo": "MUNICIPALIDAD DE LA PAZ",
+    "Tipo": "Fallo",
+    "Nro": 18004,
+    "Fecha": "21/02/2024",
+    "Multa": "Si",
+    "Cargo": "No",
+    "Abogado": [ "ATENCIO, MARIA MERCEDES" ]
+  },
+  {
+    "Expediente": "00259*",
+    "Año": 2022,
+    "Organismo": "MUNICIPALIDAD DE LUJAN DE CUYO",
+    "Tipo": "Fallo",
+    "Nro": 18005,
+    "Fecha": "21/02/2024",
+    "Multa": "No",
+    "Cargo": "No",
+    "Abogados": [ "CAVAGNARO, LUCAS DAVID", "NUÑEZ, GABRIELA GRISELDA" ]
+  },
+  {
+    "Expediente": "00377*",
+    "Año": 2022,
+    "Organismo": "ATM - ADMINISTRACIÓN TRIBUTARIA MENDOZA",
+    "Tipo": "Fallo",
+    "Nro": 18008,
+    "Fecha": "28/02/2024",
+    "Multa": "No",
+    "Cargo": "No",
+    "Abogados": [ "ATENCIO, MARIA MERCEDES", "SCHEIBLER, KARIN IVANA" ]
+  },
+  {
+    "Expediente": "00303*",
+    "Año": 2022,
+    "Organismo": "UCPP - DGE - UNIDAD COORDINADORA PROGRAMAS Y PROYECTOS",
+    "Tipo": "Fallo",
+    "Nro": 18007,
+    "Fecha": "28/02/2024",
+    "Multa": "Si",
+    "Cargo": "No",
+    "Abogado": [ "DONNA, FEDERICO EMILIO" ]
+  },
+  {
+    "Expediente": "00215*",
+    "Año": 2015,
+    "Organismo": "EPTM - EMPRESA PROVINCIAL DE TRANSPORTE",
+    "Tipo": "Fallo",
+    "Nro": 18006,
+    "Fecha": "28/02/2024",
+    "Multa": "No",
+    "Cargo": "No",
+    "Abogados": [ "CAVAGNARO, LUCAS DAVID", "CICALA, MIGUEL ALEJANDRO", "DONNA, FEDERICO EMILIO", "INZIRILLO, MARIA LAURA" ]
+  },
+  {
+    "Expediente": "00263*",
+    "Año": 2022,
+    "Organismo": "MUNICIPALIDAD DE SAN CARLOS",
+    "Tipo": "Fallo",
+    "Nro": 18009,
+    "Fecha": "04/03/2024",
+    "Multa": "No",
+    "Cargo": "No",
+    "Abogado": [ "CICALA, MIGUEL ALEJANDRO" ]
+  },
+  {
+    "Expediente": "00310*",
+    "Año": 2022,
+    "Organismo": "IPV - INSTITUTO PROVINCIAL DE LA VIVIENDA",
+    "Tipo": "Fallo",
+    "Nro": 18010,
+    "Fecha": "04/03/2024",
+    "Multa": "No",
+    "Cargo": "No",
+    "Abogado": [ "NUÑEZ, GABRIELA GRISELDA" ]
+  },
+  {
+    "Expediente": "00306*",
+    "Año": 2022,
+    "Organismo": "DGI - DEPARTAMENTO GENERAL DE IRRIGACIÓN",
+    "Tipo": "Fallo",
+    "Nro": 18013,
+    "Fecha": "13/03/2024",
+    "Multa": "No",
+    "Cargo": "No",
+    "Abogado": [ "CICALA, MIGUEL ALEJANDRO" ]
+  },
+  {
+    "Expediente": "00309*",
+    "Año": 2022,
+    "Organismo": "DPV - DIRECCION PROVINCIAL DE VIALIDAD",
+    "Tipo": "Fallo",
+    "Nro": 18014,
+    "Fecha": "13/03/2024",
+    "Multa": "Si",
+    "Cargo": "No",
+    "Abogado": [ "GALEOTA, CARINA JESICA" ]
+  },
+  {
+    "Expediente": "00327*",
+    "Año": 2022,
+    "Organismo": "EMESA",
+    "Tipo": "Fallo",
+    "Nro": 18012,
+    "Fecha": "13/03/2024",
+    "Multa": "No",
+    "Cargo": "No",
+    "Abogado": [ "CASTELLANOS, ANA CAROLINA" ]
+  },
+  {
+    "Expediente": "00353*",
+    "Año": 2022,
+    "Organismo": "MINISTERIO DE SALUD, DESARROLLO SOCIAL Y DEPORTES",
+    "Tipo": "Fallo",
+    "Nro": 18018,
+    "Fecha": "20/03/2024",
+    "Multa": "No",
+    "Cargo": "No",
+    "Abogado": [ "SCHEIBLER, KARIN IVANA" ]
+  },
+  {
+    "Expediente": "00019*",
+    "Año": 2022,
+    "Organismo": "MINISTERIO DE SALUD, DESARROLLO SOCIAL Y DEPORTES",
+    "Tipo": "Fallo",
+    "Nro": 18000,
+    "Fecha": "04/03/2024",
+    "Multa": "No",
+    "Cargo": "No",
+    "Abogado": [ "DONNA, FEDERICO EMILIO" ]
   }
 ]

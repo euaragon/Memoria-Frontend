@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Memoria-2023",
   "resources": {
-    "hash": "sha256-RpGQ99KWZDoTOquIcxPv+qUxU6pl9PUdd3t5We7UqPQ=",
+    "hash": "sha256-Zg024qBQqsXsvC6rqmrnAW6NgOMFj8oICpyDzVlU7aI=",
     "jsModuleNative": {
       "dotnet.native.8.0.4.u3j7es4xh0.js": "sha256-ju0+XWE0ihz554eKEj0HQ8Opa61xpbUIaX5/MNo8we4="
     },
@@ -18,9 +18,6 @@
     },
     "assembly": {
       "BlazorComponentUtilities.wasm": "sha256-7qa+C6Zt8hJgUpiGcE1MHWuwfOGMUMVd8ayItqmtQp0=",
-      "Blazorise.wasm": "sha256-b9ZkPev8t2j0GkNgVYaeYhubnjDI9nvumsaVuFEe6sU=",
-      "Blazorise.Icons.FontAwesome.wasm": "sha256-KG2FPC1Igd998kCOBC2Yqw9KXtExDm8/6g/wPj4sm/8=",
-      "Blazorise.Licensing.wasm": "sha256-5Mr9mILwJ1jWAhoNXuDxak5Sw8yU7kCdOyCy13Rdpz4=",
       "BlazorStrap.wasm": "sha256-dVa9OYwa4FnoKY3ppARLCYKoOuic+riZRwMRicKl04k=",
       "BlazorStrap.V5.wasm": "sha256-ieJHUKvONrVh83C4Pc61pfXrYr80nrdqUuACNwn3DgI=",
       "Microsoft.AspNetCore.Authorization.wasm": "sha256-W1OqRV83imd3SG/v4PAlCa5m/3RA9n5ysXT7G46jKKc=",
@@ -214,10 +211,10 @@
       "mscorlib.wasm": "sha256-VCfYgt1mcjITabSTosCDVZ+68ea3Z7kakTFaLNLG+18=",
       "netstandard.wasm": "sha256-YOZxxR9PM3Dltcijfb0Q4FD39DkWZbZ1e2ScbZDvWJ4=",
       "System.Private.CoreLib.wasm": "sha256-NrT1QkAzVU//2wgK9vXdq77lCGvLJ4IOZ+Aegesyanc=",
-      "Memoria-2023.wasm": "sha256-nBM39t174FMiQSosjAObdnNzDDWqRv2UK6x0uwY9I+s="
+      "Memoria-2023.wasm": "sha256-ibrrTe8mqPxYc4WB2nyR3jGfjZdYCv5QUq9jEJj9JlY="
     },
     "pdb": {
-      "Memoria-2023.pdb": "sha256-ZabsfkLSLfLAI0zMS0gF9MvtEF3pEzG2aY7vhBjkaIA="
+      "Memoria-2023.pdb": "sha256-4P3Pz6V492oxDJ8zPPXbSnYsT1QRVsSwGOfza76TwDQ="
     }
   },
   "cacheBootResources": true,

@@ -1,10 +1,42 @@
 ﻿
 
+window.setupZoom = (imageId) => {
+    console.log("setupZoom called with ID:", imageId);
+    const image = document.getElementById(imageId);
+    const container = image.parentElement;
 
+    if (!image || !container) {
+        console.error("Image or container not found for ID:", imageId);
+        return;
+    }
+
+    container.addEventListener('mousemove', (e) => {
+        const rect = container.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        const zoomFactor = 1.6;
+        const offsetX = (x / rect.width) * (1 - 1 / zoomFactor) * 100;
+        const offsetY = (y / rect.height) * (1 - 1 / zoomFactor) * 100;
+
+        image.style.transformOrigin = `${x}px ${y}px`;
+        image.style.transform = `scale(${zoomFactor}) translate(-${offsetX}%, -${offsetY}%)`;
+    });
+
+    container.addEventListener('mouseleave', () => {
+        image.style.transform = 'scale(1)';
+    });
+};
+
+window.addEventListener('load', () => {
+    if (window.setupZoom && document.getElementById("organigramaImagen")) {
+        window.setupZoom("organigramaImagen");
+    }
+});
 document.addEventListener("click", function (event) {
     let offCanvas = document.querySelector(".offcanvas.show");
     if (offCanvas && !offCanvas.contains(event.target)) {
-        DotNet.invokeMethodAsync("TuProyecto", "CloseCanvas");
+        DotNet.invokeMethodAsync("Memoria-2023", "CloseCanvas");
     }
 });
 
