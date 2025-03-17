@@ -22,80 +22,67 @@
     <canvas id="cuadro-fallos-2"></canvas>
 </div>
 
-<div class="overflow-auto mb-5" >
+<div class="overflow-auto mb-5">
     <table class="table table-sm table-responsive table-hover mt-5 tabla-aud-esp text-uppercase">
         <thead class="table-group-divider">
             <tr>
-                <th>Expediente</th>
-                <th>Año</th>
-                <th>Organismo</th>
-                <th>Fallo</th>
-                <th>Fecha</th>
-                <th>Área</th>
+                <th class="bg-transparent">Expediente</th>
+                <th class="bg-transparent">Año</th>
+                <th class="bg-transparent">Organismo</th>
+                <th class="bg-transparent">Fallo</th>
+                <th class="bg-transparent">Fecha</th>
             </tr>
         </thead>
         <tbody>
             @if (cuentas != null)
             {
-                @foreach (var cuenta in GetCurrentPageItems())
+                @foreach (var cuenta in GetCurrentPageData())
                 {
                     <tr>
-                        <td>@cuenta.Expediente</td>
-                        <td>@cuenta.Año</td>
-                        <td>@cuenta.Organismo</td>
-                        <td>@cuenta.Nro</td>
-                        <td class="fs-6">@cuenta.Fecha</td>
-                        
+                        <td class="bg-transparent">@cuenta.Expediente</td>
+                        <td class="bg-transparent">@cuenta.Anio</td>
+                        <td class="bg-transparent">@cuenta.Organismo</td>
+                        <td class="bg-transparent">@cuenta.Nro</td>
+                        <td class="bg-transparent">@cuenta.Fecha</td>
                     </tr>
                 }
             }
         </tbody>
     </table>
 
-
+    <div class="d-flex justify-content-center mt-3">
+        <button class="btn btn-secondary me-2" @onclick="PreviousPage" disabled="@(currentPage == 1)">Anterior</button>
+        <span>Página @currentPage de @totalPages</span>
+        <button class="btn btn-secondary ms-2" @onclick="NextPage" disabled="@(currentPage == totalPages)">Siguiente</button>
+    </div>
 </div>
-
-
-<div class="d-flex justify-content-center mt-3 align-items-center gap-5">
-    <button class="btn bg-primary text-light" @onclick="PreviousPage" disabled="@(currentPage == 1)">Anterior</button>
-    <span class="mx-2">Página @currentPage de @totalPages</span>
-    <button class="btn bg-primary text-light" @onclick="NextPage" disabled="@(currentPage == totalPages)">Siguiente</button>
-</div>
-
 
 <NavLink type="button" class="text-black mt-md-5" href="/"> <img class="me-2" width="32" height="32" src="https://img.icons8.com/windows/32/000000/return.png" alt="return" /> VOLVER</NavLink>
 
 @code {
     private Fallo[]? cuentas;
     private int currentPage = 1;
-    private int pageSize = 10;
+    private int pageSize = 15;
     private int totalPages;
-    private string? tituloFallos; 
+    private string? tituloFallos;
+
+    public class Fallo
+    {
+        public string? Expediente { get; set; }
+        public int? Anio { get; set; }
+        public string? Organismo { get; set; }
+        public int? Nro { get; set; }
+        public string? Fecha { get; set; }
+    }
 
     protected override async Task OnInitializedAsync()
     {
         cuentas = await Http.GetFromJsonAsync<Fallo[]>("sample-data/cuentas.json");
-
-        if (cuentas == null)
+        if (cuentas != null)
         {
-            Console.WriteLine("Error: Los datos del JSON no se cargaron correctamente.");
+            totalPages = (int)Math.Ceiling(cuentas.Length / (double)pageSize);
+            tituloFallos = $"{cuentas.Length} Cuentas Falladas en 2024  ";
         }
-        else
-        {
-            Console.WriteLine($"Datos cargados: {cuentas.Length} elementos.");
-            totalPages = (int)Math.Ceiling((double)cuentas.Length / pageSize);
-
-            int cantidadFallos = cuentas.Length;
-            tituloFallos = $"{cantidadFallos} Cuentas Falladas en 2024";
-        }
-    }
-
-    private Fallo[] GetCurrentPageItems()
-    {
-        if (cuentas == null) return Array.Empty<Fallo>();
-
-        var startIndex = (currentPage - 1) * pageSize;
-        return cuentas.Skip(startIndex).Take(pageSize).ToArray();
     }
 
     private void PreviousPage()
@@ -114,14 +101,15 @@
         }
     }
 
-    public class Fallo
+    private List<Fallo> GetCurrentPageData()
     {
-        public string? Expediente { get; set; }
-        public int? Año { get; set; }
-        public string? Organismo { get; set; }
-        public int? Nro { get; set; }
-        public string? Fecha { get; set; }
-       
+        if (cuentas == null)
+        {
+            return new List<Fallo>();
+        }
+
+        int startIndex = (currentPage - 1) * pageSize;
+        return cuentas.Skip(startIndex).Take(pageSize).ToList();
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
