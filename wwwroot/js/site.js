@@ -151,19 +151,15 @@ function Fiscalizadora() {
     const ctx = document.getElementById('fiscalizadora').getContext('2d');
 
     const data = {
-        labels: ['III 2024', 'II 2024', 'I 2024', 'IV 2022'],
+        labels: ['IV 2023', 'I 2024', 'II 2024', 'III 2022'],
         datasets: [{
             label: 'Cumplieron con todos los requisitos',
-            data: [68, 69, 70, 70],
+            data: [70, 71, 78, 78],
             backgroundColor: '#0074D9',
         }, {
             label: 'No cumplieron con todos los requisitos',
-            data: [2, 0, 0, 0], // Aquí agregamos ceros para los trimestres que no corresponden
+            data: [1, 0, 0, 0], 
             backgroundColor: '#FFD700',
-        }, {
-            label: 'No realizaron presentación alguna',
-            data: [0, 1, 0, 0], // Aquí agregamos 1 para el trimestre correspondiente
-            backgroundColor: '#FF4136',
         }]
     };
 

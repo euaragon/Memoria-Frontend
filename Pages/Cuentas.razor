@@ -49,7 +49,7 @@
         </tbody>
     </table>
 
-    <div class="d-flex justify-content-center mt-3">
+    <div class="d-flex justify-content-center mt-5">
         <button class="btn btn-secondary me-2" @onclick="PreviousPage" disabled="@(currentPage == 1)">Anterior</button>
         <span>Página @currentPage de @totalPages</span>
         <button class="btn btn-secondary ms-2" @onclick="NextPage" disabled="@(currentPage == totalPages)">Siguiente</button>

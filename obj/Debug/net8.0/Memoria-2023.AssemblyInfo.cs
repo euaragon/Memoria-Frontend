@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Memoria-2023")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+897bb626a11526eda887c05ca87f7c5f3979ced4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+855b76cf5d9173193a1569894a5a52f2016b7d6c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Memoria-2023")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Memoria-2023")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,27 +1,44 @@
-﻿document.addEventListener("click", function (event) {
-    let offCanvas = document.querySelector(".offcanvas.show");
-    if (offCanvas && !offCanvas.contains(event.target)) {
-        DotNet.invokeMethodAsync("TuProyecto", "CloseCanvas");
+﻿
+
+window.setupZoom = (imageId) => {
+    console.log("setupZoom called with ID:", imageId);
+    const image = document.getElementById(imageId);
+    const container = image.parentElement;
+
+    if (!image || !container) {
+        console.error("Image or container not found for ID:", imageId);
+        return;
+    }
+
+    container.addEventListener('mousemove', (e) => {
+        const rect = container.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        const zoomFactor = 1.6;
+        const offsetX = (x / rect.width) * (1 - 1 / zoomFactor) * 100;
+        const offsetY = (y / rect.height) * (1 - 1 / zoomFactor) * 100;
+
+        image.style.transformOrigin = `${x}px ${y}px`;
+        image.style.transform = `scale(${zoomFactor}) translate(-${offsetX}%, -${offsetY}%)`;
+    });
+
+    container.addEventListener('mouseleave', () => {
+        image.style.transform = 'scale(1)';
+    });
+};
+
+window.addEventListener('load', () => {
+    if (window.setupZoom && document.getElementById("organigramaImagen")) {
+        window.setupZoom("organigramaImagen");
     }
 });
-
-window.onload = function () {
-    setTimeout(() => {
-        document.activeElement?.blur(); // Quita el foco del iframe si lo tiene
-    }, 100);
-};
-function scrollToTop() {
-    window.scrollTo(0, 0); 
-}
-
-window.scrollToElement = function (selector) {
-    setTimeout(() => {
-        const element = document.querySelector(selector);
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-    }, 100); // Agregamos un delay para que Blazor termine de renderizar
-};
+document.addEventListener("click", function (event) {
+    let offCanvas = document.querySelector(".offcanvas.show");
+    if (offCanvas && !offCanvas.contains(event.target)) {
+        DotNet.invokeMethodAsync("Memoria-2023", "CloseCanvas");
+    }
+});
 
 
 function cuadroFallos() {
@@ -134,19 +151,15 @@ function Fiscalizadora() {
     const ctx = document.getElementById('fiscalizadora').getContext('2d');
 
     const data = {
-        labels: ['III 2024', 'II 2024', 'I 2024', 'IV 2022'],
+        labels: ['IV 2023', 'I 2024', 'II 2024', 'III 2022'],
         datasets: [{
             label: 'Cumplieron con todos los requisitos',
-            data: [68, 69, 70, 70],
+            data: [70, 71, 78, 78],
             backgroundColor: '#0074D9',
         }, {
             label: 'No cumplieron con todos los requisitos',
-            data: [2, 0, 0, 0], // Aquí agregamos ceros para los trimestres que no corresponden
+            data: [1, 0, 0, 0], 
             backgroundColor: '#FFD700',
-        }, {
-            label: 'No realizaron presentación alguna',
-            data: [0, 1, 0, 0], // Aquí agregamos 1 para el trimestre correspondiente
-            backgroundColor: '#FF4136',
         }]
     };
 
