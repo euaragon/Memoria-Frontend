@@ -163,3 +163,21 @@ iframe{
     height: 600px;
    
 }
+
+#personal, #cuadro-fallos-cuentas {
+    width: 110vh !important;
+    height: auto !important;
+    margin: 0 auto;
+}
+
+#juiciodecuentas {
+    width: 100vh !important;
+    height: auto !important;
+    margin: 0 auto;
+}
+
+#fiscalizadora {
+    width: 90vh !important;
+    height: auto !important;
+    margin: 0 auto;
+}

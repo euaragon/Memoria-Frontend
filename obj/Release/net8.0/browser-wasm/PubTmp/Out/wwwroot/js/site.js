@@ -180,132 +180,173 @@ function Fiscalizadora() {
 
 }
 
-
 function Recursos() {
-    am5.ready(function () {
-
-        // Create root element
-        // https://www.amcharts.com/docs/v5/getting-started/#Root_element
-        var root = am5.Root.new("personal");
+    const ctx = document.getElementById('personal');
 
 
-        // Set themes
-        // https://www.amcharts.com/docs/v5/concepts/themes/
-        root.setThemes([
-            am5themes_Animated.new(root)
-        ]);
+    const data = {
+        labels: [
+           'Arquitectos', 'Analistas','Profesores y Técnicos', 'Servicios Generales', 'Ingenieros', 'Abogados y Procuradores', 'Licenciados y Otros', 'Contadores', 'Contratos de Locación y Servicios'
+        ],
+        datasets: [{
+            label: "Cantidad",
+            data: [3,6,6,67,7,32,31,121,2],
+            hoverOffset: 4
+        }]
+    };
 
+    const options = {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true,
+                    max: 70,
+                }
+            }]
+        },
+        legend: {
+            display: true,
+            position: 'bottom',
+            labels: {
+                fontColor: '#333',
+                fontSize: 10,
+            }
+        }
 
-        // Create chart
-        // https://www.amcharts.com/docs/v5/charts/xy-chart/
-        var chart = root.container.children.push(am5xy.XYChart.new(root, {
-            panX: true,
-            panY: true,
-            wheelX: "panX",
-            wheelY: "zoomX",
-            pinchZoomX: true
-        }));
+    };
 
-        // Add cursor
-        // https://www.amcharts.com/docs/v5/charts/xy-chart/cursor/
-        var cursor = chart.set("cursor", am5xy.XYCursor.new(root, {}));
-        cursor.lineY.set("visible", false);
-
-
-        // Create axes
-        // https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
-        var xRenderer = am5xy.AxisRendererX.new(root, { minGridDistance: 30 });
-        xRenderer.labels.template.setAll({
-            rotation: -90,
-            centerY: am5.p50,
-            centerX: am5.p100,
-            paddingRight: 15
-        });
-
-        xRenderer.grid.template.setAll({
-            location: 1
-        })
-
-        var xAxis = chart.xAxes.push(am5xy.CategoryAxis.new(root, {
-            maxDeviation: 0.3,
-            categoryField: "country",
-            renderer: xRenderer,
-            tooltip: am5.Tooltip.new(root, {})
-        }));
-
-        var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
-            maxDeviation: 0.3,
-            renderer: am5xy.AxisRendererY.new(root, {
-                strokeOpacity: 0.1
-            })
-        }));
-
-
-        // Create series
-        // https://www.amcharts.com/docs/v5/charts/xy-chart/series/
-        var series = chart.series.push(am5xy.ColumnSeries.new(root, {
-            name: "Series 1",
-            xAxis: xAxis,
-            yAxis: yAxis,
-            valueYField: "value",
-            sequencedInterpolation: true,
-            categoryXField: "country",
-            tooltip: am5.Tooltip.new(root, {
-                labelText: "{valueY}"
-            })
-        }));
-
-        series.columns.template.setAll({ cornerRadiusTL: 5, cornerRadiusTR: 5, strokeOpacity: 0 });
-        series.columns.template.adapters.add("fill", function (fill, target) {
-            return chart.get("colors").getIndex(series.columns.indexOf(target));
-        });
-
-        series.columns.template.adapters.add("stroke", function (stroke, target) {
-            return chart.get("colors").getIndex(series.columns.indexOf(target));
-        });
-
-
-        // Set data
-        var data = [{
-            country: "ARQUITECTOS",
-            value: 3
-        }, {
-            country: "ANALISTAS",
-            value: 6
-        }, {
-            country: "PROFESORES Y TÉCNICOS",
-            value: 6
-        }, {
-            country: "TAREAS ADMINISTRATIVAS Y SERVICIOS GENERALES",
-            value: 67
-        }, {
-            country: "INGENIEROS",
-            value: 7
-        }, {
-            country: "ABOGADOS Y PROCURADORES",
-            value: 32
-        }, {
-            country: "LICENCIADOS Y OTROS",
-            value: 31
-        }, {
-            country: "CONTADORES",
-            value: 121
-        }, {
-            country: "CONTRATOS DE LOCACIÓN Y SERVICIOS",
-            value: 2
-        }];
-
-        xAxis.data.setAll(data);
-        series.data.setAll(data);
-
-
-        // Make stuff animate on load
-        // https://www.amcharts.com/docs/v5/concepts/animations/
-        series.appear(1000);
-        chart.appear(1000, 100);
-
-    }); // end am5.ready()
+    const myChart = new Chart(ctx, {
+        type: 'bar',
+        data: data,
+        options: options
+    });
 }
+
+//function Recursos() {
+//    am5.ready(function () {
+
+//        // Create root element
+//        // https://www.amcharts.com/docs/v5/getting-started/#Root_element
+//        var root = am5.Root.new("personal");
+
+
+//        // Set themes
+//        // https://www.amcharts.com/docs/v5/concepts/themes/
+//        root.setThemes([
+//            am5themes_Animated.new(root)
+//        ]);
+
+
+//        // Create chart
+//        // https://www.amcharts.com/docs/v5/charts/xy-chart/
+//        var chart = root.container.children.push(am5xy.XYChart.new(root, {
+//            panX: true,
+//            panY: true,
+//            wheelX: "panX",
+//            wheelY: "zoomX",
+//            pinchZoomX: true
+//        }));
+
+//        // Add cursor
+//        // https://www.amcharts.com/docs/v5/charts/xy-chart/cursor/
+//        var cursor = chart.set("cursor", am5xy.XYCursor.new(root, {}));
+//        cursor.lineY.set("visible", false);
+
+
+//        // Create axes
+//        // https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
+//        var xRenderer = am5xy.AxisRendererX.new(root, { minGridDistance: 30 });
+//        xRenderer.labels.template.setAll({
+//            rotation: -90,
+//            centerY: am5.p50,
+//            centerX: am5.p100,
+//            paddingRight: 15
+//        });
+
+//        xRenderer.grid.template.setAll({
+//            location: 1
+//        })
+
+//        var xAxis = chart.xAxes.push(am5xy.CategoryAxis.new(root, {
+//            maxDeviation: 0.3,
+//            categoryField: "country",
+//            renderer: xRenderer,
+//            tooltip: am5.Tooltip.new(root, {})
+//        }));
+
+//        var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
+//            maxDeviation: 0.3,
+//            renderer: am5xy.AxisRendererY.new(root, {
+//                strokeOpacity: 0.1
+//            })
+//        }));
+
+
+//        // Create series
+//        // https://www.amcharts.com/docs/v5/charts/xy-chart/series/
+//        var series = chart.series.push(am5xy.ColumnSeries.new(root, {
+//            name: "Series 1",
+//            xAxis: xAxis,
+//            yAxis: yAxis,
+//            valueYField: "value",
+//            sequencedInterpolation: true,
+//            categoryXField: "country",
+//            tooltip: am5.Tooltip.new(root, {
+//                labelText: "{valueY}"
+//            })
+//        }));
+
+//        series.columns.template.setAll({ cornerRadiusTL: 5, cornerRadiusTR: 5, strokeOpacity: 0 });
+//        series.columns.template.adapters.add("fill", function (fill, target) {
+//            return chart.get("colors").getIndex(series.columns.indexOf(target));
+//        });
+
+//        series.columns.template.adapters.add("stroke", function (stroke, target) {
+//            return chart.get("colors").getIndex(series.columns.indexOf(target));
+//        });
+
+
+//        // Set data
+//        var data = [{
+//            country: "ARQUITECTOS",
+//            value: 3
+//        }, {
+//            country: "ANALISTAS",
+//            value: 6
+//        }, {
+//            country: "PROFESORES Y TÉCNICOS",
+//            value: 6
+//        }, {
+//            country: "TAREAS ADMINISTRATIVAS Y SERVICIOS GENERALES",
+//            value: 67
+//        }, {
+//            country: "INGENIEROS",
+//            value: 7
+//        }, {
+//            country: "ABOGADOS Y PROCURADORES",
+//            value: 32
+//        }, {
+//            country: "LICENCIADOS Y OTROS",
+//            value: 31
+//        }, {
+//            country: "CONTADORES",
+//            value: 121
+//        }, {
+//            country: "CONTRATOS DE LOCACIÓN Y SERVICIOS",
+//            value: 2
+//        }];
+
+//        xAxis.data.setAll(data);
+//        series.data.setAll(data);
+
+
+//        // Make stuff animate on load
+//        // https://www.amcharts.com/docs/v5/concepts/animations/
+//        series.appear(1000);
+//        chart.appear(1000, 100);
+
+//    }); // end am5.ready()
+//}
 
 
 function Jornadas() {

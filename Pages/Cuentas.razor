@@ -4,7 +4,7 @@
 @inject NavigationManager NavigationManager
 
 <PageTitle>Cuentas Falladas en 2024</PageTitle>
-<div id="top"></div>
+
 
 <h1 class="text-center mb-4">@tituloFallos</h1>
 <p>
@@ -130,23 +130,10 @@
     {
         if (firstRender)
         {
-            await ScrollToTop();
+
             await CuadroFallos();
         }
     }
-
-    private async Task ScrollToTop()
-    {
-        try
-        {
-            await JS.InvokeVoidAsync("scrollToElement", "#top");
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine($"Error {ex.Message}");
-        }
-    }
-
     private async Task CuadroFallos()
     {
         try

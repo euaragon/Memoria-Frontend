@@ -32,7 +32,7 @@
     Interno en junio de 2024.
 </p>
 
-<p>
+<p class="mb-4">
     Además, y como parte de las auditorías del BID que se realizan por el Tribunal, se destaca, en el año 2022, la
     convocatoria del Gobierno provincial para participar en una nueva auditoría externa de un programa del BID. Se
     presentó el proyecto de presupuesto para auditar un nuevo Programa 4779, <strong>
@@ -44,37 +44,38 @@
 
 
 
+<BSCard CardType="CardType.Card" Class="d-flex flex-row gap-2 mt-4">
+    <BSCard CardType="CardType.Image" Class="img-fluid rounded-start"
+        src="img/red-federal.jpg" alt="Red Federal de Control" />
+    <BSCard CardType="CardType.Body" Class="ps-3">
+        <BSCard CardType="CardType.Title">Red Federal de Control</BSCard>
+        <BSCard CardType="CardType.Text">
+            El Tribunal de Cuentas de la Provincia de Mendoza, por Acuerdo Nº 3.728 del 26 de mayo de 2004,
+            adhirió al Convenio de Coordinación y Cooperación Técnica celebrado entre el Secretariado
+            Permanente de Tribunales de Cuentas, Órganos y Organismos Públicos de Control Externo de la
+            República Argentina y la Red Federal de Control Público. <br>
+            En cumplimiento de dicho Convenio, se ha continuado con la labor de auditoría sobre los
+            distintos planes y/o programas desarrollados por los distintos ministerios que componen la Red
+            Federal.<br>
+            Las distintas Unidades de Auditoría Interna continuaron con la realización de talleres virtuales
+            en los que se expusieron pormenores de cada programa y se brindaron detalles sobre los puntos de
+            control sugeridos.
+        </BSCard>
+        <BSButton Color="BSColor.Primary" Target="modal1">Leer mas...</BSButton>
+    </BSCard>
+</BSCard>
 
 
 
-<div class="card mb-3 mt-5" style="max-width: 100vw;">
-    <div class="row g-0 align-items-center">
-        <div class="col-md-4">
-            <img src="img/red-federal.jpg" class="img-fluid rounded-start" alt="red federal de control">
-        </div>
-        <div class="col-md-8 ">
-            <div class="card-body align-items-center">
-                <h5 class="card-title">Red Federal de Control</h5>
-                <p class="card-text">El Tribunal de Cuentas de la Provincia de Mendoza, por Acuerdo Nº 3.728 del 26 de mayo de 2004, adhirió al Convenio de Coordinación y Cooperación Técnica celebrado entre el Secretariado Permanente de Tribunales de Cuentas, Órganos y Organismos Públicos de Control Externo de la República Argentina y la Red Federal de Control Público. </p>
-                <BSButton Color="BSColor.Primary" Target="modal1">Leer mas...</BSButton>
 
-            </div>
-        </div>
-    </div>
-</div>
-
-<NavLink type="button" class="text-black mt-md-5" href="/">  <img class="me-2" width="32" height="32" src="https://img.icons8.com/windows/32/000000/return.png" alt="return" /> VOLVER</NavLink>
+<NavLink type="button" class="text-black mt-md-5" href="/"> <img class="me-2" width="32" height="32"
+        src="https://img.icons8.com/windows/32/000000/return.png" alt="return" /> VOLVER</NavLink>
 
 
-<BSModal DataId="modal1">
-    <Header>Red Federal de Control</Header>
+<BSModal DataId="modal1" Size="Size.ExtraLarge">
+    
     <Content>
         <p>
-            En cumplimiento de dicho Convenio, se ha continuado con la labor de auditoría sobre los distintos
-            planes y/o programas desarrollados por los distintos ministerios que componen la Red Federal.
-            Las distintas Unidades de Auditoría Interna continuaron con la realización de talleres virtuales en
-            los que se expusieron pormenores de cada programa y se brindaron detalles sobre los puntos de
-            control sugeridos. <br><br>
             Se llevaron a cabo las siguientes auditorías:<br>
             <strong> MINISTERIO DE EDUCACIÓN</strong><br>
             • INET – Instituto Nacional de Educación Tecnológica<br><br>
@@ -140,7 +141,7 @@
 
         </p>
     </Content>
-    
+
 </BSModal>
 
 
@@ -153,7 +154,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                
+
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
@@ -178,5 +179,3 @@
             await modal1.ToggleAsync();
     }
 }
-
-
