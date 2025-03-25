@@ -41,9 +41,9 @@ document.addEventListener("click", function (event) {
 });
 
 
-function cuadroFallos() {
+function cuadroFallosIndex() {
    
-    const ctx = document.getElementById('cuadro-fallos');
+    const ctx = document.getElementById('cuadro-fallos-index');
 
     const data = {
         labels: [
@@ -57,11 +57,6 @@ function cuadroFallos() {
         datasets: [{
             label: 'Cuentas falladas en 2024',
             data: [50, 25, 24, 44, 24, 5],
-            //backgroundColor: [
-            //  'rgb(255, 99, 132)',
-            //  'rgb(54, 162, 235)',
-            //  'rgb(255, 205, 86)'
-            //],
             hoverOffset: 4
         }]
     };
@@ -92,9 +87,9 @@ function cuadroFallos() {
     });
 }
 
-function cuadroFallos2() {
+function cuadroFallosCuentas() {
 
-    const ctx = document.getElementById('cuadro-fallos-2');
+    const ctx = document.getElementById('cuadro-fallos-cuentas');
 
     const data = {
         labels: [
@@ -108,11 +103,6 @@ function cuadroFallos2() {
         datasets: [{
             label: 'Cuentas falladas en 2024',
             data: [50, 25, 24, 44, 24, 5],
-            //backgroundColor: [
-            //  'rgb(255, 99, 132)',
-            //  'rgb(54, 162, 235)',
-            //  'rgb(255, 205, 86)'
-            //],
             hoverOffset: 4
         }]
     };

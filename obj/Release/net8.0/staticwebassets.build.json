@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xEmruN1V62pMwcc22yAR2G8lPs0FxNdzEhLKWx5P2xE=",
+  "Hash": "NTo9yhgYvG/CJfQ5hHLyxpdxlClKO3AsHfTKQp6caOk=",
   "Source": "Memoria-2023",
   "BasePath": "/",
   "Mode": "Root",
@@ -8413,6 +8413,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\autoridades\\pettignano.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\img\\autoridades\\riera.jpg",
+      "SourceId": "Memoria-2023",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "img/autoridades/riera.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\autoridades\\riera.jpg"
     },
     {
       "Identity": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\img\\autoridades\\tribunal.jpg",

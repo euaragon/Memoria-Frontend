@@ -14,14 +14,11 @@ body {
 }
 
 
-p {
-    font-size: 1.1em !important;
+p, li {
+    font-size: 1em !important;
     line-height:1.8em;
 }
 
-li {
-    font-size: 1.2em !important;
-}
 
 a {
     text-decoration: none !important;
