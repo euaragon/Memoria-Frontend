@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Memoria-2023",
   "resources": {
-    "hash": "sha256-RiUfmw48iMUWRiEbiCiwFM4yHq9soffe66O3o6l9oAw=",
+    "hash": "sha256-VrpUpnKBuwJmfgDcSn0Asab8HyQFUpzv7KwGKJcdJQg=",
     "jsModuleNative": {
       "dotnet.native.8.0.4.u3j7es4xh0.js": "sha256-ju0+XWE0ihz554eKEj0HQ8Opa61xpbUIaX5/MNo8we4="
     },
@@ -211,10 +211,10 @@
       "mscorlib.wasm": "sha256-VCfYgt1mcjITabSTosCDVZ+68ea3Z7kakTFaLNLG+18=",
       "netstandard.wasm": "sha256-YOZxxR9PM3Dltcijfb0Q4FD39DkWZbZ1e2ScbZDvWJ4=",
       "System.Private.CoreLib.wasm": "sha256-NrT1QkAzVU//2wgK9vXdq77lCGvLJ4IOZ+Aegesyanc=",
-      "Memoria-2023.wasm": "sha256-FNq3UxwnUc89coxmAVJuViwMPonLL3r5BV0ZZXWeVAY="
+      "Memoria-2023.wasm": "sha256-VJnLcau0YCKbUnDVJXplNaIdIG9PTlvKgcqdzXojrAM="
     },
     "pdb": {
-      "Memoria-2023.pdb": "sha256-7FxB+WA4N7XBLiwOKa+ePd8Kz6e7fdOQf7jxjmhPf6g="
+      "Memoria-2023.pdb": "sha256-rIi2tvH3HHKt2JEflJxyKc4lyWmkCqLX0sy/iA7wTPQ="
     }
   },
   "cacheBootResources": true,

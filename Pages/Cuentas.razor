@@ -25,11 +25,12 @@
     <table class="table table-sm table-responsive table-hover mt-5 tabla-aud-esp text-uppercase">
         <thead class="table-group-divider">
             <tr>
-                <th class="bg-transparent">Expediente</th>
+                
                 <th class="bg-transparent">Año</th>
-                <th class="bg-transparent">Organismo</th>
                 <th class="bg-transparent">Fallo</th>
+                <th class="bg-transparent">Organismo</th>                
                 <th class="bg-transparent">Fecha</th>
+                <th class="bg-transparent">Expte</th>
             </tr>
         </thead>
         <tbody>
@@ -38,11 +39,11 @@
                 @foreach (var cuenta in GetCurrentPageData())
                 {
                     <tr>
-                        <td class="bg-transparent">@cuenta.Expediente</td>
                         <td class="bg-transparent">@cuenta.Anio</td>
-                        <td class="bg-transparent">@cuenta.Organismo</td>
                         <td class="bg-transparent">@cuenta.Nro</td>
+                        <td class="bg-transparent">@cuenta.Organismo</td>
                         <td class="bg-transparent">@cuenta.Fecha</td>
+                        <td class="bg-transparent">@cuenta.Expediente</td>
                     </tr>
                 }
             }

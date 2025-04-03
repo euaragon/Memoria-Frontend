@@ -186,11 +186,11 @@ function Recursos() {
 
     const data = {
         labels: [
-           'Arquitectos', 'Analistas','Profesores y Técnicos', 'Servicios Generales', 'Ingenieros', 'Abogados y Procuradores', 'Licenciados y Otros', 'Contadores', 'Contratos de Locación y Servicios'
+           'Bioingenieros','Arquitectos', 'Analistas','Profesores y Técnicos', 'Servicios Generales', 'Ingenieros', 'Abogados y Procuradores', 'Licenciados', 'Contadores', 'Contratos de Locación', 'En Comisión'
         ],
         datasets: [{
             label: "Cantidad",
-            data: [3,6,6,67,7,32,31,121,2],
+            data: [1,3,5,16,56,7,30,30,119,3,1],
             hoverOffset: 4
         }]
     };

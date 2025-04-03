@@ -222,132 +222,6 @@ function Recursos() {
     });
 }
 
-//function Recursos() {
-//    am5.ready(function () {
-
-//        // Create root element
-//        // https://www.amcharts.com/docs/v5/getting-started/#Root_element
-//        var root = am5.Root.new("personal");
-
-
-//        // Set themes
-//        // https://www.amcharts.com/docs/v5/concepts/themes/
-//        root.setThemes([
-//            am5themes_Animated.new(root)
-//        ]);
-
-
-//        // Create chart
-//        // https://www.amcharts.com/docs/v5/charts/xy-chart/
-//        var chart = root.container.children.push(am5xy.XYChart.new(root, {
-//            panX: true,
-//            panY: true,
-//            wheelX: "panX",
-//            wheelY: "zoomX",
-//            pinchZoomX: true
-//        }));
-
-//        // Add cursor
-//        // https://www.amcharts.com/docs/v5/charts/xy-chart/cursor/
-//        var cursor = chart.set("cursor", am5xy.XYCursor.new(root, {}));
-//        cursor.lineY.set("visible", false);
-
-
-//        // Create axes
-//        // https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
-//        var xRenderer = am5xy.AxisRendererX.new(root, { minGridDistance: 30 });
-//        xRenderer.labels.template.setAll({
-//            rotation: -90,
-//            centerY: am5.p50,
-//            centerX: am5.p100,
-//            paddingRight: 15
-//        });
-
-//        xRenderer.grid.template.setAll({
-//            location: 1
-//        })
-
-//        var xAxis = chart.xAxes.push(am5xy.CategoryAxis.new(root, {
-//            maxDeviation: 0.3,
-//            categoryField: "country",
-//            renderer: xRenderer,
-//            tooltip: am5.Tooltip.new(root, {})
-//        }));
-
-//        var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
-//            maxDeviation: 0.3,
-//            renderer: am5xy.AxisRendererY.new(root, {
-//                strokeOpacity: 0.1
-//            })
-//        }));
-
-
-//        // Create series
-//        // https://www.amcharts.com/docs/v5/charts/xy-chart/series/
-//        var series = chart.series.push(am5xy.ColumnSeries.new(root, {
-//            name: "Series 1",
-//            xAxis: xAxis,
-//            yAxis: yAxis,
-//            valueYField: "value",
-//            sequencedInterpolation: true,
-//            categoryXField: "country",
-//            tooltip: am5.Tooltip.new(root, {
-//                labelText: "{valueY}"
-//            })
-//        }));
-
-//        series.columns.template.setAll({ cornerRadiusTL: 5, cornerRadiusTR: 5, strokeOpacity: 0 });
-//        series.columns.template.adapters.add("fill", function (fill, target) {
-//            return chart.get("colors").getIndex(series.columns.indexOf(target));
-//        });
-
-//        series.columns.template.adapters.add("stroke", function (stroke, target) {
-//            return chart.get("colors").getIndex(series.columns.indexOf(target));
-//        });
-
-
-//        // Set data
-//        var data = [{
-//            country: "ARQUITECTOS",
-//            value: 3
-//        }, {
-//            country: "ANALISTAS",
-//            value: 6
-//        }, {
-//            country: "PROFESORES Y TÉCNICOS",
-//            value: 6
-//        }, {
-//            country: "TAREAS ADMINISTRATIVAS Y SERVICIOS GENERALES",
-//            value: 67
-//        }, {
-//            country: "INGENIEROS",
-//            value: 7
-//        }, {
-//            country: "ABOGADOS Y PROCURADORES",
-//            value: 32
-//        }, {
-//            country: "LICENCIADOS Y OTROS",
-//            value: 31
-//        }, {
-//            country: "CONTADORES",
-//            value: 121
-//        }, {
-//            country: "CONTRATOS DE LOCACIÓN Y SERVICIOS",
-//            value: 2
-//        }];
-
-//        xAxis.data.setAll(data);
-//        series.data.setAll(data);
-
-
-//        // Make stuff animate on load
-//        // https://www.amcharts.com/docs/v5/concepts/animations/
-//        series.appear(1000);
-//        chart.appear(1000, 100);
-
-//    }); // end am5.ready()
-//}
-
 
 function Jornadas() {
     const ctx = document.getElementById('jornada').getContext('2d');
@@ -404,17 +278,30 @@ function Calidad() {
     const ctx = document.getElementById('calidad').getContext('2d');
 
     const data = {
-        labels: ['2018', '2019', '2020', '2021', '2022 *'],
-        datasets: [{
+        labels: ['2018', '2019', '2020', '2021', '2022', '2023'],
+        datasets: [
+            {
+                label: 'Cantidad de cuentas falladas en los 8 meses (hasta 240 días)',
+                data: [113,99,128,129,135,129],
+                borderColor:'#435aa5',
+                backgroundColor: '#6976b8',
+                type: 'line',
+                order: 0
+            },
+            {
+                label: 'Tiempo promedio para fallo en días corridos',
+                data: [199, 202, 170, 167, 161, 134],
+                borderColor:'#851036',
+                backgroundColor: '#ffae99',
+                type: 'line',
+                order: 0
+            },
+            {
             label: 'Cuentas falladas',
-            data: [159, 158, 161, 165, 132],
+            data: [159, 158, 161, 165, 165,136],
             backgroundColor: '#2bc299',
-        },
-        {
-            label: 'Tiempo promedio para fallo en días corridos',
-            data: [199, 202, 170, 167, 137],
-            backgroundColor: '#ffae99',
-        }]
+        }
+       ]
     };
 
     const options = {
@@ -427,8 +314,9 @@ function Calidad() {
             }]
         },
         legend: {
+         
             display: true,
-            position: 'bottom',
+            position: 'top',
             labels: {
                 fontColor: '#333',
                 fontSize: 12,
