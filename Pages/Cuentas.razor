@@ -31,6 +31,7 @@
                 <th class="bg-transparent">Organismo</th>                
                 <th class="bg-transparent">Fecha</th>
                 <th class="bg-transparent">Expte</th>
+                <th class="bg-transparent">Area</th>
             </tr>
         </thead>
         <tbody>
@@ -44,6 +45,7 @@
                         <td class="bg-transparent">@cuenta.Organismo</td>
                         <td class="bg-transparent">@cuenta.Fecha</td>
                         <td class="bg-transparent">@cuenta.Expediente</td>
+                        <td class="bg-transparent">@cuenta.Area</td>
                     </tr>
                 }
             }
@@ -68,26 +70,12 @@
 
     public class Fallo
     {
-        public string? Expediente { get; set; }
+        public int? Expediente { get; set; }
         public int? Anio { get; set; }
         public string? Organismo { get; set; }
         public int? Nro { get; set; }
         public string? Fecha { get; set; }
-    }
-
-    public class FalloFueraCronograma
-    {
-        public string? Expediente { get; set; }
-        public int? Anio { get; set; }
-        public string? Organismo { get; set; }
-        public int? Nro { get; set; }
-        public string? Fecha { get; set; }
-    }
-
-    public class CuentasData
-    {
-        public Fallo[]? registros_principales { get; set; }
-        public FalloFueraCronograma[]? registros_adicionales { get; set; }
+        public string? Area { get; set; }
     }
 
     protected override async Task OnInitializedAsync()
