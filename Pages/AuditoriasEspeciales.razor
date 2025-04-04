@@ -9,9 +9,8 @@
 <table class="table table-hover mt-5 tabla-aud-esp">
     <thead class="table-group-divider">
         <tr>
-            <th>Organismo Auditado</th>
-            <th>Tema</th>
-            <th>Tipo de Auditoría</th>
+            <th class="bg-transparent">Organismo Auditado</th>
+            <th class="bg-transparent">Tema</th>
         </tr>
     </thead>
     <tbody>
@@ -20,9 +19,8 @@
             @foreach (var auditoria in auditorias)
             {
                 <tr>
-                    <td>@auditoria.OrganismoAuditado</td>
-                    <td>@auditoria.Tema</td>
-                    <td>@auditoria.TipoDeAuditoria</td>
+                    <td class="bg-transparent">@auditoria.OrganismoAuditado</td>
+                    <td class="bg-transparent">@auditoria.Tema</td>
                 </tr>
             }
         }
@@ -46,7 +44,6 @@
     {
         public string? OrganismoAuditado { get; set; }
         public string? Tema { get; set; }
-        public string? TipoDeAuditoria { get; set; }
     }
 }
 

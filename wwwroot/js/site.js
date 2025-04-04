@@ -40,6 +40,8 @@ document.addEventListener("click", function (event) {
     }
 });
 
+let chartInstance = null;
+let chartInstanceIndex = null;
 
 
 window.cuadroFallosIndex = () => {
@@ -67,12 +69,12 @@ window.cuadroFallosIndex = () => {
                         label: 'Cuentas falladas en 2024',
                         data: cantidades,
                         backgroundColor: [ // Colores para cada segmento del pastel
-                            'rgba(255, 99, 132, 0.6)',
-                            'rgba(54, 162, 235, 0.6)',
-                            'rgba(255, 206, 86, 0.6)',
-                            'rgba(75, 192, 192, 0.6)',
-                            'rgba(153, 102, 255, 0.6)',
-                            'rgba(255, 159, 64, 0.6)'
+                            'rgb(255, 99, 133)',
+                            'rgba(54, 162, 235)',
+                            'rgba(255, 206, 86)',
+                            'rgba(75, 192, 192)',
+                            'rgba(153, 102, 255)',
+                            'rgba(255, 159, 64)'
                         ],
                         hoverOffset: 4
                     }]
@@ -92,148 +94,67 @@ window.cuadroFallosIndex = () => {
 };
 
 
-// function cuadroFallosIndex() {
-   
-//     const ctx = document.getElementById('cuadro-fallos-index');
-
-//     const data = {
-//         labels: [
-//             'Descentralizadas I',
-//             'Descentralizadas II',
-//             'Recursos',
-//             'Gobierno',
-//             'Municipalidades',
-//             'DAEC'
-//         ],
-//         datasets: [{
-//             label: 'Cuentas falladas en 2024',
-//             data: [50, 25, 24, 44, 24, 5],
-//             hoverOffset: 4
-//         }]
-//     };
-
-//     const options = {
-//         scales: {
-//             yAxes: [{
-//                 ticks: {
-//                     beginAtZero: true,
-//                     max: 70,
-//                 }
-//             }]
-//         },
-//         legend: {
-//             display: true,
-//             position: 'bottom',
-//             labels: {
-//                 fontColor: '#333',
-//                 fontSize: 12,
-//             }
-//         }
-//     };
-
-//     const myChart = new Chart(ctx, {
-//         type: 'pie',
-//         data: data,
-//         options: options
-//     });
-// }
-
-// function cuadroFallosCuentas() {
-
-//     const ctx = document.getElementById('cuadro-fallos-cuentas');
-
-//     const data = {
-//         labels: [
-//             'Descentralizadas I',
-//             'Descentralizadas II',
-//             'Recursos',
-//             'Gobierno',
-//             'Municipalidades',
-//             'DAEC'
-//         ],
-//         datasets: [{
-//             label: 'Cuentas falladas en 2024',
-//             data: [50, 25, 24, 44, 24, 5],
-//             hoverOffset: 4
-//         }]
-//     };
-
-//     const options = {
-//         scales: {
-//             yAxes: [{
-//                 ticks: {
-//                     beginAtZero: true,
-//                     max: 70,
-//                 }
-//             }]
-//         },
-//         legend: {
-//             display: true,
-//             position: 'bottom',
-//             labels: {
-//                 fontColor: '#333',
-//                 fontSize: 12,
-//             }
-//         }
-
-//     };
-
-//     const myChart = new Chart(ctx, {
-//         type: 'bar',
-//         data: data,
-//         options: options
-//     });
-// }
-
 
 window.cuadroFallosCuentas = () => {
     fetch('sample-data/cuentas.json')
         .then(response => response.json())
         .then(data => {
-            // Contar la cantidad de fallos por área
             const conteoAreas = {};
             data.forEach(item => {
                 const area = item.Area;
                 conteoAreas[area] = (conteoAreas[area] || 0) + 1;
             });
 
-            // Preparar los datos para el gráfico
             const labels = Object.keys(conteoAreas);
             const cantidades = Object.values(conteoAreas);
 
-            // Crear el gráfico
             const ctx = document.getElementById('cuadro-fallos-cuentas').getContext('2d');
-            new Chart(ctx, {
+
+            // Destruir instancia previa si existe
+            if (chartInstance) {
+                chartInstance.destroy();
+            }
+
+            chartInstance = new Chart(ctx, {
                 type: 'bar',
                 data: {
                     labels: labels,
                     datasets: [{
                         label: 'Cuentas falladas en 2024',
                         data: cantidades,
+                        backgroundColor: '#42A5F5',
                         hoverOffset: 4
                     }]
                 },
                 options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
                     scales: {
-                        yAxes: [{
-                            ticks: {
-                                beginAtZero: true,
-                                max: Math.max(...cantidades) + 5, // Ajustar el máximo del eje Y
-                            }
-                        }]
+                        y: {
+                            beginAtZero: true,
+                            max: Math.max(...cantidades) + 5
+                        }
                     },
-                    legend: {
-                        display: true,
-                        position: 'bottom',
-                        labels: {
-                            fontColor: '#333',
-                            fontSize: 12,
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'bottom',
+                            labels: {
+                                color: '#333',
+                                font: {
+                                    size: 12
+                                }
+                            }
                         }
                     }
                 }
             });
+        })
+        .catch(error => {
+            console.error('Error cargando datos:', error);
         });
 };
+
 
 
 
