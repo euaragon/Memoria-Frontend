@@ -1,15 +1,15 @@
 {
   "mainAssemblyName": "Memoria-2023",
   "resources": {
-    "hash": "sha256-VrpUpnKBuwJmfgDcSn0Asab8HyQFUpzv7KwGKJcdJQg=",
+    "hash": "sha256-Jkf6ArbEgErmwUYuNElokzOMrvBez1BKZK1Lu9aeCGA=",
     "jsModuleNative": {
-      "dotnet.native.8.0.4.u3j7es4xh0.js": "sha256-ju0+XWE0ihz554eKEj0HQ8Opa61xpbUIaX5/MNo8we4="
+      "dotnet.native.8.0.13.g9aimpkmhk.js": "sha256-xNQsYHtL1vcbrVTHDZAwJM4WovpoyjsrM2C6FQ8cW1w="
     },
     "jsModuleRuntime": {
-      "dotnet.runtime.8.0.4.91o14ob19v.js": "sha256-JeVsECOqOie/Pe89n9PJNJaMmb5vJsAAxfXY8INN64A="
+      "dotnet.runtime.8.0.13.1yuc4bojrl.js": "sha256-13vqU3hueOALvSTEM8xnJkJj2exVJYtNc1KZelMCDf0="
     },
     "wasmNative": {
-      "dotnet.native.wasm": "sha256-U1JSgnum2OTerSq8i5Y9L17deHEWJmae0djinSPLyJM="
+      "dotnet.native.wasm": "sha256-XhsharnkthjahGEiBkFjCLc/87/Tecti9860TIEq0H0="
     },
     "icu": {
       "icudt_CJK.dat": "sha256-SZLtQnRc0JkwqHab0VUVP7T3uBPSeYzxzDnpxPpUnHk=",
@@ -211,10 +211,10 @@
       "mscorlib.wasm": "sha256-VCfYgt1mcjITabSTosCDVZ+68ea3Z7kakTFaLNLG+18=",
       "netstandard.wasm": "sha256-YOZxxR9PM3Dltcijfb0Q4FD39DkWZbZ1e2ScbZDvWJ4=",
       "System.Private.CoreLib.wasm": "sha256-NrT1QkAzVU//2wgK9vXdq77lCGvLJ4IOZ+Aegesyanc=",
-      "Memoria-2023.wasm": "sha256-VJnLcau0YCKbUnDVJXplNaIdIG9PTlvKgcqdzXojrAM="
+      "Memoria-2023.wasm": "sha256-B5pqrKTa3fzCSZZyccCpzNAP/pkXlbrAH1NUQjeb9fM="
     },
     "pdb": {
-      "Memoria-2023.pdb": "sha256-rIi2tvH3HHKt2JEflJxyKc4lyWmkCqLX0sy/iA7wTPQ="
+      "Memoria-2023.pdb": "sha256-QskE7hjGB5rxzptPO66X6Kbnb8R8WsAbD91moL5fS5U="
     }
   },
   "cacheBootResources": true,
