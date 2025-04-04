@@ -51,13 +51,14 @@
         </tbody>
     </table>
 
-    <div class="d-flex justify-content-center mt-5">
-        <button class="btn btn-secondary me-2" @onclick="PreviousPage" disabled="@(currentPage == 1)">Anterior</button>
+    <div class="d-flex justify-content-center mt-5 align-items-center gap-4">
+        <button class="btn btn-primary me-2" @onclick="PreviousPage" disabled="@(currentPage == 1)">Anterior</button>
         <span>Página @currentPage de @totalPages</span>
-        <button class="btn btn-secondary ms-2" @onclick="NextPage" disabled="@(currentPage == totalPages)">Siguiente</button>
+        <button class="btn btn-primary ms-2" @onclick="NextPage" disabled="@(currentPage == totalPages)">Siguiente</button>
     </div>
 </div>
 
+<a class="text-center text-uppercase" href="https://www.tribcuentasmendoza.gob.ar/tcnet/digesto/filtrodigesto/FiltroNormativaWeb_2.aspx" target="_blank"><h5 class="text-primary">consultá los fallos acá</h5></a>
 
 <NavLink type="button" class="text-black mt-md-5" href="/"> <img class="me-2" width="32" height="32" src="https://img.icons8.com/windows/32/000000/return.png" alt="return" /> VOLVER</NavLink>
 
