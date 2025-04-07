@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\Memoria-2023.props" />
-</Project>

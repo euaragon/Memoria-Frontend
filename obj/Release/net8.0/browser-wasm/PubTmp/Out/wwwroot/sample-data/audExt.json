@@ -1,662 +1,426 @@
 ﻿[
   {
-    "organismoAuditado": "UNIDAD DE FINANCIAMIUENTO INTERNACIONAL  - DIRECCIÓN PROVINCIAL DE VIALIDAD",
-    "tema": "Segundo Sgto Estado de Obra: Refuncionalización Ruta Prov. N°82 -. Tramo II (Intersección Ruta Panamericana y Corredor del Oeste – Gdor. Ortiz)",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE SAN RAFAEL",
+   "Tema": "Demolición Edif. Vieja Terminal San Rafael - Construcción Locales Comerciales, Cocheras, Ofic. (Exp Nº 12618-S-22)"
   },
   {
-    "organismoAuditado": "DEPARTAMENTO GENERAL DE IRRIGACIÓN",
-    "tema": "Auditar Obra: Modernización Sistema de Riego Hijuela Esteban – Rio Mendoza - Lote I - Revestimiento.",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE GENERAL ALVEAR",
+   "Tema": "Obra: Remodelación Km 0 Cdad de G. Alvear (Ex-2022-05903033- -GDEMZA-SECOBYSERV#ALVEAR)"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE LAVALLE",
-    "tema": "Auditar Obra: Conexión Sistema de Agua Potable Jocoli - Convenio c/ENOHSA",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE SAN MARTIN",
+   "Tema": "Construcción Edificio p\/Policia y Juzgado Vial (Expte 3186\/2022)"
   },
   {
-    "organismoAuditado": "MINISTERIO DE PLANIFICACIÓN E INFRAESTRUCTURA PÚBLICA",
-    "tema": "Auditar Obra: Construcción Nuevo Hospital Dr. Héctor Gailhac - 1ª etapa ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MINISTERIO DE PLANIFICACIÓN E INFRAESTRUCTURA  PÚBLICA",
+   "Tema": "Obra: Ampliación Ctro Salud N 62 Dr. Oscar De Lellis - Junín (EX2023-04315349- - GDEMZA-MESA#MIPIP)"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE SAN CARLOS",
-    "tema": "Auditar Obra: Urbanizacion Loteo Valle Hermoso- Oldrá - Dist. La Consulta",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "DPV - DIRECCION PROVINCIAL DE VIALIDAD",
+   "Tema": "Obra: Pavimentación Camino de Gualtallary - Tupungato (EX2023-04083628- -GDEMZA)"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE LA PAZ",
-    "tema": "Auditar Obra: Construcción Calzada con Concreto Asfaltico -  Zona Centro - Primera Etapa ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE MAIPU",
+   "Tema": "Construcción Escenario y Trabajos Vs. De Hormigonado en Teatro Griego - Parque Metropolitano (Expte.047408\/2022)"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE LA PAZ",
-    "tema": "Auditar Obra: Construcción Playones Multideportivos - Zona Centro Este",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE GODOY CRUZ",
+   "Tema": "Obra: Infraestructura Vial Carril Cervantes - 2° etapa (Expte. 2208-S-2023)"
   },
   {
-    "organismoAuditado": "UNIDAD DE FINANCIAMIUENTO INTERNACIONAL  - DIRECCIÓN PROVINCIAL DE VIALIDAD",
-    "tema": "Auditar: Verificación por muestreo a Redeterminaciones de Precios – Obra Refuncionalización RP N°82 -. Tramo II  ",
-    "tipoDeAuditoria": "ADMINISTRATIVO / CONTABLE",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE JUNIN",
+   "Tema": "Juicios de Apremio"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE JUNÍN",
-    "tema": "Auditar: Juicios Civiles",
-    "tipoDeAuditoria": "JUICIOS",
-    "toPagedList": 0
+   "OrganismoAuditado": "DGI - DEPARTAMENTO GENERAL DE IRRIGACIÓN",
+   "Tema": "Juicios Laborales"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE RIVADAVIA",
-    "tema": "Auditar: Juicios Laborales",
-    "tipoDeAuditoria": "JUICIOS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE GUAYMALLEN",
+   "Tema": "Juicios Laborales"
   },
   {
-    "organismoAuditado": "DEPARTAMENTO GENERAL DE IRRIGACIÓN",
-    "tema": "Auditar Obra: Modernización Sistema de Riego Hijuela Esteban – Rio Mendoza – Lote II - Reservorio",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE LAVALLE",
+   "Tema": "Juicios Civiles"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE SAN MARTÍN",
-    "tema": "Auditar Obra: Obra Alum Pub c/ Torres y Farolas en Espacio Verde y Arreglo de Escudo ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE GUAYMALLEN",
+   "Tema": "Provisión de Mano de Obra, Equipo, Herramientas y Totalidad de Materiales p\/Const. de Intervenciones Urbanas en Calles Vs. - Etapa 32 (Expte. 9201\/2023 - Lic Nº 1092)"
   },
   {
-    "organismoAuditado": "CAJA SEGURO MUTUAL",
-    "tema": "Auditar Obra: Remodelación Caja Seguro Mutual – 9 de Julio 1257 ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MINISTERIO DE PLANIFICACIÓN E INFRAESTRUCTURA  PÚBLICA",
+   "Tema": "Refuncionalización Plaza San Martín - La Consulta - San Carlos - Mza (EX-2022-08778555-GDEMZAMESA#MIPIP)"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD  DE LA CIUDAD DE MENDOZA",
-    "tema": "Seguimiento Estado de Obra - Revalorización Veredas - Eje calle Colon ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MINISTERIO DE PLANIFICACIÓN E INFRAESTRUCTURA  PÚBLICA",
+   "Tema": "Remodelación Integral Plaza Sarmiento - Eugenio Bustos - San Carlos - Mza. (EX-2022-08778512- -GDEMZA-MESA#MIPIP)"
   },
   {
-    "organismoAuditado": "INSTITUTO PROVINCIAL DE LA VIVIENDA",
-    "tema": "Auditar Obra: Construcción Bº Aguaribay VI – Junín ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "IPV - INSTITUTO PROVINCIAL DE LA VIVIENDA",
+   "Tema": "Construcción Bº CEC VIII - 3º Etapa -San Martín (EX-2022-8795231- -GDEMZA-IPV)"
   },
   {
-    "organismoAuditado": "INSTITUTO PROVINCIAL DE LA VIVIENDA",
-    "tema": "Auditar Obra: Construcción Bº SOEM  – Rivadavia",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "IPV - INSTITUTO PROVINCIAL DE LA VIVIENDA",
+   "Tema": "Construccion Bº Terrada - Gutierrez -  Maipu  (EX-2023-1494951- -GDEMZA-IPV)"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE LAS HERAS",
-    "tema": "Auditar Obra: Renovación Cubierta Estadio Vicente Polimeni ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE GODOY CRUZ",
+   "Tema": "Construcción Sede Club Villa Martinez (Expte. 1843-S-2023 - Lic. Nº 1263\/2023)"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE LUJÁN DE CUYO",
-    "tema": "Obra: Remodelación Accesibilidad Parque Urbano Lujan",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MINISTERIO DE PLANIFICACIÓN E INFRAESTRUCTURA  PÚBLICA",
+   "Tema": "Sgto Estado de Obra:Refuncionalización y Ampliación Hospital Lencinas (EX2022-02166759-GDEMZA-MESA#MIPIP)"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE SAN MARTÍN",
-    "tema": "Auditar: Juicios de Apremio",
-    "tipoDeAuditoria": "JUICIOS",
-    "toPagedList": 0
+   "OrganismoAuditado": "IPJYC - INSTITUTO PROVINCIAL DE JUEGOS Y CASINOS",
+   "Tema": "Juicios Laborales"
   },
   {
-    "organismoAuditado": "HOSPITAL CENTRAL",
-    "tema": "Auditar: Juicios Laborales",
-    "tipoDeAuditoria": "JUICIOS",
-    "toPagedList": 0
+   "OrganismoAuditado": "IPV - INSTITUTO PROVINCIAL DE LA VIVIENDA",
+   "Tema": "Juicios Laborales"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE SAN MARTÍN",
-    "tema": "Auditar Obra: Alum Pub Vial y en Esp Verdes Av. Eva Perón y Carril Costa Canal",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE LA CIUDAD DE MENDOZA",
+   "Tema": "Juicios Civiles"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE SAN MARTÍN",
-    "tema": "Auditar Obra: Alum Pub Vial y en Esp Verdes Av. Boulogne Sur Mer - Ghellinaza y Abdala ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "IPV - INSTITUTO PROVINCIAL DE LA VIVIENDA",
+   "Tema": "Construcción B° Antártida Argentina I - San Martin  ( EX 2020-02316074-GDMZA-IPV)"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE TUNUYÁN",
-    "tema": "Auditar Obra: Construcción Viviendas en Loteo Bordelongue - Sector 2 (110 unidades) Prog. Casa Propia ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "AYSAM SAPEM",
+   "Tema": "Ampliación Establecimiento Depurador San Carlos (Expte N° 1647-PEAS-98)"
   },
   {
-    "organismoAuditado": "MINISTERIO DE PLANIFICACIÓN E INFRAESTRUCTURA - EMETUR",
-    "tema": "Obra de Remodelación Plaza del Vino ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE LUJAN DE CUYO",
+   "Tema": "Obra Perforación Terrada-Boedo (Expte. 5662\/2023)"
   },
   {
-    "organismoAuditado": "MINISTERIO DE PLANIFICACIÓN E INFRAESTRUCTURA PÚBLICA",
-    "tema": "Seguimiento del Estado de Obra de Reparación Red Troncal Eléctrica y Terminación Servicios - Casa de Gobierno ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE GODOY CRUZ",
+   "Tema": "Urbanización Bulevar Pedro Goyena (Expte. 2023-002476-S1-GC - Lic. N° 1329\/2023)"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE GODOY CRUZ",
-    "tema": "Auditar Obra: Obra Plan de Peatonalización Ejes Comerciales Calles Perito Moreno Colon y T. Benegas ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE GODOY CRUZ",
+   "Tema": "Obra Espacio de Contención Social (Lic. Pub. N° 1361\/2022 - Expte. 2022-1922-S1-GC)"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE GUAYMALLÉN",
-    "tema": "Seguimiento del Estado de Obra de Red de Gas en Calle Godoy Cruz entre c/Urquiza y La Purísima. Villa Nueva ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "IPV - INSTITUTO PROVINCIAL DE LA VIVIENDA",
+   "Tema": "Loteo UOCRA - Maipú (EX2022-4268228- -GDEMZA-IPV)"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE SANTA ROSA",
-    "tema": "Auditar Obra: Construcción Calle Alberdi de la Villa Cabecera ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE LAS HERAS",
+   "Tema": "Losas de Hormigon en la Vía Pública (Expte. N° 35377-M-2022)"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE SANTA ROSA",
-    "tema": "Auditar Obra: Construcción Calle Alberdi de la Villa Cabecera ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE GODOY CRUZ",
+   "Tema": "Juicios de Apremio - Multas de Transito"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE GODOY CRUZ",
-    "tema": "Auditar: Juicios de Apremio",
-    "tipoDeAuditoria": "JUICIOS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE JUNIN",
+   "Tema": "Juicios Laborales"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE MAIPÚ",
-    "tema": "Auditar: Juicios Laborales",
-    "tipoDeAuditoria": "JUICIOS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE LAVALLE",
+   "Tema": "Juicios Laborales"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE GODOY CRUZ",
-    "tema": "Auditar: Juicios Civiles",
-    "tipoDeAuditoria": "JUICIOS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE LUJAN DE CUYO",
+   "Tema": "Juicios Civiles"
   },
   {
-    "organismoAuditado": "AYSAM - UNIDAD DE FINANCIAMIENTO INTERNACIONAL",
-    "tema": "Seguimiento Estado de Obra - Sist Integ de Recolección y Tratamiento de Efluentes Cdad. de Malargüe",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE GODOY CRUZ",
+   "Tema": "Refuncionalización calles Mitre y Lencinas (Expte. 3183-S-2023 - Lic. Pub. Nº 1374\/2023)"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE MALARGUE",
-    "tema": "Seguimiento Estado de Obra - Centro de Interpretación - Parque Paleontológico Huellas de Dinosaurios",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE MAIPU",
+   "Tema": "Mejoras Plaza Bº Viejo Tonel - Distrito Ciudad - Maipú (Expte Nº 419\/2023)"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE SAN RAFAEL",
-    "tema": "Auditar Obra: Construcción Casa de la Mujer  ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE LA CIUDAD DE MENDOZA",
+   "Tema": "Refuncionalización calle San Juan - tramo Zapata-Cordoba (Expte. 2088\/2033)"
   },
   {
-    "organismoAuditado": "OBRA SOCIAL DE EMPLEADOS PÚBLICOS",
-    "tema": "Auditar Obra: Ampliac y Refunc Guardia Hosp El Carmen ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE LAS HERAS",
+   "Tema": "Provisión de Materiales y Mano de Obra p\/Construcción de Predio Deportivo (Expte. 34771-M-2022)"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE SANTA ROSA",
-    "tema": "Auditar Obra: Construcción Bº Municipal - La Dormida",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE GODOY CRUZ",
+   "Tema": "Terminaciones e Intervención Estructural cuerpo “C” y “J3” conjunto arquitectónico ex Bodega Arizú (Expte. 2023-3297\/S1 – G. Cruz –Lic. Nº 1262\/2023)"
   },
   {
-    "organismoAuditado": "INSTITUTO PROVINCIAL DE LA VIVIENDA",
-    "tema": "Auditar Obra: Construcción B° Bransen - Prog. Casa Propia - Rivadavia ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE SANTA ROSA",
+   "Tema": "Construcción Centro Sustentable Santa Rosa (Expte. 4654\/2023)"
   },
   {
-    "organismoAuditado": "INSTITUTO PROVINCIAL DE LA VIVIENDA",
-    "tema": "Auditar Obra: Construcción B° Sta Cecilia - Prog. Casa Propia - San Martín",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE SAN CARLOS",
+   "Tema": "Juicios Laborales"
   },
   {
-    "organismoAuditado": "INSTITUTO PROVINCIAL DE LA VIVIENDA",
-    "tema": "Auditar Obra: Construcción B° Virgen del Rosario - Prog. Casa Propia - Lavalle ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE RIVADAVIA",
+   "Tema": "Juicios Laborales"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE GUAYMALLÉN",
-    "tema": "Auditar Obra: Construcción Plaza Cayetano, Distrito Las Cañas ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "HOSPITAL CARLOS PEREYRA",
+   "Tema": "Juicios Civiles"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE MAIPÚ",
-    "tema": "Auditar: Juicios de Apremio",
-    "tipoDeAuditoria": "JUICIOS",
-    "toPagedList": 0
+   "OrganismoAuditado": "DPV - DIRECCION PROVINCIAL DE VIALIDAD",
+   "Tema": "Obra: Doble Vía Acceso Rivadavia - Junín - San Martin (EX-2022-05556725-GDEMZA-DPV)"
   },
   {
-    "organismoAuditado": "HOSPITAL LAGOMAGGIORE",
-    "tema": "Auditar: Juicios Laborales",
-    "tipoDeAuditoria": "JUICIOS",
-    "toPagedList": 0
+   "OrganismoAuditado": "DPV - DIRECCION PROVINCIAL DE VIALIDAD",
+   "Tema": "Obra: Reconstrucción R.P. Nº 14 - Puente Río Mendoza (EX2022-1260817-GDEMZA-DPV)"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE LAVALLE",
-    "tema": "Auditar Obra: Construcción Viviendas en Colonia Italia (46 unidades) - Prog Casa Propia ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE LAVALLE",
+   "Tema": "Avance de Obra Construcción\/Terminación de Viviendas Sociales - Programa Reconstruir - Expte Nº 10468\/21 - Item 2 - 38 Viviendas"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE LAVALLE",
-    "tema": "Auditar Obra: Construcción Viviendas en Costa de Araujo (28 unidades) - Prog Casa Propia ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE LAVALLE",
+   "Tema": "Avance de Obra Construcción\/Terminación de Viviendas Sociales - Programa Reconstruir - Expte Nº 10468\/21 - Item 5 - 42 Viviendas"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE TUNUYÁN",
-    "tema": "Auditar Obra: Construcción Viviendas en Loteo Bordelongue - Sector 4 (114 unidades) Prog. Casa Propia ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE LAVALLE",
+   "Tema": "Avance de Obra Construcción\/Terminación de Viviendas Sociales - Programa Reconstruir - Expte Nº 10468\/21 - Item 3 - 40 Viviendas"
   },
   {
-    "organismoAuditado": "INSTITUTO PROVINCIAL DE LA VIVIENDA",
-    "tema": "Auditar Obra: Construcción Viviendas en B° Padre Contreras - Villa Tulumaya (14 unidades) -Prog Casa Propia ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE LA CIUDAD DE MENDOZA",
+   "Tema": "Juicios de Apremio - Multas de Transito"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE GUAYMALLEN",
-    "tema": "Auditar Obra: Construcción Centro Cívico en Puente de Hierro - Severo del Castillo 8813 ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE TUNUYAN",
+   "Tema": "Juicios Laborales"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE LAVALLE",
-    "tema": "Auditar Obra: Construcción Viviendas en B° Padre Contreras - Villa Tulumaya (35 unidades) - Prog Casa Propia ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "HOSPITAL CENTRAL",
+   "Tema": "Juicios Laborales"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE LA CIUDAD DE MENDOZA",
-    "tema": "Auditar Obra: Remodelación Integral de Av. Mitre entre Av. Godoy Cruz y c/Coronel Plaza",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE TUPUNGATO",
+   "Tema": "Juicios Civiles"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE LAS HERAS",
-    "tema": "Auditar: Juicios de Apremio",
-    "tipoDeAuditoria": "JUICIOS",
-    "toPagedList": 0
+   "OrganismoAuditado": "DGI - DEPARTAMENTO GENERAL DE IRRIGACIÓN",
+   "Tema": "Revestimiento Tramo Rama Morales (Expte. 805.564- 2024)"
   },
   {
-    "organismoAuditado": "HOSPITAL HUMBERTO NOTTI",
-    "tema": "Auditar: Juicios Laborales",
-    "tipoDeAuditoria": "JUICIOS",
-    "toPagedList": 0
+   "OrganismoAuditado": "DGI - DEPARTAMENTO GENERAL DE IRRIGACIÓN",
+   "Tema": "Mantenimiento Compuerta Nº 1 Y Nº 2 en Cámara Desripiadora y Compuerta Nº 3 en Azud Móvil - Dique Cipolletti (Expte. 806.090-2024)"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE LA CIUDAD DE MENDOZA",
-    "tema": "Auditar: Juicios Civiles",
-    "tipoDeAuditoria": "JUICIOS",
-    "toPagedList": 0
+   "OrganismoAuditado": "UCPP - DGE - UNIDAD COORDINADORA PROGRAMAS Y PROYECTOS",
+   "Tema": "Ampliación Escuela Nº 0-150 Prof. Rosemar y Scalabrella - Guaymallen - Prog. 46 (EX-6682381- - GDEMZA-MESA#DGE  Y Otros)"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE LAS HERAS",
-    "tema": "Auditar Obra: Sistema de Provisión de Agua Potable Pedemonte Norte - Las Heras ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MINISTERIO DE GOBIERNO, INFRAESTRUCTURA Y DESARROLLO TERRITORIAL",
+   "Tema": "Obra de Refuncionalización de la Ex BoleterÍa - Ecoparque - Mendoza (EX-2023-03921744- -GDEMZA-APOT#SAYOT)"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE RIVADAVIA",
-    "tema": "Auditar: Juicios de Apremios",
-    "tipoDeAuditoria": "JUICIOS",
-    "toPagedList": 0
+   "OrganismoAuditado": "IPV - INSTITUTO PROVINCIAL DE LA VIVIENDA",
+   "Tema": "Obra Bº Bonfanti - Rodeo de la Cruz (EX-2021-08001146-GDEMZA-IPV)"
   },
   {
-    "organismoAuditado": "OBRA SOCIAL DE EMPLEADOS PÚBLICOS",
-    "tema": "Auditar: Juicios Laborales",
-    "tipoDeAuditoria": "JUICIOS",
-    "toPagedList": 0
+   "OrganismoAuditado": "IPV - INSTITUTO PROVINCIAL DE LA VIVIENDA",
+   "Tema": "Obra: Bº El Prado 3º Etapa - Rodeo de la Cruz (EX 2022-02314427-GDEMZA-IPV)"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE GUAYMALLÉN",
-    "tema": "Auditar: Juicios Civiles",
-    "tipoDeAuditoria": "JUICIOS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE LUJAN DE CUYO",
+   "Tema": "Obra de urbanización hormigones en el Distrito Carrodilla – Etapa 1 (Expte. Nº  2774\/2024 - Lic. Nº 125\/24)"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE LUJÁN DE CUYO",
-    "tema": "Auditar Obra: Consolidación Espacios Públicos en Distrito de Carrodilla. ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MINISTERIO DE PLANIFICACIÓN E INFRAESTRUCTURA  PÚBLICA",
+   "Tema": "Obra: Construcción Centro de Salud Nº 76 Dr. Persico - Palmira - San Martin (EX2022-04780032-GDEMZA-SEGE#MSDSYD)"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE LUJÁN DE CUYO",
-    "tema": "Auditar Obra: Construcción Plaza Rincón de Agrelo) ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE GODOY CRUZ",
+   "Tema": "Juicios Laborales"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE MAIPÚ",
-    "tema": "Auditar Obra: Mantenimiento, recuperación y Conservación Infr. Urbana: Reconstr laterales Calle Paso y Ciclovía ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE SAN MARTIN",
+   "Tema": "Juicios de Apremios"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE MAIPÚ",
-    "tema": "Auditar Obra: Construcción Escuela Municipal",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE RIVADAVIA",
+   "Tema": "Obra Cubierta Techo Polideportivo - Nota 9041\/24"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE GODOY CRUZ",
-    "tema": "Auditar Obra: Construcción 2º Etapa Calle 9 de Julio ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "AYSAM SAPEM",
+   "Tema": "Optimización Sistema de Macrodistribución Gran Mendoza (Exte. N° 557 - PEAS- 00)"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE RIVADAVIA",
-    "tema": "Auditar Obra: Construcción Ampliación Centro de Estudios Terciarios ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "AYSAM SAPEM",
+   "Tema": "Ampliación Establecimiento Depurador Palmira (Exte. N° 1042 - PEAS- 00)"
   },
   {
-    "organismoAuditado": "HOSPITAL PEREYRA",
-    "tema": "Auditar: Juicios Laborales",
-    "tipoDeAuditoria": "JUICIOS",
-    "toPagedList": 0
+   "OrganismoAuditado": "UCPP - DGE - UNIDAD COORDINADORA PROGRAMAS Y PROYECTOS",
+   "Tema": "Obra Escuela N° 4-123 s\/Nombre - La Consulta - San Carlos (EX2023-03173089- -GDEMZA-MESA+DGE)"
   },
   {
-    "organismoAuditado": "HONORABLE TRIBUNAL DE CUENTAS ",
-    "tema": "´Fideicomiso Fondo Integral Socio Urbana´ Auditar Obra: Construcción 78 Viviendas en B° Gral San Martín.",
-    "tipoDeAuditoria": "JUICIOS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE SAN MARTIN",
+   "Tema": "Obra de Urbanización en Barrio CEC VIII -3° Etapa (Expte. 994-D-2024)"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE LAVALLE",
-    "tema": "Auditar Obra: Reacondicionamiento Ciclo 1 y Ampliación Ciclo 2 - Frigorífico Municipal - Seguimiento Estado de la Obra",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE SANTA ROSA",
+   "Tema": "Construcción Polo Educativo Villa Cabecera-Santa Rosa (Exte. 9061\/2022)"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE MALARGUE",
-    "tema": "Auditar Obra: Centro de Interpretación - Parque Paleontológico Huellas de Dinosaurios - Actualización de Inf. Nº 039/23",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE SAN MARTIN",
+   "Tema": "Juicios Laborales"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE LUJÁN DE CUYO",
-    "tema": "Auditar Obra: Paseo de las Estaciones - Seguimiento Estado de la Obra",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE TUPUNGATO",
+   "Tema": "Juicios Laborales"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE LA PAZ",
-    "tema": "Auditar Obra: Construcción Cordón, Banquina y Adoquinado Bº Quiroga - Seguimiento Estado de la Obra",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "HOSPITAL CENTRAL",
+   "Tema": "Juicios Civiles"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE LA PAZ",
-    "tema": "Auditar Obra: Construcción Centro Educativo - La Paz",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "DGI - DEPARTAMENTO GENERAL DE IRRIGACIÓN",
+   "Tema": "Entubado Arroyo El Olmo (Subdelegación Tunuyán Sup)  Expediente Nº 792771"
   },
   {
-    "organismoAuditado": "AYSAM",
-    "tema": "Auditar Obra:  Renov. y Adec. de Redes Colectoras Cloacales de Godoy Cruz. Colector Centro - Trasvase de Cuenca ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE SAN MARTIN",
+   "Tema": "Construcción de Escuela de Oficios - Expediente Nº 6808\/2022"
   },
   {
-    "organismoAuditado": "AYSAM",
-    "tema": "Auditar Obra: Renovación Colector Cloacal Calle San Juan - Morón - Cdad - Mza ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "IPV - INSTITUTO PROVINCIAL DE LA VIVIENDA",
+   "Tema": "Construcción Bº LA SUPERIORA II -San Carlos (EX-2023-00428451- -GDEMZA-IPV)"
   },
   {
-    "organismoAuditado": "INSTITUTO PROVINCIAL DE LA VIVIENDA",
-    "tema": "Auditar Obra: Construcción Bº El Recodo II - Maipú ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "IPV - INSTITUTO PROVINCIAL DE LA VIVIENDA",
+   "Tema": "Construccion Bº LOS VIÑEDOS 2º ETAPA - San Carlos  (EX-2022-02063361- -GDEMZA-IPV)"
   },
   {
-    "organismoAuditado": "INSTITUTO PROVINCIAL DE LA VIVIENDA",
-    "tema": "Auditar Obra: Construcción Bª Vista Olivo II - Las Heras ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE LUJAN DE CUYO",
+   "Tema": "Intervenciones en Espacios Públicos - Ugarteche-1º Etapa. Licitación Privada Nº 2006\/24"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE GUAYMALLÉN",
-    "tema": "Auditar: Juicios de Apremio",
-    "tipoDeAuditoria": "JUICIOS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE GUAYMALLEN",
+   "Tema": "Provisión de Mano de Obra, Equipo, Herramientas y Totalidad de Materiales p\/Const. de Intervenciones Urbanas en Calles Vs. - Etapa 35 (Expte. 912\/2024 - Lic Nº 1020)"
   },
   {
-    "organismoAuditado": "HOSPITAL EL SAUCE",
-    "tema": "Auditar: Juicios Civiles",
-    "tipoDeAuditoria": "JUICIOS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE LAVALLE",
+   "Tema": "Juicios Apremio"
   },
   {
-    "organismoAuditado": "UNIDAD DE FINANCIAMIENTO INTERNACIOANL- DIRECCIÓN PROVINCIAL DE VIALIDAD",
-    "tema": "Tercer Sgto Estado de Obra: Refuncionalización Ruta Prov. N°82 -. Tramo II (Intersección Ruta Panamericana y Corredor del Oeste - Gdor Ortíz.",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "HOSPITAL DIEGO PAROISSIEN",
+   "Tema": "Juicios Laborales"
   },
   {
-    "organismoAuditado": "MINISTERIO DE PLANIFICACIÓN E INFRAESTRUCTURA PÚBLICA",
-    "tema": "Auditar Obra \"Recinto Monos Papiones y Cierre Parcial del Predio - Ecoparque Mendoza\"",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "DPV - DIRECCION PROVINCIAL DE VIALIDAD",
+   "Tema": "Juicios Laborales"
   },
   {
-    "organismoAuditado": "DEPARTAMENTO PROVINCIAL DE LA VIVIENDA",
-    "tema": "Auditar Construcción Rotonda R.P. Nº50 y C/Miguez. Departamento  San Martín. ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "ISCAMEN - INSTITUTO DE SANIDAD Y CALIDAD AGROPECUARIA MENDOZA",
+   "Tema": "Juicios Laborales"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE GUAYMALLÉN",
-    "tema": "Auditar Construcción Jardin Maternal Amiguitos",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "DGI - DEPARTAMENTO GENERAL DE IRRIGACIÓN",
+   "Tema": "Entubado Hijuela Villalobos (Subdelegación Tunuyán Sup)  Expediente Nº 792759"
   },
   {
-    "organismoAuditado": "INSTITUTO PROVINCIAL DE LA VIVIENDA",
-    "tema": "Auditar Construcción Bº  Don Sebastián - Junin ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE LUJAN DE CUYO",
+   "Tema": "Obra de Intervención del Espacio Público Vistalba Luján – Bº 27 de Abril (Expte. Nº 3380-2024 - Lic. Nº 1140\/24)"
   },
   {
-    "organismoAuditado": "INSTITUTO PROVINCIAL DE LA VIVIENDA",
-    "tema": "Auditar Construcción Bº  Los Horneros - Tupungato ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "IPV - INSTITUTO PROVINCIAL DE LA VIVIENDA",
+   "Tema": "BARRIO IPV BARRIO ALTO LUJAN NORTE EXPEDIENTE 2022EX-202202315037-GDEMZA-IPV"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE GODOY CRUZ",
-    "tema": "Auditar Plan de Peatonalización y Fortalecimiento de Ejes Comerciales s/Av. San Martin ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "UCPP - DGE - UNIDAD COORDINADORA PROGRAMAS Y PROYECTOS",
+   "Tema": "Construcción Jardin de Infantes- Escuela N° 4-1385 San José Guaymallén (EX2022-01745046- -GDEMZA-MESA-DGE)"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE LA CIUDAD DE MENDOZA",
-    "tema": "Remodelación Plaza Los Constituyentes ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE GODOY CRUZ",
+   "Tema": "Obras Departamentales Etapa 3 - Expediente 2024\/415\/S1-GC"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE MAIPÚ",
-    "tema": "Auditar Juicios de Apremios - Multas de Transito",
-    "tipoDeAuditoria": "JUICIOS",
-    "toPagedList": 0
+   "OrganismoAuditado": "AYSAM SAPEM",
+   "Tema": "Juicios Apremio"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE SAN MARTIN",
-    "tema": "Auditar Juicios Laborales",
-    "tipoDeAuditoria": "JUICIOS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE LUJAN DE CUYO",
+   "Tema": "Juicios Laborales"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE LUJAN DE CUYO",
-    "tema": "Auditar Juicios de Apremio",
-    "tipoDeAuditoria": "JUICIOS",
-    "toPagedList": 0
+   "OrganismoAuditado": "HOSPITAL EL SAUCE",
+   "Tema": "Juicios Laborales"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE TUPUNGATO",
-    "tema": "Auditar Juicios Laborales",
-    "tipoDeAuditoria": "JUICIOS",
-    "toPagedList": 0
+   "OrganismoAuditado": "IPV - INSTITUTO PROVINCIAL DE LA VIVIENDA",
+   "Tema": "Juicios Civiles"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE LA CIUDAD DE MENDOZA",
-    "tema": "Auditar Obra \"Recuperación y puesta en valor del cuadro 33 para Sitio de Memoria.  Primera etapa\".",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE SAN RAFAEL",
+   "Tema": "Construcción Carpeta Asfáltica – Expediente Nº 16218-S-2024"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE SAN RAFAEL",
-    "tema": "Obra Construcción Gasoducto p/Provisión de Gas Natural \"Proyecto Gas Andes\"",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE TUNUYAN",
+   "Tema": "Contratación de Mano de Obra Con Materiales Ampliación Cementerio de Tunuyán (Expte.. 1972-2024 - Lic. Nº  2282\/2024)"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE SAN RAFAEL",
-    "tema": "Obra Construcción Centro de Jubilados Villa 25 de Mayo",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE TUNUYAN",
+   "Tema": "Contratación de Mano de Obra Con Materiales Ampliación Cementerio de Vista Flores - Tunuyán (Expte. 760-2024 - Lic. Nº 2283\/2024)"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE TUNUYÁN",
-    "tema": "Construcción Calzada con Concreto Asfaltico - Parque Lombardía",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "IPV - INSTITUTO PROVINCIAL DE LA VIVIENDA",
+   "Tema": "Construcción Barrio Viejo Viñedo Nº EX-2023-00513689-GDEMZA-IPV - Tupungato"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE TUNUYÁN",
-    "tema": "Construcción Calzada con Concreto Asfaltico en Calles Aledañas a RN N°40 ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "AYSAM SAPEM",
+   "Tema": "Entubado Arroyo El Olmo (Subdelegación Tunuyán Sup)  Expediente Nº 792771"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE GODOY CRUZ",
-    "tema": "MUNICIPALIDAD DE GODOY CRUZ\tObra: Infraestructura Vial Lateral Acceso Sur - Godoy Cruz ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE JUNIN",
+   "Tema": "Construcción de Escuela de Oficios - Expediente Nº 6808\/2022"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE GUAYMALLEN",
-    "tema": "Obra: Recuperación y Ordenamiento de Espacio Público en C/Mathus Hoyos entre Costanera y Teniente Ibáñez ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE MAIPU",
+   "Tema": "Juicios Apremio - Multas de Tránsito"
   },
   {
-    "organismoAuditado": "INSTITUTO PROVINCIAL DE LA VIVIENDA",
-    "tema": "Construcción B° San Ignacio - Las Heras ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MIPIP",
+   "Tema": "Segto. Estado de Obra: Remodelación Hospital Gailhac"
   },
   {
-    "organismoAuditado": "INSTITUTO PROVINCIAL DE LA VIVIENDA",
-    "tema": "Construcción B° San Joaquin - Las Heras ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "Unidad de Financiamiento Internacioanl- Dirección Provincial de Vialidad",
+   "Tema": "Cuarto Sgto Estado de Obra: Refuncionalización Ruta Prov. N°82 -. Tramo II (Intersección Ruta Panamericana y Corredor del Oeste - Gdor Ortíz. - EX2019-05779675-GDEMZA-DPV#MEIYE)"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE GUAYMALLEN",
-    "tema": "Juicios de Apremio - Multas de Transito",
-    "tipoDeAuditoria": "JUICIOS",
-    "toPagedList": 0
+   "OrganismoAuditado": "D.G.I.",
+   "Tema": "Seguimiento al Estado de Obra: Modernización Sistema de Riego Hijuela Esteban - Rio Mendoza - Lote 1(Expte. 787225)"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE MAIPÚ",
-    "tema": "Juicios de Apremio - Actualizacion de estado",
-    "tipoDeAuditoria": "JUICIOS",
-    "toPagedList": 0
+   "OrganismoAuditado": "D.G.I.",
+   "Tema": "Seguimiento al Estado de Obra: Modernización Sistema de Riego Hijuela Esteban - Rio Mendoza - Lote 2 y Reservorio (Expte. 794478)"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE LAS HERAS",
-    "tema": "Juicios Laborales",
-    "tipoDeAuditoria": "JUICIOS",
-    "toPagedList": 0
+   "OrganismoAuditado": "Municipalidad de Lavalle",
+   "Tema": "Seguimiento Estado de Obra: Conexión Sistema de Agua Potable Jocoli - Convenio c\/ENOHSA (Expte. 11913\/2021)"
   },
   {
-    "organismoAuditado": "HOSPITAL DIEGO PAROISIEN",
-    "tema": "Juicios Laborales",
-    "tipoDeAuditoria": "JUICIOS",
-    "toPagedList": 0
+   "OrganismoAuditado": "Municipalidad de Lavalle",
+   "Tema": "Seguimiento Estado de Obra:  Intervención Integral Urbana en Tulumaya, Barrio Belgrano"
   },
   {
-    "organismoAuditado": "STM - SOCIEDAD DE TRANSPORTE DE MZA.",
-    "tema": "Auditar Obra Metrotranvia de Mendoza - Tercer y Cuarta Etapa",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "Municipalidad de Lavalle",
+   "Tema": "Seguimiento Estado de Obra: Intervención Integral Urbana en Tulumaya, Loteo Musri"
   },
   {
-    "organismoAuditado": "OBRA SOCIAL DE EMPLEADOS PÚBLICOS",
-    "tema": "Seguimiento Estado de Obra - Ampliac y Refunc Guardia Hosp El Carmen",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "Municipalidad de Lavalle",
+   "Tema": "Seguimiento Estado de Obra:  Intervención Integral Urbana en Tulumaya, Loteo La Solita"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE GODOY CRUZ",
-    "tema": "Auditar Obra: Ampliación y Reparación Centro de Salud Dr. Arturo Illia y Don Andrés Martin",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "OSEP",
+   "Tema": "Seguimiento Estado de Obra - Ampliac y Refunc Guardia Hosp El Carmen -Adicionales de Obra - Expte. 2023-09925516, 2024 1354871, 20241700788"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE GODOY CRUZ",
-    "tema": "Auditar Obra: Ampliación y Reparación Centro de Salud Dr. Arturo Illia y Don Andrés Martin",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
+   "OrganismoAuditado": "Unidad de Financiamiento Internacioanl- Dirección Provincial de Vialidad",
+   "Tema": "Quinto Sgto Estado de Obra: Refuncionalización Ruta Prov. N°82 -. Tramo II (Intersección Ruta Panamericana y Corredor del Oeste - Gdor Ortíz. - EX2019-05779675-GDEMZA-DPV#MEIYE)"
   },
   {
-    "organismoAuditado": "MUNICIPALIDAD DE LUJAN DE CUYO",
-    "tema": "Auditar Obra: Construcción Plaza B° Rincón de Vistalba ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
-  },
-  {
-    "organismoAuditado": "MUNICIPALIDAD DE LUJAN DE CUYO",
-    "tema": "Auditar Obra: Nexos Red de Agua Potable en Distintas Zonas del Departamento ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
-  },
-  {
-    "organismoAuditado": "MUNICIPALIDAD DE GUAYMALLEN",
-    "tema": "Auditar Obra: Recuperación y Ordenamiento de Espacio Público en      C/ Avellaneda entre Mathus Hoyos y Canal Lagunita – Tramo 5 ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
-  },
-  {
-    "organismoAuditado": "MUNICIPALIDAD DE MAIPÚ",
-    "tema": "Auditar Obra: Repavimentación de Calzadas en Ciclovía del Parque Metropolitano, calles del B° San Francisco y c/ Pescara. ",
-    "tipoDeAuditoria": "OBRAS",
-    "toPagedList": 0
-  },
-  {
-    "organismoAuditado": "MUNICIPALIDAD DE MENDOZA",
-    "tema": "Auditar Juicios de Apremio",
-    "tipoDeAuditoria": "JUICIOS",
-    "toPagedList": 0
+   "OrganismoAuditado": "MUNICIPALIDAD DE SAN RAFAEL",
+   "Tema": "Sgto. Estado de obra: Demolición Edif. Vieja Terminal San Rafael - Construcción Locales Comerciales, Cocheras, Ofic. (Exp Nº 12618-S-22)"
   }
-]
+ ]

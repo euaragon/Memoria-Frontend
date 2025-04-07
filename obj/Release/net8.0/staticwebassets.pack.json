@@ -145,18 +145,6 @@
       "PackagePath": "staticwebassets\\img\\firma-nestor-pares.png"
     },
     {
-      "Id": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\img\\fondo-memoria-dark.png",
-      "PackagePath": "staticwebassets\\img\\fondo-memoria-dark.png"
-    },
-    {
-      "Id": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\img\\fondo-memoria.jpg",
-      "PackagePath": "staticwebassets\\img\\fondo-memoria.jpg"
-    },
-    {
-      "Id": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\img\\fondo-memoria.png",
-      "PackagePath": "staticwebassets\\img\\fondo-memoria.png"
-    },
-    {
       "Id": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\img\\gestion.png",
       "PackagePath": "staticwebassets\\img\\gestion.png"
     },
@@ -175,10 +163,6 @@
     {
       "Id": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\img\\nestor-pares.png",
       "PackagePath": "staticwebassets\\img\\nestor-pares.png"
-    },
-    {
-      "Id": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\img\\organigrama.jpg",
-      "PackagePath": "staticwebassets\\img\\organigrama.jpg"
     },
     {
       "Id": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\img\\organigrama.png",
@@ -213,32 +197,24 @@
       "PackagePath": "staticwebassets\\img\\tribunal-de-cuentas.png"
     },
     {
-      "Id": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\img\\twitter.jpg",
-      "PackagePath": "staticwebassets\\img\\twitter.jpg"
+      "Id": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\img\\version-teatro\\encarnacion-gira-1.jpeg",
+      "PackagePath": "staticwebassets\\img\\version-teatro\\encarnacion-gira-1.jpeg"
     },
     {
-      "Id": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\img\\version-teatro\\actrices.jpg",
-      "PackagePath": "staticwebassets\\img\\version-teatro\\actrices.jpg"
+      "Id": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\img\\version-teatro\\encarnacion-gira-2.jpeg",
+      "PackagePath": "staticwebassets\\img\\version-teatro\\encarnacion-gira-2.jpeg"
     },
     {
-      "Id": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\img\\version-teatro\\afiche.jpg",
-      "PackagePath": "staticwebassets\\img\\version-teatro\\afiche.jpg"
+      "Id": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\img\\version-teatro\\espacio-ludico-teatro-2.jpeg",
+      "PackagePath": "staticwebassets\\img\\version-teatro\\espacio-ludico-teatro-2.jpeg"
     },
     {
-      "Id": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\img\\version-teatro\\agasajo.jpg",
-      "PackagePath": "staticwebassets\\img\\version-teatro\\agasajo.jpg"
+      "Id": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\img\\version-teatro\\espacio-ludico-teatro.jpeg",
+      "PackagePath": "staticwebassets\\img\\version-teatro\\espacio-ludico-teatro.jpeg"
     },
     {
-      "Id": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\img\\version-teatro\\diego rios.jpg",
-      "PackagePath": "staticwebassets\\img\\version-teatro\\diego rios.jpg"
-    },
-    {
-      "Id": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\img\\version-teatro\\resolucion.jpg",
-      "PackagePath": "staticwebassets\\img\\version-teatro\\resolucion.jpg"
-    },
-    {
-      "Id": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\img\\version-teatro\\staff.jpg",
-      "PackagePath": "staticwebassets\\img\\version-teatro\\staff.jpg"
+      "Id": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\img\\version-teatro\\lita-tancredi.jpg",
+      "PackagePath": "staticwebassets\\img\\version-teatro\\lita-tancredi.jpg"
     },
     {
       "Id": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\index.html",
@@ -251,6 +227,10 @@
     {
       "Id": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\sample-data\\Copia de cuentas.json",
+      "PackagePath": "staticwebassets\\sample-data\\Copia de cuentas.json"
     },
     {
       "Id": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\sample-data\\audExt.json",

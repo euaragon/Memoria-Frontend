@@ -40,99 +40,120 @@ document.addEventListener("click", function (event) {
     }
 });
 
+let chartInstance = null;
+let chartInstanceIndex = null;
 
-function cuadroFallosIndex() {
-   
-    const ctx = document.getElementById('cuadro-fallos-index');
 
-    const data = {
-        labels: [
-            'Descentralizadas I',
-            'Descentralizadas II',
-            'Recursos',
-            'Gobierno',
-            'Municipalidades',
-            'DAEC'
-        ],
-        datasets: [{
-            label: 'Cuentas falladas en 2024',
-            data: [50, 25, 24, 44, 24, 5],
-            hoverOffset: 4
-        }]
-    };
+window.cuadroFallosIndex = () => {
+    fetch('sample-data/cuentas.json')
+        .then(response => response.json())
+        .then(data => {
+            // Contar la cantidad de fallos por área
+            const conteoAreas = {};
+            data.forEach(item => {
+                const area = item.Area;
+                conteoAreas[area] = (conteoAreas[area] || 0) + 1;
+            });
 
-    const options = {
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero: true,
-                    max: 70,
+            // Preparar los datos para el gráfico
+            const labels = Object.keys(conteoAreas);
+            const cantidades = Object.values(conteoAreas);
+
+            // Crear el gráfico de pastel
+            const ctx = document.getElementById('cuadro-fallos-index').getContext('2d');
+            new Chart(ctx, {
+                type: 'pie',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Cuentas falladas en 2024',
+                        data: cantidades,
+                        backgroundColor: [ // Colores para cada segmento del pastel
+                            'rgb(255, 99, 133)',
+                            'rgba(54, 162, 235)',
+                            'rgba(255, 206, 86)',
+                            'rgba(75, 192, 192)',
+                            'rgba(153, 102, 255)',
+                            'rgba(255, 159, 64)'
+                        ],
+                        hoverOffset: 4
+                    }]
+                },
+                options: {
+                    legend: {
+                        display: true,
+                        position: 'bottom',
+                        labels: {
+                            fontColor: '#333',
+                            fontSize: 12,
+                        }
+                    }
                 }
-            }]
-        },
-        legend: {
-            display: true,
-            position: 'bottom',
-            labels: {
-                fontColor: '#333',
-                fontSize: 12,
+            });
+        });
+};
+
+
+
+window.cuadroFallosCuentas = () => {
+    fetch('sample-data/cuentas.json')
+        .then(response => response.json())
+        .then(data => {
+            const conteoAreas = {};
+            data.forEach(item => {
+                const area = item.Area;
+                conteoAreas[area] = (conteoAreas[area] || 0) + 1;
+            });
+
+            const labels = Object.keys(conteoAreas);
+            const cantidades = Object.values(conteoAreas);
+
+            const ctx = document.getElementById('cuadro-fallos-cuentas').getContext('2d');
+
+            // Destruir instancia previa si existe
+            if (chartInstance) {
+                chartInstance.destroy();
             }
-        }
-    };
 
-    const myChart = new Chart(ctx, {
-        type: 'pie',
-        data: data,
-        options: options
-    });
-}
-
-function cuadroFallosCuentas() {
-
-    const ctx = document.getElementById('cuadro-fallos-cuentas');
-
-    const data = {
-        labels: [
-            'Descentralizadas I',
-            'Descentralizadas II',
-            'Recursos',
-            'Gobierno',
-            'Municipalidades',
-            'DAEC'
-        ],
-        datasets: [{
-            label: 'Cuentas falladas en 2024',
-            data: [50, 25, 24, 44, 24, 5],
-            hoverOffset: 4
-        }]
-    };
-
-    const options = {
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero: true,
-                    max: 70,
+            chartInstance = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Cuentas falladas en 2024',
+                        data: cantidades,
+                        backgroundColor: '#42A5F5',
+                        hoverOffset: 4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: Math.max(...cantidades) + 5
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'bottom',
+                            labels: {
+                                color: '#333',
+                                font: {
+                                    size: 12
+                                }
+                            }
+                        }
+                    }
                 }
-            }]
-        },
-        legend: {
-            display: true,
-            position: 'bottom',
-            labels: {
-                fontColor: '#333',
-                fontSize: 12,
-            }
-        }
-
-    };
-
-    const myChart = new Chart(ctx, {
-        type: 'bar',
-        data: data,
-        options: options
-    });
-}
+            });
+        })
+        .catch(error => {
+            console.error('Error cargando datos:', error);
+        });
+};
 
 
 
@@ -141,7 +162,7 @@ function Fiscalizadora() {
     const ctx = document.getElementById('fiscalizadora').getContext('2d');
 
     const data = {
-        labels: ['IV 2023', 'I 2024', 'II 2024', 'III 2022'],
+        labels: ['IV 2023', 'I 2024', 'II 2024', 'III 2024'],
         datasets: [{
             label: 'Cumplieron con todos los requisitos',
             data: [70, 71, 78, 78],
@@ -183,39 +204,52 @@ function Fiscalizadora() {
 function Recursos() {
     const ctx = document.getElementById('personal');
 
-
     const data = {
         labels: [
-           'Bioingenieros','Arquitectos', 'Analistas','Profesores y Técnicos', 'Servicios Generales', 'Ingenieros', 'Abogados y Procuradores', 'Licenciados', 'Contadores', 'Contratos de Locación', 'En Comisión'
+            'Bioingenieros', 'Arquitectos', 'Analistas', 'Profesores y Técnicos',
+            'Servicios Generales', 'Ingenieros', 'Abogados y Procuradores',
+            'Licenciados', 'Contadores', 'Contratos de Locación', 'En Comisión'
         ],
         datasets: [{
             label: "Cantidad",
-            data: [1,3,5,16,56,7,30,30,119,3,1],
+            data: [1, 3, 5, 16, 56, 7, 30, 30, 119, 3, 1],
+            backgroundColor: [
+                '#2c3e50'
+            ],
             hoverOffset: 4
         }]
     };
 
     const options = {
         scales: {
-            yAxes: [{
+            y: {
+                beginAtZero: true,
+                max: 70,
                 ticks: {
-                    beginAtZero: true,
-                    max: 70,
+                    color: '#333'
                 }
-            }]
+            },
+            x: {
+                ticks: {
+                    color: '#333'
+                }
+            }
         },
-        legend: {
-            display: true,
-            position: 'bottom',
-            labels: {
-                fontColor: '#333',
-                fontSize: 10,
+        plugins: {
+            legend: {
+                display: true,
+                position: 'bottom',
+                labels: {
+                    color: '#333',
+                    font: {
+                        size: 10
+                    }
+                }
             }
         }
-
     };
 
-    const myChart = new Chart(ctx, {
+    new Chart(ctx, {
         type: 'bar',
         data: data,
         options: options
@@ -223,56 +257,6 @@ function Recursos() {
 }
 
 
-function Jornadas() {
-    const ctx = document.getElementById('jornada').getContext('2d');
-
-    const data = {
-        labels: [
-            "BUENOS AIRES",
-            "CATAMARCA",
-            "CHACO",
-            "ENTRE RÍOS",
-            "FORMOSA",
-            "JUJUY",
-            "MENDOZA",
-            "RÍO NEGRO",
-            "SAN JUAN",
-            "SANTA FE"
-        ],
-        datasets: [{
-            label: 'CANTIDAD DE TRABAJOS PRESENTADOS',
-            data: [3, 4, 3, 3, 1, 1, 10, 1, 3, 1],
-            hoverOffset: 4
-        }]
-    };
-
-    const options = {
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero: true,
-                    max: 70,
-                }
-            }]
-        },
-        legend: {
-            display: true,
-            position: 'bottom',
-            labels: {
-                fontColor: '#333',
-                fontSize: 12,
-            }
-        }
-    };
-
-    const myChart = new Chart(ctx, {
-        type: 'pie',
-        data: data,
-        options: options
-    });
-
-
-}
 
 function Calidad() {
     const ctx = document.getElementById('calidad').getContext('2d');

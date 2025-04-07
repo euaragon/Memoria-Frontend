@@ -11,10 +11,12 @@
     Un Fallo es una resolución que aprueba o no las rendiciones de los Organismos a cargo de fondos públicos
     provinciales o municipales; puede aplicar multas o cargos si la administración de dichos fondos no fue llevada de
     acuerdo a las leyes vigentes.
-    <br><br>
-  
-    De conformidad con lo dispuesto por el Art. Nº 69 de la Ley Nº 9.292, se presenta el estado de las cuentas
-    falladas.
+    <br>
+    En el siguiente gráfico se detallan las 175 cuentas falladas durante el año 2024, de la cuales 138 corresponden al
+    ejercicio 2023, 34 a ejercicios anteriores y 3 al ejercicio 2024.
+    <br>
+    De conformidad con lo dispuesto por el Art. Nº 69 de la Ley Nº 9.292, se presenta el estado de las cuentas falladas.
+
 </p>
 
 <div class="mt-5 p-3">
@@ -25,12 +27,13 @@
     <table class="table table-sm table-responsive table-hover mt-5 tabla-aud-esp text-uppercase">
         <thead class="table-group-divider">
             <tr>
-                
+
                 <th class="bg-transparent">Año</th>
                 <th class="bg-transparent">Fallo</th>
-                <th class="bg-transparent">Organismo</th>                
+                <th class="bg-transparent">Organismo</th>
                 <th class="bg-transparent">Fecha</th>
                 <th class="bg-transparent">Expte</th>
+                <th class="bg-transparent">Area</th>
             </tr>
         </thead>
         <tbody>
@@ -44,22 +47,110 @@
                         <td class="bg-transparent">@cuenta.Organismo</td>
                         <td class="bg-transparent">@cuenta.Fecha</td>
                         <td class="bg-transparent">@cuenta.Expediente</td>
+                        <td class="bg-transparent">@cuenta.Area</td>
                     </tr>
                 }
             }
         </tbody>
     </table>
 
-    <div class="d-flex justify-content-center mt-5">
-        <button class="btn btn-secondary me-2" @onclick="PreviousPage" disabled="@(currentPage == 1)">Anterior</button>
+    <div class="d-flex justify-content-center mt-5 align-items-center gap-4">
+        <button class="btn btn-primary me-2" @onclick="PreviousPage" disabled="@(currentPage == 1)">Anterior</button>
         <span>Página @currentPage de @totalPages</span>
-        <button class="btn btn-secondary ms-2" @onclick="NextPage" disabled="@(currentPage == totalPages)">Siguiente</button>
+        <button class="btn btn-primary ms-2" @onclick="NextPage"
+            disabled="@(currentPage == totalPages)">Siguiente</button>
     </div>
 </div>
+<hr>
+<h3 class="mt-5 text-center">Podés buscar un fallo acá</h3>
 
-<NavLink type="button" class="text-black mt-md-5" href="/"> <img class="me-2" width="32" height="32" src="https://img.icons8.com/windows/32/000000/return.png" alt="return" /> VOLVER</NavLink>
+<EditForm Model="@filtros" OnValidSubmit="Buscar">
+    <div class="container mt-4">
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label>Tipo Norma</label>
+                <BSInput InputType="InputType.Select" @bind-Value="filtros.TipoNorma">
+                    <option value="null">Seleccione un tipo de norma</option>
+                    <option value="Resolución">Resolución</option>
+                    <option value="Decreto">Decreto</option>
+                </BSInput>
+               
+            </div>
+            <div class="col-md-3">
+                <label>Número</label>
+                <InputText class="form-control" @bind-Value="filtros.Numero" />
+            </div>
+            <div class="col-md-3">
+                <label>Año</label>
+                <InputText class="form-control" @bind-Value="filtros.Anio" />
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label>Org. Emisor</label>
+
+                <BSInput InputType="InputType.Select" @bind-Value="filtros.OrgEmisor">
+                    <option value="null">Seleccione un organismo emisor</option>
+                    <option value="Tribunal">Tribunal</option>
+                    <option value="Gobierno">Gobierno</option>
+                </BSInput>
+
+            </div>
+            <div class="col-md-6">
+                <label>Org. de Aplicación</label>
+
+                <BSInput InputType="InputType.Select" @bind-Value="filtros.OrgAplicacion">
+                    <option value="null">Seleccione un organismo de aplicación</option>
+                    <option value="TODOS">TODOS</option>
+                </BSInput>
+
+                <div class="form-check mt-1">
+                    <InputCheckbox @bind-Value="filtros.IncluirTodos" class="form-check-input" id="todosCheck" />
+                    <label class="form-check-label" for="todosCheck">Incluir "[TODOS]"</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-12">
+                <label>Palabra clave</label>
+                <InputText class="form-control" @bind-Value="filtros.PalabraClave" />
+            </div>
+        </div>
+
+        <BSButton Class="text-end" Color="BSColor.Primary" Type="Button" OnClick="Buscar">Buscar</BSButton>
+    </div>
+</EditForm>
+
+
+
+
+<NavLink type="button" class="text-black mt-md-5" href="/"> <img class="me-2" width="32" height="32"
+        src="https://img.icons8.com/windows/32/000000/return.png" alt="return" /> VOLVER</NavLink>
 
 @code {
+
+    private FiltroBusqueda filtros = new();
+
+    private void Buscar()
+    {
+        // Lógica de búsqueda
+        Console.WriteLine($"Buscando con: {System.Text.Json.JsonSerializer.Serialize(filtros)}");
+    }
+
+    public class FiltroBusqueda
+    {
+        public string? TipoNorma { get; set; }
+        public string? Numero { get; set; }
+        public string? Anio { get; set; }
+        public string? OrgEmisor { get; set; }
+        public string? OrgAplicacion { get; set; }
+        public bool IncluirTodos { get; set; }
+        public string? PalabraClave { get; set; }
+    }
+
+
     private Fallo[]? cuentas;
     private int currentPage = 1;
     private int pageSize = 15;
@@ -68,26 +159,12 @@
 
     public class Fallo
     {
-        public string? Expediente { get; set; }
+        public int? Expediente { get; set; }
         public int? Anio { get; set; }
         public string? Organismo { get; set; }
         public int? Nro { get; set; }
         public string? Fecha { get; set; }
-    }
-
-    public class FalloFueraCronograma
-    {
-        public string? Expediente { get; set; }
-        public int? Anio { get; set; }
-        public string? Organismo { get; set; }
-        public int? Nro { get; set; }
-        public string? Fecha { get; set; }
-    }
-
-    public class CuentasData
-    {
-        public Fallo[]? registros_principales { get; set; }
-        public FalloFueraCronograma[]? registros_adicionales { get; set; }
+        public string? Area { get; set; }
     }
 
     protected override async Task OnInitializedAsync()
@@ -96,7 +173,7 @@
         if (cuentas != null)
         {
             totalPages = (int)Math.Ceiling(cuentas.Length / (double)pageSize);
-            tituloFallos = $"{cuentas.Length} Cuentas Falladas en 2024  ";
+            tituloFallos = $"{cuentas.Length} Cuentas Falladas en 2024 ";
         }
     }
 

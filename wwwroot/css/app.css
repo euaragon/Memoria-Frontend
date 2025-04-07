@@ -181,3 +181,7 @@ iframe{
     height: auto !important;
     margin: 0 auto;
 }
+
+.card:hover{
+    opacity: 0.8;
+}
