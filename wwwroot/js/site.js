@@ -162,7 +162,7 @@ function Fiscalizadora() {
     const ctx = document.getElementById('fiscalizadora').getContext('2d');
 
     const data = {
-        labels: ['IV 2023', 'I 2024', 'II 2024', 'III 2022'],
+        labels: ['IV 2023', 'I 2024', 'II 2024', 'III 2024'],
         datasets: [{
             label: 'Cumplieron con todos los requisitos',
             data: [70, 71, 78, 78],
@@ -204,39 +204,52 @@ function Fiscalizadora() {
 function Recursos() {
     const ctx = document.getElementById('personal');
 
-
     const data = {
         labels: [
-           'Bioingenieros','Arquitectos', 'Analistas','Profesores y Técnicos', 'Servicios Generales', 'Ingenieros', 'Abogados y Procuradores', 'Licenciados', 'Contadores', 'Contratos de Locación', 'En Comisión'
+            'Bioingenieros', 'Arquitectos', 'Analistas', 'Profesores y Técnicos',
+            'Servicios Generales', 'Ingenieros', 'Abogados y Procuradores',
+            'Licenciados', 'Contadores', 'Contratos de Locación', 'En Comisión'
         ],
         datasets: [{
             label: "Cantidad",
-            data: [1,3,5,16,56,7,30,30,119,3,1],
+            data: [1, 3, 5, 16, 56, 7, 30, 30, 119, 3, 1],
+            backgroundColor: [
+                '#2c3e50'
+            ],
             hoverOffset: 4
         }]
     };
 
     const options = {
         scales: {
-            yAxes: [{
+            y: {
+                beginAtZero: true,
+                max: 70,
                 ticks: {
-                    beginAtZero: true,
-                    max: 70,
+                    color: '#333'
                 }
-            }]
+            },
+            x: {
+                ticks: {
+                    color: '#333'
+                }
+            }
         },
-        legend: {
-            display: true,
-            position: 'bottom',
-            labels: {
-                fontColor: '#333',
-                fontSize: 10,
+        plugins: {
+            legend: {
+                display: true,
+                position: 'bottom',
+                labels: {
+                    color: '#333',
+                    font: {
+                        size: 10
+                    }
+                }
             }
         }
-
     };
 
-    const myChart = new Chart(ctx, {
+    new Chart(ctx, {
         type: 'bar',
         data: data,
         options: options
@@ -244,56 +257,6 @@ function Recursos() {
 }
 
 
-function Jornadas() {
-    const ctx = document.getElementById('jornada').getContext('2d');
-
-    const data = {
-        labels: [
-            "BUENOS AIRES",
-            "CATAMARCA",
-            "CHACO",
-            "ENTRE RÍOS",
-            "FORMOSA",
-            "JUJUY",
-            "MENDOZA",
-            "RÍO NEGRO",
-            "SAN JUAN",
-            "SANTA FE"
-        ],
-        datasets: [{
-            label: 'CANTIDAD DE TRABAJOS PRESENTADOS',
-            data: [3, 4, 3, 3, 1, 1, 10, 1, 3, 1],
-            hoverOffset: 4
-        }]
-    };
-
-    const options = {
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero: true,
-                    max: 70,
-                }
-            }]
-        },
-        legend: {
-            display: true,
-            position: 'bottom',
-            labels: {
-                fontColor: '#333',
-                fontSize: 12,
-            }
-        }
-    };
-
-    const myChart = new Chart(ctx, {
-        type: 'pie',
-        data: data,
-        options: options
-    });
-
-
-}
 
 function Calidad() {
     const ctx = document.getElementById('calidad').getContext('2d');
