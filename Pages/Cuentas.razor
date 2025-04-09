@@ -3,6 +3,7 @@
 @inject HttpClient Http
 @inject NavigationManager NavigationManager
 
+
 <PageTitle>Cuentas Falladas en 2024</PageTitle>
 
 
@@ -64,64 +65,44 @@
 <hr>
 <h3 class="mt-5 text-center">Podés buscar un fallo acá</h3>
 
-<EditForm Model="@filtros" OnValidSubmit="Buscar">
-    <div class="container mt-4">
-        <div class="row mb-3">
-            <div class="col-md-6">
-                <label>Tipo Norma</label>
-                <BSInput InputType="InputType.Select" @bind-Value="filtros.TipoNorma">
-                    <option value="null">Seleccione un tipo de norma</option>
-                    <option value="Resolución">Resolución</option>
-                    <option value="Decreto">Decreto</option>
-                </BSInput>
-               
-            </div>
-            <div class="col-md-3">
-                <label>Número</label>
-                <InputText class="form-control" @bind-Value="filtros.Numero" />
-            </div>
-            <div class="col-md-3">
-                <label>Año</label>
-                <InputText class="form-control" @bind-Value="filtros.Anio" />
-            </div>
-        </div>
+<EditForm class="row g-3 align-items-end" Model="@filtros" OnSubmit="Buscar">
 
-        <div class="row mb-3">
-            <div class="col-md-6">
-                <label>Org. Emisor</label>
+    <div class="col-12 col-md-3">
+        <label class="form-label">Número</label>
+        <InputText class="form-control" @bind-Value="filtros.Numero" />
+    </div>
 
-                <BSInput InputType="InputType.Select" @bind-Value="filtros.OrgEmisor">
-                    <option value="null">Seleccione un organismo emisor</option>
-                    <option value="Tribunal">Tribunal</option>
-                    <option value="Gobierno">Gobierno</option>
-                </BSInput>
+    <div class="col-12 col-md-5">
+        <label class="form-label">Org. de Aplicación</label>
+        <BSInput InputType="InputType.Select" @bind-Value="filtros.OrgAplicacion" class="form-select">
+            <option value="">Seleccione un organismo de aplicación</option>
+            <option value="TODOS">TODOS</option>
+            @if (cuentas != null)
+            {
+                @foreach (var organismo in cuentas
+                    .Select(c => c.Organismo)
+                    .Where(o => !string.IsNullOrWhiteSpace(o))
+                    .Distinct()
+                    .OrderBy(o => o))
+                {
+                    <option value="@organismo">@organismo</option>
+                }
+            }
+        </BSInput>
+    </div>
 
-            </div>
-            <div class="col-md-6">
-                <label>Org. de Aplicación</label>
+    <div class="col-12 col-md-3">
+        <label class="form-label">Palabra clave</label>
+        <InputText class="form-control text-center" @bind-Value="filtros.PalabraClave" />
+    </div>
 
-                <BSInput InputType="InputType.Select" @bind-Value="filtros.OrgAplicacion">
-                    <option value="null">Seleccione un organismo de aplicación</option>
-                    <option value="TODOS">TODOS</option>
-                </BSInput>
-
-                <div class="form-check mt-1">
-                    <InputCheckbox @bind-Value="filtros.IncluirTodos" class="form-check-input" id="todosCheck" />
-                    <label class="form-check-label" for="todosCheck">Incluir "[TODOS]"</label>
-                </div>
-            </div>
-        </div>
-
-        <div class="row mb-3">
-            <div class="col-12">
-                <label>Palabra clave</label>
-                <InputText class="form-control" @bind-Value="filtros.PalabraClave" />
-            </div>
-        </div>
-
-        <BSButton Class="text-end" Color="BSColor.Primary" Type="Button" OnClick="Buscar">Buscar</BSButton>
+    <div class="col-12 d-flex justify-content-center">
+        <BSButton Color="BSColor.Primary" Type="Submit" class="px-4 w-auto">
+            Buscar
+        </BSButton>
     </div>
 </EditForm>
+
 
 
 
@@ -133,21 +114,82 @@
 
     private FiltroBusqueda filtros = new();
 
-    private void Buscar()
+    private async Task Buscar()
     {
-        // Lógica de búsqueda
-        Console.WriteLine($"Buscando con: {System.Text.Json.JsonSerializer.Serialize(filtros)}");
+        try
+        {
+            var filtroFallos = new FiltroFallos
+            {
+                Numero = filtros.Numero ?? "",
+                OrgAplicacion = filtros.OrgAplicacion ?? "",
+                PalabraClave = filtros.PalabraClave ?? ""
+            };
+
+            var response = await Http.PostAsJsonAsync("api/fallos/buscar", filtroFallos);
+
+            if (response.IsSuccessStatusCode)
+            {
+                var resultados = await response.Content.ReadFromJsonAsync<List<ResultadoDigesto>>();
+
+                // Mapear ResultadoDigesto a tu clase Fallo
+                cuentas = resultados?.Select(d => new Fallo
+                {
+                    Nro = int.TryParse(d.DigNumero, out var n) ? n : (int?)null,
+                    Organismo = d.EntRazonSocial,
+                    Fecha = d.DigFEmision?.ToString("dd/MM/yyyy"),
+                    Expediente = d.DigId,
+                    Area = d.AplDigNombre
+                }).ToArray();
+
+                currentPage = 1;
+                totalPages = (int)Math.Ceiling((cuentas?.Length ?? 1) / (double)pageSize);
+                tituloFallos = $"{cuentas?.Length} Fallos encontrados";
+            }
+            else
+            {
+                Console.WriteLine($"Error al buscar: {response.StatusCode}");
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error en Buscar: {ex.Message}");
+        }
+
+        StateHasChanged();
     }
 
     public class FiltroBusqueda
     {
-        public string? TipoNorma { get; set; }
-        public string? Numero { get; set; }
-        public string? Anio { get; set; }
-        public string? OrgEmisor { get; set; }
-        public string? OrgAplicacion { get; set; }
-        public bool IncluirTodos { get; set; }
-        public string? PalabraClave { get; set; }
+        public string Numero { get; set; } = string.Empty;
+        public string OrgAplicacion { get; set; } = string.Empty;
+        public string PalabraClave { get; set; } = string.Empty;
+    }
+
+    public class FiltroFallos
+    {
+        public string Numero { get; set; } = string.Empty;
+        public string OrgAplicacion { get; set; } = string.Empty;
+        public string PalabraClave { get; set; } = string.Empty;
+    }
+
+    public class ResultadoDigesto
+    {
+        public int DigId { get; set; }
+        public string? TipNorNombre { get; set; }
+        public string? DigNumero { get; set; }
+        public string? EntRazonSocial { get; set; }
+        public int TipNorId { get; set; }
+        public int EntId { get; set; }
+        public DateTime? DigFEmision { get; set; }
+        public DateTime? DigFPublicacion { get; set; }
+        public DateTime? DigFVigencia { get; set; }
+        public string? DigExtracto { get; set; }
+        public string? AplDigNombre { get; set; }
+        public bool DigModificada { get; set; }
+        public bool DigDerogada { get; set; }
+        public bool DigSeleccion { get; set; }
+        public bool DigInternet { get; set; }
+        public string? ArcDigNombre { get; set; }
     }
 
 
