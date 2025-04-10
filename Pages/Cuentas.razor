@@ -2,22 +2,14 @@
 @inject IJSRuntime JS
 @inject HttpClient Http
 @inject NavigationManager NavigationManager
+@using System.Text.Json
 
 
 <PageTitle>Cuentas Falladas en 2024</PageTitle>
 
-
 <h1 class="text-center mb-4">@tituloFallos</h1>
 <p>
-    Un Fallo es una resolución que aprueba o no las rendiciones de los Organismos a cargo de fondos públicos
-    provinciales o municipales; puede aplicar multas o cargos si la administración de dichos fondos no fue llevada de
-    acuerdo a las leyes vigentes.
-    <br>
-    En el siguiente gráfico se detallan las 175 cuentas falladas durante el año 2024, de la cuales 138 corresponden al
-    ejercicio 2023, 34 a ejercicios anteriores y 3 al ejercicio 2024.
-    <br>
-    De conformidad con lo dispuesto por el Art. Nº 69 de la Ley Nº 9.292, se presenta el estado de las cuentas falladas.
-
+    Un Fallo es una resolución que aprueba o no las rendiciones de los Organismos a cargo de fondos públicos...
 </p>
 
 <div class="mt-5 p-3">
@@ -28,7 +20,6 @@
     <table class="table table-sm table-responsive table-hover mt-5 tabla-aud-esp text-uppercase">
         <thead class="table-group-divider">
             <tr>
-
                 <th class="bg-transparent">Año</th>
                 <th class="bg-transparent">Fallo</th>
                 <th class="bg-transparent">Organismo</th>
@@ -38,19 +29,21 @@
             </tr>
         </thead>
         <tbody>
-            @if (cuentas != null)
+            @foreach (var cuenta in GetCurrentPageData())
             {
-                @foreach (var cuenta in GetCurrentPageData())
-                {
-                    <tr>
-                        <td class="bg-transparent">@cuenta.Anio</td>
-                        <td class="bg-transparent">@cuenta.Nro</td>
-                        <td class="bg-transparent">@cuenta.Organismo</td>
-                        <td class="bg-transparent">@cuenta.Fecha</td>
-                        <td class="bg-transparent">@cuenta.Expediente</td>
-                        <td class="bg-transparent">@cuenta.Area</td>
-                    </tr>
-                }
+                <tr>
+                    <td class="bg-transparent">@cuenta.Anio</td>
+                    <td class="bg-transparent">
+                        <a class="btn btn-primary text-light" href="javascript:void(0)"
+                            @onclick="() => VerDetalleDesdeBusqueda(cuenta.Nro)">
+                            @cuenta.Nro
+                        </a>
+                    </td>
+                    <td class="bg-transparent">@cuenta.Organismo</td>
+                    <td class="bg-transparent">@cuenta.Fecha</td>
+                    <td class="bg-transparent">@cuenta.Expediente</td>
+                    <td class="bg-transparent">@cuenta.Area</td>
+                </tr>
             }
         </tbody>
     </table>
@@ -62,11 +55,11 @@
             disabled="@(currentPage == totalPages)">Siguiente</button>
     </div>
 </div>
+
 <hr>
 <h3 class="mt-5 text-center">Podés buscar un fallo acá</h3>
 
-<EditForm class="row g-3 align-items-end" Model="@filtros" OnSubmit="Buscar">
-
+@* <EditForm class="row g-3 align-items-end" Model="@filtros" OnValidSubmit="Buscar">
     <div class="col-12 col-md-3">
         <label class="form-label">Número</label>
         <InputText class="form-control" @bind-Value="filtros.Numero" />
@@ -77,16 +70,13 @@
         <BSInput InputType="InputType.Select" @bind-Value="filtros.OrgAplicacion" class="form-select">
             <option value="">Seleccione un organismo de aplicación</option>
             <option value="TODOS">TODOS</option>
-            @if (cuentas != null)
+            @foreach (var organismo in (cuentas ?? Array.Empty<Fallo>())
+                        .Select(c => c.Organismo)
+                        .Where(o => !string.IsNullOrWhiteSpace(o))
+                        .Distinct()
+                        .OrderBy(o => o))
             {
-                @foreach (var organismo in cuentas
-                    .Select(c => c.Organismo)
-                    .Where(o => !string.IsNullOrWhiteSpace(o))
-                    .Distinct()
-                    .OrderBy(o => o))
-                {
-                    <option value="@organismo">@organismo</option>
-                }
+                <option value="@organismo">@organismo</option>
             }
         </BSInput>
     </div>
@@ -101,53 +91,146 @@
             Buscar
         </BSButton>
     </div>
-</EditForm>
+</EditForm> *@
+
+<BSModal @ref="modalDetalle" Title="Detalle del Fallo" Size="Size.ExtraLarge">
+
+    @if (falloSeleccionado != null)
+    {
+        <div class="p-5">
+            <Header>
+                <h1 class="mb-4">Fallo Nº @falloSeleccionado.DigNumero</h1>
+            </Header>
+
+            <Content>
+                <div class="mb-3">
+                    <h6 class="text-muted">Organismo</h6>
+                    <p class="mb-1">@falloSeleccionado.EntRazonSocial</p>
+                </div>
+
+                <div class="mb-3">
+                    <h6 class="text-muted">Destinado a</h6>
+                    <p class="mb-1">@falloSeleccionado.AplDigNombre</p>
+                </div>
+
+                <div class="mb-3">
+                    <h6 class="text-muted">Extracto</h6>
+                    <p class="mb-1">@falloSeleccionado.DigExtracto</p>
+                </div>
+
+                <hr />
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <h6 class="text-muted">Fecha de Emisión</h6>
+                        <p>@falloSeleccionado.DigFEmision?.ToString("dd/MM/yyyy")</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h6 class="text-muted">Fecha de Publicación</h6>
+                        <p>@falloSeleccionado.DigFPublicacion?.ToString("dd/MM/yyyy")</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h6 class="text-muted">Fecha de Vigencia</h6>
+                        <p>@falloSeleccionado.DigFVigencia?.ToString("dd/MM/yyyy")</p>
+                    </div>
+                </div>
+            </Content>
+
+        </div>
+    }
+</BSModal>
 
 
-
-
-
-<NavLink type="button" class="text-black mt-md-5" href="/"> <img class="me-2" width="32" height="32"
-        src="https://img.icons8.com/windows/32/000000/return.png" alt="return" /> VOLVER</NavLink>
+<NavLink type="button" class="text-black mt-md-5" href="/">
+    <img class="me-2" width="32" height="32" src="https://img.icons8.com/windows/32/000000/return.png" alt="return" />
+    VOLVER
+</NavLink>
 
 @code {
-
+    private BSModal? modalDetalle;
+    private ResultadoDigesto? falloSeleccionado;
     private FiltroBusqueda filtros = new();
+    private Fallo[]? cuentas;
+    private Fallo[]? cuentasDb;
+    private int currentPage = 1;
+    private int pageSize = 15;
+    private int totalPages;
+    private string? tituloFallos;
+    private List<ResultadoDigesto>? resultadosCompletos;
+
+    protected override async Task OnInitializedAsync()
+    {
+        cuentas = await Http.GetFromJsonAsync<Fallo[]>("sample-data/cuentas.json");
+        if (cuentas != null)
+        {
+            totalPages = (int)Math.Ceiling(cuentas.Length / (double)pageSize);
+            tituloFallos = $"{cuentas.Length} Cuentas Falladas en 2024";
+        }
+    }
+
+    private List<Fallo> GetCurrentPageData()
+    {
+        var source = cuentasDb ?? cuentas ?? Array.Empty<Fallo>();
+        int startIndex = (currentPage - 1) * pageSize;
+        return source.Skip(startIndex).Take(pageSize).ToList();
+    }
+
+    private void PreviousPage()
+    {
+        if (currentPage > 1) currentPage--;
+    }
+
+    private void NextPage()
+    {
+        if (currentPage < totalPages) currentPage++;
+    }
 
     private async Task Buscar()
     {
         try
         {
-            var filtroFallos = new FiltroFallos
-            {
-                Numero = filtros.Numero ?? "",
-                OrgAplicacion = filtros.OrgAplicacion ?? "",
-                PalabraClave = filtros.PalabraClave ?? ""
-            };
+            var queryParams = new Dictionary<string, string>();
+            if (!string.IsNullOrWhiteSpace(filtros.Numero)) queryParams.Add("DigNumeroDesde", filtros.Numero);
+            if (!string.IsNullOrWhiteSpace(filtros.OrgAplicacion)) queryParams.Add("EntIdApl", filtros.OrgAplicacion);
+            if (!string.IsNullOrWhiteSpace(filtros.PalabraClave)) queryParams.Add("Keyword", filtros.PalabraClave);
 
-            var response = await Http.PostAsJsonAsync("api/fallos/buscar", filtroFallos);
+            var queryString = string.Join("&", queryParams.Select(kvp =>
+            $"{Uri.EscapeDataString(kvp.Key)}={Uri.EscapeDataString(kvp.Value)}"));
+
+            var url = $"https://localhost:7030/api/Fallos/buscar?{queryString}";
+
+            // Aquí hacemos una petición más controlada
+            var response = await Http.GetAsync(url);
+            var content = await response.Content.ReadAsStringAsync();
+
+            Console.WriteLine($"Respuesta del servidor:\n{content}");
 
             if (response.IsSuccessStatusCode)
             {
-                var resultados = await response.Content.ReadFromJsonAsync<List<ResultadoDigesto>>();
+                var options = new JsonSerializerOptions
+                {
+                    PropertyNameCaseInsensitive = true
+                };
 
-                // Mapear ResultadoDigesto a tu clase Fallo
-                cuentas = resultados?.Select(d => new Fallo
+                resultadosCompletos = JsonSerializer.Deserialize<List<ResultadoDigesto>>(content, options);
+
+                cuentasDb = resultadosCompletos?.Select(d => new Fallo
                 {
                     Nro = int.TryParse(d.DigNumero, out var n) ? n : (int?)null,
                     Organismo = d.EntRazonSocial,
                     Fecha = d.DigFEmision?.ToString("dd/MM/yyyy"),
                     Expediente = d.DigId,
-                    Area = d.AplDigNombre
+                    Area = d.AplDigNombre,
+                    Anio = d.DigFEmision?.Year
                 }).ToArray();
 
                 currentPage = 1;
-                totalPages = (int)Math.Ceiling((cuentas?.Length ?? 1) / (double)pageSize);
-                tituloFallos = $"{cuentas?.Length} Fallos encontrados";
+                totalPages = (int)Math.Ceiling((cuentasDb?.Length ?? 1) / (double)pageSize);
+                tituloFallos = $"{cuentasDb?.Length ?? 0} Fallos encontrados";
             }
             else
             {
-                Console.WriteLine($"Error al buscar: {response.StatusCode}");
+                Console.WriteLine($"Error HTTP: {response.StatusCode}");
             }
         }
         catch (Exception ex)
@@ -158,14 +241,67 @@
         StateHasChanged();
     }
 
-    public class FiltroBusqueda
+    private async Task VerDetalleDesdeBusqueda(int? nroFallo)
     {
-        public string Numero { get; set; } = string.Empty;
-        public string OrgAplicacion { get; set; } = string.Empty;
-        public string PalabraClave { get; set; } = string.Empty;
+        if (nroFallo == null) return;
+
+        falloSeleccionado = await ObtenerDetalleFalloPorNumero(nroFallo.Value);
+
+        if (falloSeleccionado != null)
+        {
+            await modalDetalle?.ShowAsync();
+        }
     }
 
-    public class FiltroFallos
+
+    private async Task<ResultadoDigesto?> ObtenerDetalleFalloPorNumero(int nroFallo)
+    {
+        try
+        {
+            var url = $"https://localhost:7030/api/Fallos/buscar?DigNumeroDesde={nroFallo}";
+            var response = await Http.GetAsync(url);
+            var content = await response.Content.ReadAsStringAsync();
+
+            if (response.IsSuccessStatusCode)
+            {
+                var opciones = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
+                var resultados = JsonSerializer.Deserialize<List<ResultadoDigesto>>(content, opciones);
+                return resultados?.FirstOrDefault();
+            }
+            else
+            {
+                Console.WriteLine($"Error HTTP: {response.StatusCode}");
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error al obtener detalle: {ex.Message}");
+        }
+
+        return null;
+    }
+
+    private async Task CuadroFallos()
+    {
+        try
+        {
+            await JS.InvokeVoidAsync("cuadroFallosCuentas");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error en JS: {ex.Message}");
+        }
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await CuadroFallos();
+        }
+    }
+
+    public class FiltroBusqueda
     {
         public string Numero { get; set; } = string.Empty;
         public string OrgAplicacion { get; set; } = string.Empty;
@@ -175,29 +311,14 @@
     public class ResultadoDigesto
     {
         public int DigId { get; set; }
-        public string? TipNorNombre { get; set; }
         public string? DigNumero { get; set; }
         public string? EntRazonSocial { get; set; }
-        public int TipNorId { get; set; }
-        public int EntId { get; set; }
         public DateTime? DigFEmision { get; set; }
         public DateTime? DigFPublicacion { get; set; }
         public DateTime? DigFVigencia { get; set; }
         public string? DigExtracto { get; set; }
         public string? AplDigNombre { get; set; }
-        public bool DigModificada { get; set; }
-        public bool DigDerogada { get; set; }
-        public bool DigSeleccion { get; set; }
-        public bool DigInternet { get; set; }
-        public string? ArcDigNombre { get; set; }
     }
-
-
-    private Fallo[]? cuentas;
-    private int currentPage = 1;
-    private int pageSize = 15;
-    private int totalPages;
-    private string? tituloFallos;
 
     public class Fallo
     {
@@ -207,62 +328,5 @@
         public int? Nro { get; set; }
         public string? Fecha { get; set; }
         public string? Area { get; set; }
-    }
-
-    protected override async Task OnInitializedAsync()
-    {
-        cuentas = await Http.GetFromJsonAsync<Fallo[]>("sample-data/cuentas.json");
-        if (cuentas != null)
-        {
-            totalPages = (int)Math.Ceiling(cuentas.Length / (double)pageSize);
-            tituloFallos = $"{cuentas.Length} Cuentas Falladas en 2024 ";
-        }
-    }
-
-    private void PreviousPage()
-    {
-        if (currentPage > 1)
-        {
-            currentPage--;
-        }
-    }
-
-    private void NextPage()
-    {
-        if (currentPage < totalPages)
-        {
-            currentPage++;
-        }
-    }
-
-    private List<Fallo> GetCurrentPageData()
-    {
-        if (cuentas == null)
-        {
-            return new List<Fallo>();
-        }
-
-        int startIndex = (currentPage - 1) * pageSize;
-        return cuentas.Skip(startIndex).Take(pageSize).ToList();
-    }
-
-    protected override async Task OnAfterRenderAsync(bool firstRender)
-    {
-        if (firstRender)
-        {
-
-            await CuadroFallos();
-        }
-    }
-    private async Task CuadroFallos()
-    {
-        try
-        {
-            await JS.InvokeVoidAsync("cuadroFallosCuentas");
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine($"Error {ex.Message}");
-        }
     }
 }
