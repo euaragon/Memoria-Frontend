@@ -130,6 +130,13 @@ window.cuadroFallosCuentas = () => {
                     responsive: true,
                     maintainAspectRatio: false,
                     scales: {
+                        x: {
+                            ticks: {
+                                autoSkip: false,
+                                maxRotation: 45,
+                                minRotation: 30
+                            }
+                        },
                         y: {
                             beginAtZero: true,
                             max: Math.max(...cantidades) + 5
@@ -156,8 +163,6 @@ window.cuadroFallosCuentas = () => {
 };
 
 
-
-
 function Fiscalizadora() {
     const ctx = document.getElementById('fiscalizadora').getContext('2d');
 
@@ -169,17 +174,19 @@ function Fiscalizadora() {
             backgroundColor: '#0074D9',
         }, {
             label: 'No cumplieron con todos los requisitos',
-            data: [1, 0, 0, 0], 
+            data: [1, 0, 0, 0],
             backgroundColor: '#FFD700',
         }]
     };
 
     const options = {
+        responsive: true, // Asegura que el gráfico sea responsivo
+        maintainAspectRatio: false, // Permite que la altura se ajuste
         scales: {
             yAxes: [{
                 ticks: {
                     beginAtZero: true,
-                    max: 70,
+                    max: 80, // Ajusté el máximo para que quepa la barra más alta
                 }
             }]
         },
@@ -198,7 +205,6 @@ function Fiscalizadora() {
         data: data,
         options: options
     });
-
 }
 
 function Recursos() {
@@ -221,6 +227,8 @@ function Recursos() {
     };
 
     const options = {
+        responsive: true,
+maintainAspectRatio: false,
         scales: {
             y: {
                 beginAtZero: true,

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
-  <parameter name="IIS Web Application Name" description="" value="memoria-2024" tags="IisApp">
-    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\earagon\.TRIBUNAL\\Desktop\\Memoria\ version\ Blazor\\Memoria-2023\\obj\\Release\\net8\.0\\browser-wasm\\PubTmp\\Out\\$" />
+  <parameter name="IIS Web Application Name" description="" value="Memoria2024" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\earagon\.TRIBUNAL\\Desktop\\Memoria\ version\ Blazor\\Memoria2024\.BlazorApi\\obj\\Release\\net8\.0\\browser-wasm\\PubTmp\\Out\\$" />
   </parameter>
 </parameters>

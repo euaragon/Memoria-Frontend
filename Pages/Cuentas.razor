@@ -12,8 +12,10 @@
     Un Fallo es una resolución que aprueba o no las rendiciones de los Organismos a cargo de fondos públicos...
 </p>
 
-<div class="mt-5 p-3">
-    <canvas id="cuadro-fallos-cuentas"></canvas>
+<div class="mt-5 p-3" style="width: 100%; overflow-x: auto;">
+    <div style="min-width: 600px; height: 600px;">
+        <canvas id="cuadro-fallos-cuentas"></canvas>
+    </div>
 </div>
 
 <div class="overflow-auto mb-5">
@@ -33,11 +35,11 @@
             {
                 <tr>
                     <td class="bg-transparent">@cuenta.Anio</td>
-                    <td class="bg-transparent">
-                        <a class="btn btn-primary text-light" href="javascript:void(0)"
+                    <td class="bg-transparent">@cuenta.Nro
+                        @* <a class="btn btn-primary text-light" href="javascript:void(0)"
                             @onclick="() => VerDetalleDesdeBusqueda(cuenta.Nro)">
                             @cuenta.Nro
-                        </a>
+                        </a> *@
                     </td>
                     <td class="bg-transparent">@cuenta.Organismo</td>
                     <td class="bg-transparent">@cuenta.Fecha</td>
@@ -56,42 +58,6 @@
     </div>
 </div>
 
-<hr>
-<h3 class="mt-5 text-center">Podés buscar un fallo acá</h3>
-
-@* <EditForm class="row g-3 align-items-end" Model="@filtros" OnValidSubmit="Buscar">
-    <div class="col-12 col-md-3">
-        <label class="form-label">Número</label>
-        <InputText class="form-control" @bind-Value="filtros.Numero" />
-    </div>
-
-    <div class="col-12 col-md-5">
-        <label class="form-label">Org. de Aplicación</label>
-        <BSInput InputType="InputType.Select" @bind-Value="filtros.OrgAplicacion" class="form-select">
-            <option value="">Seleccione un organismo de aplicación</option>
-            <option value="TODOS">TODOS</option>
-            @foreach (var organismo in (cuentas ?? Array.Empty<Fallo>())
-                        .Select(c => c.Organismo)
-                        .Where(o => !string.IsNullOrWhiteSpace(o))
-                        .Distinct()
-                        .OrderBy(o => o))
-            {
-                <option value="@organismo">@organismo</option>
-            }
-        </BSInput>
-    </div>
-
-    <div class="col-12 col-md-3">
-        <label class="form-label">Palabra clave</label>
-        <InputText class="form-control text-center" @bind-Value="filtros.PalabraClave" />
-    </div>
-
-    <div class="col-12 d-flex justify-content-center">
-        <BSButton Color="BSColor.Primary" Type="Submit" class="px-4 w-auto">
-            Buscar
-        </BSButton>
-    </div>
-</EditForm> *@
 
 <BSModal @ref="modalDetalle" Title="Detalle del Fallo" Size="Size.ExtraLarge">
 
@@ -100,6 +66,7 @@
         <div class="p-5">
             <Header>
                 <h1 class="mb-4">Fallo Nº @falloSeleccionado.DigNumero</h1>
+                
             </Header>
 
             <Content>
@@ -134,6 +101,9 @@
                         <p>@falloSeleccionado.DigFVigencia?.ToString("dd/MM/yyyy")</p>
                     </div>
                 </div>
+                <button class="btn btn-outline-primary" @onclick="DescargarPdf">
+                    Descargar PDF del Fallo
+                </button>
             </Content>
 
         </div>
@@ -280,6 +250,26 @@
 
         return null;
     }
+
+    private async Task DescargarPdf()
+{
+    if (falloSeleccionado is null) return;
+
+    try
+    {
+        var digId = falloSeleccionado.DigId;
+     var pdfUrl = $"/api/Fallos/pdf/{digId}";
+
+
+
+        // Abrimos el PDF en una nueva pestaña o lo descargamos
+        await JS.InvokeVoidAsync("abrirPdf", pdfUrl);
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Error al descargar PDF: {ex.Message}");
+    }
+}
 
     private async Task CuadroFallos()
     {

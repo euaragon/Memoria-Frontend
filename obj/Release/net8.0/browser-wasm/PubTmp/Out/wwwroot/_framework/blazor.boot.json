@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Memoria-2023",
   "resources": {
-    "hash": "sha256-R+WbPU9MxqMenP0ie36WSF3jU9EzqTa5r9rm8hLYYkA=",
+    "hash": "sha256-c0vYShWmzJFyKp8Kbqq2aTa+UjDORLa9NgyvNfT2PGU=",
     "jsModuleNative": {
       "dotnet.native.8.0.4.u3j7es4xh0.js": "sha256-ju0+XWE0ihz554eKEj0HQ8Opa61xpbUIaX5/MNo8we4="
     },
@@ -20,7 +20,7 @@
       "BlazorComponentUtilities.wasm": "sha256-7qa+C6Zt8hJgUpiGcE1MHWuwfOGMUMVd8ayItqmtQp0=",
       "BlazorStrap.V5.wasm": "sha256-ieJHUKvONrVh83C4Pc61pfXrYr80nrdqUuACNwn3DgI=",
       "BlazorStrap.wasm": "sha256-dVa9OYwa4FnoKY3ppARLCYKoOuic+riZRwMRicKl04k=",
-      "Memoria-2023.wasm": "sha256-Gm9W87RGyjSTUFYgKVHzzY1gSRstA3tTAA71bPqOzp4=",
+      "Memoria-2023.wasm": "sha256-fWX3Rvx/O5pmaEZfJeCKazKEHDlB5Y63ODDtWPqUDwI=",
       "Microsoft.AspNetCore.Components.Forms.wasm": "sha256-zl6Lu+G5Rxps22Fq3Fdjvw/uAlDwTztdgPjvFayuVz4=",
       "Microsoft.AspNetCore.Components.wasm": "sha256-1UkhEGpwfYCluUn8/0CfqQJAb5udlWKdZNxMgZbmz54=",
       "Microsoft.AspNetCore.Components.Web.wasm": "sha256-qJgJivdjNcPwFKp1JyiPEr943K4h7DPkk8oefvu+fX0=",

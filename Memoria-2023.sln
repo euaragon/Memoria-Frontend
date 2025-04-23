@@ -5,7 +5,7 @@ VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Memoria-2023", "Memoria-2023.csproj", "{4CC987D7-718F-406E-834A-8B70CAB78E7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemoriaAPI", "..\MemoriaAPI\MemoriaAPI.csproj", "{851AC615-FE44-4C8A-9D88-D408F942745D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MemoriaAPI", "..\MemoriaAPI\MemoriaAPI.csproj", "{851AC615-FE44-4C8A-9D88-D408F942745D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

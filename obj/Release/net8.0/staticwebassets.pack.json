@@ -93,6 +93,10 @@
       "PackagePath": "staticwebassets\\img\\actividades.png"
     },
     {
+      "Id": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\img\\acuerdo-emop.jpg",
+      "PackagePath": "staticwebassets\\img\\acuerdo-emop.jpg"
+    },
+    {
       "Id": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\img\\auditorias-especiales.jpg",
       "PackagePath": "staticwebassets\\img\\auditorias-especiales.jpg"
     },
@@ -129,12 +133,40 @@
       "PackagePath": "staticwebassets\\img\\balanza.png"
     },
     {
+      "Id": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\img\\capacitacion\\capacitacion-1.jpg",
+      "PackagePath": "staticwebassets\\img\\capacitacion\\capacitacion-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\img\\capacitacion\\capacitacion-2.jpg",
+      "PackagePath": "staticwebassets\\img\\capacitacion\\capacitacion-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\img\\capacitacion\\capacitacion-3.jpg",
+      "PackagePath": "staticwebassets\\img\\capacitacion\\capacitacion-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\img\\congreso-2024\\congreso(1).jpg",
+      "PackagePath": "staticwebassets\\img\\congreso-2024\\congreso(1).jpg"
+    },
+    {
+      "Id": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\img\\congreso-2024\\congreso(3).jpg",
+      "PackagePath": "staticwebassets\\img\\congreso-2024\\congreso(3).jpg"
+    },
+    {
+      "Id": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\img\\congreso-2024\\congreso(4).jpg",
+      "PackagePath": "staticwebassets\\img\\congreso-2024\\congreso(4).jpg"
+    },
+    {
       "Id": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\img\\cuentas.png",
       "PackagePath": "staticwebassets\\img\\cuentas.png"
     },
     {
       "Id": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\img\\debug.log",
       "PackagePath": "staticwebassets\\img\\debug.log"
+    },
+    {
+      "Id": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\img\\devops.png",
+      "PackagePath": "staticwebassets\\img\\devops.png"
     },
     {
       "Id": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\img\\fallos-cuentas.jpg",
@@ -187,6 +219,10 @@
     {
       "Id": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\img\\riera.png",
       "PackagePath": "staticwebassets\\img\\riera.png"
+    },
+    {
+      "Id": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\img\\sistemas.jpg",
+      "PackagePath": "staticwebassets\\img\\sistemas.jpg"
     },
     {
       "Id": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\img\\tribunal-de-cuentas-claro.png",
