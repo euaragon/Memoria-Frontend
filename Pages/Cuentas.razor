@@ -35,11 +35,11 @@
             {
                 <tr>
                     <td class="bg-transparent">@cuenta.Anio</td>
-                    <td class="bg-transparent">@cuenta.Nro
-                        @* <a class="btn btn-primary text-light" href="javascript:void(0)"
+                    <td class="bg-transparent">
+                        <a class="btn btn-primary text-light" href="javascript:void(0)"
                             @onclick="() => VerDetalleDesdeBusqueda(cuenta.Nro)">
                             @cuenta.Nro
-                        </a> *@
+                        </a>
                     </td>
                     <td class="bg-transparent">@cuenta.Organismo</td>
                     <td class="bg-transparent">@cuenta.Fecha</td>
@@ -167,7 +167,7 @@
             var queryString = string.Join("&", queryParams.Select(kvp =>
             $"{Uri.EscapeDataString(kvp.Key)}={Uri.EscapeDataString(kvp.Value)}"));
 
-            var url = $"https://localhost:7030/api/Fallos/buscar?{queryString}";
+            var url = $"https://192.168.237.187:7030/api/Fallos/buscar?{queryString}";
 
             // Aquí hacemos una petición más controlada
             var response = await Http.GetAsync(url);
@@ -228,7 +228,7 @@
     {
         try
         {
-            var url = $"https://localhost:7030/api/Fallos/buscar?DigNumeroDesde={nroFallo}";
+            var url = $"https://192.168.237.187:7030/api/Fallos/buscar?DigNumeroDesde={nroFallo}";
             var response = await Http.GetAsync(url);
             var content = await response.Content.ReadAsStringAsync();
 
@@ -258,7 +258,7 @@
     try
     {
         var digId = falloSeleccionado.DigId;
-     var pdfUrl = $"/api/Fallos/pdf/{digId}";
+     var pdfUrl = $"https://192.168.237.187:7030/api/Fallos/pdf/{digId}";
 
 
 
