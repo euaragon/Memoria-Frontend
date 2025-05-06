@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Memoria-2023",
   "resources": {
-    "hash": "sha256-byUKSmpbysJsVc45Lrxd6upp2TJnxstbJLmpiUsGva8=",
+    "hash": "sha256-PN3mVDbENhGHJMlifyggcgkUvETq7c/mZ1XvTLUIZ3U=",
     "jsModuleNative": {
       "dotnet.native.8.0.4.u3j7es4xh0.js": "sha256-ju0+XWE0ihz554eKEj0HQ8Opa61xpbUIaX5/MNo8we4="
     },
@@ -39,6 +39,7 @@
       "Microsoft.Extensions.Logging.wasm": "sha256-Rx+UwnmyfTtMmlYd3HWJOvYVnSSwShUKrbPvqkfxmZk=",
       "Microsoft.Extensions.Logging.Abstractions.wasm": "sha256-glWux6/5FFNJxVrbRPQ/PhLriEkSd3TllLfjmvZbpKw=",
       "Microsoft.Extensions.Options.wasm": "sha256-5/m+yVFGRuY+N4jQnD+QETKH0AfhAsnVze5dJ5ogIVM=",
+      "Microsoft.Extensions.Options.ConfigurationExtensions.wasm": "sha256-yDh0iPC/I53PyMf/KCnYAoDUABFzUrEFUd2Ej6AKarc=",
       "Microsoft.Extensions.Primitives.wasm": "sha256-pVrYOTfjb2ITls3LKIByW1t8jwOAWFhmkIVDewtJ1GE=",
       "Microsoft.JSInterop.wasm": "sha256-5cqIyKsdUZ1dHGvNaW58/lWROJnvOdig8Ja6mv1p3Qg=",
       "Microsoft.JSInterop.WebAssembly.wasm": "sha256-k1ycznAW3kfyxO+I3lroU5VWTHPfMEmvwPqq6dnWPtk=",
@@ -211,10 +212,10 @@
       "mscorlib.wasm": "sha256-VCfYgt1mcjITabSTosCDVZ+68ea3Z7kakTFaLNLG+18=",
       "netstandard.wasm": "sha256-YOZxxR9PM3Dltcijfb0Q4FD39DkWZbZ1e2ScbZDvWJ4=",
       "System.Private.CoreLib.wasm": "sha256-NrT1QkAzVU//2wgK9vXdq77lCGvLJ4IOZ+Aegesyanc=",
-      "Memoria-2023.wasm": "sha256-MKikxbaVfUSHDoBwQ0Jm574EkmKbMaDawI9zBAAU9b4="
+      "Memoria-2023.wasm": "sha256-CnGz7jUoTV8LP0Hy0ox6+nlAmbIitFBgnOcDzlqZl5U="
     },
     "pdb": {
-      "Memoria-2023.pdb": "sha256-KVKwlA/Cajm9WW/TKfLLxdOLvepODEBUPg9abQGPTYY="
+      "Memoria-2023.pdb": "sha256-rIMwu8PxRbxtGCWrYAySLbNzjHsYejjeAzln6Xcdwds="
     }
   },
   "cacheBootResources": true,

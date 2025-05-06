@@ -3138,3 +3138,8 @@ C:\Users\earagon.TRIBUNAL\Desktop\Memoria version Blazor\Memoria2024.BlazorApi\o
 C:\Users\earagon.TRIBUNAL\Desktop\Memoria version Blazor\Memoria2024.BlazorApi\obj\Release\net8.0\refint\Memoria-2023.dll
 C:\Users\earagon.TRIBUNAL\Desktop\Memoria version Blazor\Memoria2024.BlazorApi\obj\Release\net8.0\Memoria-2023.pdb
 C:\Users\earagon.TRIBUNAL\Desktop\Memoria version Blazor\Memoria2024.BlazorApi\obj\Release\net8.0\ref\Memoria-2023.dll
+C:\Users\earagon.TRIBUNAL\Desktop\Memoria version Blazor\Memoria2024.BlazorApi\bin\Release\net8.0\wwwroot\_framework\Microsoft.Extensions.Options.ConfigurationExtensions.wasm
+C:\Users\earagon.TRIBUNAL\Desktop\Memoria version Blazor\Memoria2024.BlazorApi\bin\Release\net8.0\wwwroot\_framework\Microsoft.Extensions.Options.ConfigurationExtensions.wasm.gz
+C:\Users\earagon.TRIBUNAL\Desktop\Memoria version Blazor\Memoria2024.BlazorApi\bin\Release\net8.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Users\earagon.TRIBUNAL\Desktop\Memoria version Blazor\Memoria2024.BlazorApi\obj\Release\net8.0\webcil\Microsoft.Extensions.Options.ConfigurationExtensions.wasm
+C:\Users\earagon.TRIBUNAL\Desktop\Memoria version Blazor\Memoria2024.BlazorApi\obj\Release\net8.0\compressed\np40fvnjqa.gz

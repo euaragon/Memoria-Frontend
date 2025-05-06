@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rQUDG2Lt7xUzNyTEQiDB4zgid2FDBojswMPiY5DvE8c=",
+  "Hash": "rpQzS4hUc9PeQ9H3M+uunC0jZKnpE3thfRj98KSaClw=",
   "Source": "Memoria-2023",
   "BasePath": "/",
   "Mode": "Root",
@@ -794,6 +794,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\obj\\Release\\net8.0\\webcil\\Microsoft.Extensions.Logging.wasm"
+    },
+    {
+      "Identity": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\bin\\Release\\net8.0\\wwwroot\\_framework\\Microsoft.Extensions.Options.ConfigurationExtensions.wasm",
+      "SourceId": "Memoria-2023",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\bin\\Release\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Options.ConfigurationExtensions.wasm",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "WasmResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\obj\\Release\\net8.0\\webcil\\Microsoft.Extensions.Options.ConfigurationExtensions.wasm"
     },
     {
       "Identity": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\bin\\Release\\net8.0\\wwwroot\\_framework\\Microsoft.Extensions.Options.wasm",
@@ -6798,6 +6817,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\bin\\Release\\net8.0\\wwwroot\\_framework\\System.Private.Xml.wasm"
+    },
+    {
+      "Identity": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\obj\\Release\\net8.0\\compressed\\np40fvnjqa.gz",
+      "SourceId": "Memoria-2023",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\bin\\Release\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Options.ConfigurationExtensions.wasm.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\bin\\Release\\net8.0\\wwwroot\\_framework\\Microsoft.Extensions.Options.ConfigurationExtensions.wasm",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\bin\\Release\\net8.0\\wwwroot\\_framework\\Microsoft.Extensions.Options.ConfigurationExtensions.wasm"
     },
     {
       "Identity": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\obj\\Release\\net8.0\\compressed\\nrfthmrps4.gz",

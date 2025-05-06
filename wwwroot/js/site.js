@@ -1,4 +1,9 @@
-﻿
+﻿function abrirPdf(urlRecibida) {
+    const backendUrl = 'https://192.168.237.187:7030/api/Fallos/pdf/';
+    const digId = urlRecibida.split('/').pop(); // Intenta extraer el DigId de la URL recibida
+    const urlBackendCompleta = backendUrl + digId;
+    window.open(urlBackendCompleta, '_blank');
+}
 
 window.setupZoom = (imageId) => {
     console.log("setupZoom called with ID:", imageId);
@@ -151,7 +156,8 @@ window.cuadroFallosCuentas = () => {
                                 font: {
                                     size: 12
                                 }
-                            }
+                            },
+                            onClick: (e) => e.stopPropagation() // Evita que se borren los datos al hacer clic
                         }
                     }
                 }

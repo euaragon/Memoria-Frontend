@@ -151,7 +151,8 @@ window.cuadroFallosCuentas = () => {
                                 font: {
                                     size: 12
                                 }
-                            }
+                            },
+                            onClick: (e) => e.stopPropagation() // Evita que se borren los datos al hacer clic
                         }
                     }
                 }
