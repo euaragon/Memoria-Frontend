@@ -1,15 +1,23 @@
 ﻿@page "/cuentas"
+
+@using Memoria2024.Models 
+@using Memoria2024.Services
+@using System.Text.Json
+
 @inject IJSRuntime JS
 @inject HttpClient Http
 @inject NavigationManager NavigationManager
-@inject IConfiguration Configuration
-@using System.Text.Json;
+@inject IFallosService FallosService
 
-<PageTitle>Cuentas Falladas en 2024</PageTitle>
+<PageTitle>Cuentas Falladas en 2024 </PageTitle>
 
 <h1 class="text-center mb-4">@tituloFallos</h1>
 <p>
-    Un Fallo es una resolución que aprueba o no las rendiciones de los Organismos a cargo de fondos públicos...
+    Un Fallo es una resolución que aprueba o no las rendiciones de los Organismos a cargo de fondos públicos
+    provinciales o municipales; puede aplicar multas o cargos si la administración de dichos fondos no fue llevada de
+    acuerdo a las leyes vigentes.
+    <br><br>
+    De conformidad con lo dispuesto por el Art. Nº 69 de la Ley Nº 9.292, se presenta el estado de las cuentas falladas.
 </p>
 
 <div class="mt-5 p-3" style="width: 100%; overflow-x: auto;">
@@ -25,9 +33,9 @@
                 <th class="bg-transparent">Año</th>
                 <th class="bg-transparent">Fallo</th>
                 <th class="bg-transparent">Organismo</th>
-                <th class="bg-transparent">Área</th>
                 <th class="bg-transparent">Fecha</th>
                 <th class="bg-transparent">Expte</th>
+                <th class="bg-transparent">Área</th>
             </tr>
         </thead>
         <tbody>
@@ -37,14 +45,14 @@
                     <td class="bg-transparent">@cuenta.Anio</td>
                     <td class="bg-transparent">
                         <a class="btn btn-primary text-light" href="javascript:void(0)"
-                           @onclick="() => VerDetalleDesdeBusqueda(cuenta.Resultado)">
+                            @onclick="@(() => MostrarDetalle(cuenta.Nro))">
                             @cuenta.Nro
                         </a>
                     </td>
                     <td class="bg-transparent">@cuenta.Organismo</td>
-                    <td class="bg-transparent">@cuenta.Area</td>
                     <td class="bg-transparent">@cuenta.Fecha</td>
                     <td class="bg-transparent">@cuenta.Expediente</td>
+                    <td class="bg-transparent">@cuenta.Area.Replace("Dirección de Cuentas", "").Trim()</td>
                 </tr>
             }
         </tbody>
@@ -54,36 +62,31 @@
         <button class="btn btn-primary me-2" @onclick="PreviousPage" disabled="@(currentPage == 1)">Anterior</button>
         <span>Página @currentPage de @totalPages</span>
         <button class="btn btn-primary ms-2" @onclick="NextPage"
-                disabled="@(currentPage == totalPages)">Siguiente</button>
+            disabled="@(currentPage == totalPages)">Siguiente</button>
     </div>
 </div>
 
-<BSModal @ref="modalDetalle" Title="Detalle del Fallo" Size="Size.ExtraLarge">
-    @if (falloSeleccionado != null)
-    {
-        <div class="p-5">
-            <Header>
-                <h1 class="mb-4">Fallo Nº @falloSeleccionado.FalNumero</h1>
-            </Header>
-
-            <Content>
-                <div class="mb-3">
-                    <h6 class="text-muted">Organismo</h6>
-                    <p class="mb-1">@falloSeleccionado.EntRazonSocial</p>
-                </div>
+<BSModal @ref="modalDetalle" IsDismissible="true" Title="Detalle del Fallo" Size="Size.ExtraLarge">
+    <Header>
+        <div class="col">
+            <h1 class="pt-2 ps-2 mb-1">Fallo Nº @falloSeleccionado?.DigNumero</h1>
+            <p class="mb-1 ps-2 text-muted">@falloSeleccionado?.SecNombre</p>
+        </div>
+    </Header>
+    <Content>
+        @if (falloSeleccionado != null)
+        {
+            <div class="p-2">
 
                 <div class="mb-3">
                     <h6 class="text-muted">Destinado a</h6>
                     <p class="mb-1">@falloSeleccionado.AplDigNombre</p>
                 </div>
-
                 <div class="mb-3">
                     <h6 class="text-muted">Extracto</h6>
                     <p class="mb-1">@falloSeleccionado.DigExtracto</p>
                 </div>
-
                 <hr />
-
                 <div class="row">
                     <div class="col-md-4">
                         <h6 class="text-muted">Fecha de Emisión</h6>
@@ -101,57 +104,32 @@
                 <button class="btn btn-outline-primary" @onclick="DescargarPdf">
                     Descargar PDF del Fallo
                 </button>
-            </Content>
-        </div>
-    }
+            </div>
+        }
+    </Content>
 </BSModal>
 
-<NavLink type="button" class="text-black mt-md-5" href="https://www.tribcuentasmendoza.gob.ar/Memoria/2024/">
-    <img class="me-2" width="32" height="32" src="https://img.icons8.com/windows/32/000000/return.png" alt="return" />
-    VOLVER
-</NavLink>
+<NavLink type="button" class="text-black mt-md-5" href="/Memoria/2024/"> <img
+        class="me-2" width="32" height="32" src="https://img.icons8.com/windows/32/000000/return.png" alt="return" />
+    VOLVER</NavLink>
 
 @code {
-
-    private List<ResultadoDigesto> cabeceraFallos = new();
-    private List<ResultadoDigesto> gastosReservadosFallos = new();
-    private List<ResultadoDigesto> piezaSeparadaFallos = new();
-
-    private BSModal? modalDetalle;
-    private ResultadoDigesto? falloSeleccionado;
-    private List<Fallo> cuentas = new(); // Cambiado a List<Fallo> para almacenar todos los resultados
+        private BSModal? modalDetalle;
+    private List<Fallo> cuentas = new();
+    private List<ResultadoDigestoDetalle>? falloDetalle;
+    private ResultadoDigestoDetalle? falloSeleccionado;
     private int currentPage = 1;
     private int pageSize = 15;
     private int totalPages;
     private string? tituloFallos;
-    private string? fallosApiBaseUrl;
-    private List<ResultadoDigesto> resultadosCompletos = new(); // Para almacenar todos los resultados sin procesar
 
     protected override async Task OnInitializedAsync()
     {
-        fallosApiBaseUrl = Configuration["ApiConfiguration:BaseUrl"];
-        var opciones = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
-
         try
         {
-            // Cargar datos de cabecera
-            var urlCabecera = $"{fallosApiBaseUrl}/api/Fallos/fallos2024/todos";
-            var responseCabecera = await Http.GetAsync(urlCabecera);
-            if (responseCabecera.IsSuccessStatusCode)
-            {
-                var content = await responseCabecera.Content.ReadAsStringAsync();
-                var resultado = JsonSerializer.Deserialize<List<ResultadoDigesto>>(content, opciones);
-                if (resultado != null)
-                {
-                    cabeceraFallos = resultado;
-                    resultadosCompletos.AddRange(resultado);
-                }
-            }
-
-            
-
-            // Procesar y ordenar todos los resultados
-            cuentas = resultadosCompletos
+            // Usamos el servicio para obtener los datos
+            var resultadosCabecera = await FallosService.GetCabeceraFallos2024();
+            cuentas = resultadosCabecera
                 .Select(d => new Fallo
                 {
                     Nro = d.FalNumero ?? 0,
@@ -160,23 +138,24 @@
                     Expediente = d.ExpNumero,
                     Area = d.SecNombre,
                     Anio = d.ExpEjercicio ?? 0,
-                    DigId = d.DigId,
-                    Resultado = d
+                    DigId = d.DigId
                 })
                 .OrderBy(f => f.Nro)
-                .ToList();
+                .ToList(); // Convertimos a lista para poder paginar
 
             totalPages = (int)Math.Ceiling(cuentas.Count / (double)pageSize);
             tituloFallos = $"{cuentas.Count} Cuentas Falladas en 2024";
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"Error cargando fallos: {ex.Message}");
+            Console.WriteLine($"Error cargando cabecera de fallos: {ex.Message}");
+            // Manejar el error apropiadamente (mostrar mensaje al usuario, etc.)
         }
     }
 
     private List<Fallo> GetCurrentPageData()
     {
+        // Ya no necesitamos el ?? Array.Empty<Fallo>(), la lista nunca será nula aquí.
         int startIndex = (currentPage - 1) * pageSize;
         return cuentas.Skip(startIndex).Take(pageSize).ToList();
     }
@@ -184,11 +163,37 @@
     private void PreviousPage() => currentPage = Math.Max(1, currentPage - 1);
     private void NextPage() => currentPage = Math.Min(totalPages, currentPage + 1);
 
-    private async Task VerDetalleDesdeBusqueda(ResultadoDigesto? fallo)
+    private async Task MostrarDetalle(int? nroFallo)
     {
-        if (fallo is null) return;
-        falloSeleccionado = fallo;
-        await modalDetalle?.ShowAsync();
+        if (nroFallo == null) return;
+
+        try
+        {
+            var listaDetalle = await FallosService.GetDetalleFallo(nroFallo);
+
+
+            if (listaDetalle != null && listaDetalle.Any())
+            {
+                falloSeleccionado = listaDetalle.First();
+
+                var cuentaSeleccionada = cuentas.FirstOrDefault(c => c.Nro == nroFallo);
+                if (cuentaSeleccionada != null)
+                {
+                    falloSeleccionado.SecNombre = cuentaSeleccionada.Area;
+                }
+
+                await modalDetalle?.ShowAsync();
+            }
+            else
+            {
+                Console.WriteLine($"No se encontraron detalles para el fallo {nroFallo}.");
+            }
+
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error al obtener detalle del fallo {nroFallo}: {ex.Message}");
+        }
     }
 
     private async Task DescargarPdf()
@@ -196,8 +201,7 @@
         if (falloSeleccionado is null) return;
         try
         {
-            var pdfUrl = $"{fallosApiBaseUrl}/api/fallos/pdf/{falloSeleccionado.DigId}";
-            await JS.InvokeVoidAsync("abrirPdf", pdfUrl);
+            await FallosService.DescargarPdf(falloSeleccionado.DigId);
         }
         catch (Exception ex)
         {
@@ -209,7 +213,7 @@
     {
         try
         {
-            await JS.InvokeVoidAsync("cuadroFallosCuentas");
+            await FallosService.CuadroFallos();
         }
         catch (Exception ex)
         {
@@ -225,41 +229,15 @@
         }
     }
 
-    public class FiltroBusqueda
-    {
-        public string Numero { get; set; } = string.Empty;
-        public string OrgAplicacion { get; set; } = string.Empty;
-        public string PalabraClave { get; set; } = string.Empty;
-    }
-
-    public class ResultadoDigesto
-    {
-        public int DigId { get; set; }
-        public string? DigNumero { get; set; }
-        public string? EntRazonSocial { get; set; }
-        public DateTime? DigFEmision { get; set; }
-        public DateTime? DigFPublicacion { get; set; }
-        public DateTime? DigFVigencia { get; set; }
-        public string? DigExtracto { get; set; }
-        public string? AplDigNombre { get; set; }
-
-        public int? FalNumero { get; set; }
-        public DateTime? FalFechaEmision { get; set; }
-        public string? ExpNumero { get; set; }
-        public int? ExpEjercicio { get; set; }
-
-        public string? SecNombre { get; set; } // <-- ESTE ES EL CAMPO DE ÁREA
-    }
     public class Fallo
     {
-        public string? Expediente { get; set; }
-        public int? Anio { get; set; }
+        public int Nro { get; set; }
         public string? Organismo { get; set; }
-        public int? Nro { get; set; }
         public string? Fecha { get; set; }
+        public string? Expediente { get; set; }
         public string? Area { get; set; }
-
+        public int Anio { get; set; }
         public int DigId { get; set; }
-        public ResultadoDigesto? Resultado { get; set; }
     }
+
 }

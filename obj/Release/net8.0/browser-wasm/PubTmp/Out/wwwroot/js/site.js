@@ -1,4 +1,11 @@
-﻿
+﻿function abrirPdf(urlRecibida) {
+    const backendUrl = 'https://www.tribcuentasmendoza.gob.ar/MemoriaAPI/api/Fallos/pdf/';
+    const digId = urlRecibida.split('/').pop(); // Intenta extraer el DigId de la URL recibida
+    const urlBackendCompleta = backendUrl + digId;
+    window.open(urlBackendCompleta, '_blank');
+}
+
+window.blazorHasLoaded = false;
 
 window.setupZoom = (imageId) => {
     console.log("setupZoom called with ID:", imageId);
@@ -45,36 +52,35 @@ let chartInstanceIndex = null;
 
 
 window.cuadroFallosIndex = () => {
-    fetch('sample-data/cuentas.json')
-        .then(response => response.json())
+    fetch('https://www.tribcuentasmendoza.gob.ar/MemoriaAPI/api/Fallos/fallos2024/cantidad-por-sector')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json();
+        })
         .then(data => {
-            // Contar la cantidad de fallos por área
-            const conteoAreas = {};
-            data.forEach(item => {
-                const area = item.Area;
-                conteoAreas[area] = (conteoAreas[area] || 0) + 1;
-            });
+         
+            const dataSinTotal = data.slice(1);
 
-            // Preparar los datos para el gráfico
-            const labels = Object.keys(conteoAreas);
-            const cantidades = Object.values(conteoAreas);
+            const labels = dataSinTotal.map(item => item.sector);
+            const cantidades = dataSinTotal.map(item => item.cantidadTotal);
 
-            // Crear el gráfico de pastel
             const ctx = document.getElementById('cuadro-fallos-index').getContext('2d');
-            new Chart(ctx, {
+            if (chartInstance) {
+                chartInstance.destroy();
+            }
+            chartInstance = new Chart(ctx, {
                 type: 'pie',
                 data: {
                     labels: labels,
                     datasets: [{
-                        label: 'Cuentas falladas en 2024',
+                        label: '',
                         data: cantidades,
-                        backgroundColor: [ // Colores para cada segmento del pastel
-                            'rgb(255, 99, 133)',
+                        backgroundColor: [
+                          
                             'rgba(54, 162, 235)',
-                            'rgba(255, 206, 86)',
-                            'rgba(75, 192, 192)',
-                            'rgba(153, 102, 255)',
-                            'rgba(255, 159, 64)'
+                           
                         ],
                         hoverOffset: 4
                     }]
@@ -90,79 +96,70 @@ window.cuadroFallosIndex = () => {
                     }
                 }
             });
-        });
-};
-
-
-
-window.cuadroFallosCuentas = () => {
-    fetch('sample-data/cuentas.json')
-        .then(response => response.json())
-        .then(data => {
-            const conteoAreas = {};
-            data.forEach(item => {
-                const area = item.Area;
-                conteoAreas[area] = (conteoAreas[area] || 0) + 1;
-            });
-
-            const labels = Object.keys(conteoAreas);
-            const cantidades = Object.values(conteoAreas);
-
-            const ctx = document.getElementById('cuadro-fallos-cuentas').getContext('2d');
-
-            // Destruir instancia previa si existe
-            if (chartInstance) {
-                chartInstance.destroy();
-            }
-
-            chartInstance = new Chart(ctx, {
-                type: 'bar',
-                data: {
-                    labels: labels,
-                    datasets: [{
-                        label: 'Cuentas falladas en 2024',
-                        data: cantidades,
-                        backgroundColor: '#42A5F5',
-                        hoverOffset: 4
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    scales: {
-                        x: {
-                            ticks: {
-                                autoSkip: false,
-                                maxRotation: 45,
-                                minRotation: 30
-                            }
-                        },
-                        y: {
-                            beginAtZero: true,
-                            max: Math.max(...cantidades) + 5
-                        }
-                    },
-                    plugins: {
-                        legend: {
-                            display: true,
-                            position: 'bottom',
-                            labels: {
-                                color: '#333',
-                                font: {
-                                    size: 12
-                                }
-                            },
-                            onClick: (e) => e.stopPropagation() // Evita que se borren los datos al hacer clic
-                        }
-                    }
-                }
-            });
         })
         .catch(error => {
-            console.error('Error cargando datos:', error);
+            console.error('Error al cargar los datos unificados de fallos por sector:', error);
         });
 };
 
+window.cuadroFallosCuentas = () => {
+    fetch('https://www.tribcuentasmendoza.gob.ar/MemoriaAPI/api/Fallos/fallos2024/cantidad-por-sector')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+    })
+    .then(data => {
+         
+        const dataSinTotal = data.slice(1);
+
+        const labels = dataSinTotal.map(item => item.sector);
+        const cantidades = dataSinTotal.map(item => item.cantidadTotal);
+
+        const ctx = document.getElementById('cuadro-fallos-cuentas').getContext('2d');
+        if (chartInstance) {
+            chartInstance.destroy();
+        }
+        chartInstance = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: '',
+                    data: cantidades,
+                    backgroundColor: [
+                      
+                        'rgba(54, 162, 235)',
+                      
+                    ],
+                    hoverOffset: 4
+                }]
+            },
+            options: {
+                legend: {
+                    display: true,
+                    position: 'bottom',
+                    labels: {
+                        fontColor: '#333',
+                        fontSize: 12,
+                    }
+                }
+            }
+        });
+    })
+        .catch(error => {
+            console.error('Error cargando datos:', error);
+            window.blazorHasLoaded = true; // Asegúrate de que la bandera se establezca incluso en caso de error
+            if (window.informBlazorOfLoad) {
+                window.informBlazorOfLoad();
+            }
+        });
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+    window.cuadroFallosCuentas();
+});
 
 function Fiscalizadora() {
     const ctx = document.getElementById('fiscalizadora').getContext('2d');

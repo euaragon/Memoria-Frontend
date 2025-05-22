@@ -265,16 +265,8 @@
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\sample-data\\Copia de cuentas.json",
-      "PackagePath": "staticwebassets\\sample-data\\Copia de cuentas.json"
-    },
-    {
       "Id": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\sample-data\\audExt.json",
       "PackagePath": "staticwebassets\\sample-data\\audExt.json"
-    },
-    {
-      "Id": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\sample-data\\cuentas.json",
-      "PackagePath": "staticwebassets\\sample-data\\cuentas.json"
     },
     {
       "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.Memoria-2023.Microsoft.AspNetCore.StaticWebAssets.props",

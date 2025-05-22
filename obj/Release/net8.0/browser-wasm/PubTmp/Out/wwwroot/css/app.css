@@ -29,6 +29,25 @@ img{
     mix-blend-mode: multiply;
 }
 
+.loading-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+#app:empty {
+    display: none;
+}
+
 .hidden {
     display: none;
 }
@@ -51,7 +70,7 @@ img{
 
 
 .logo {
-    background: url("../img/tribunal-de-cuentas.png");
+    background: url("/Memoria2024/img/tribunal-de-cuentas.png");
     background-position: center;
     background-repeat: no-repeat;
     width: 270px;
@@ -60,28 +79,6 @@ img{
     top: -1px;
 }
 
-.dark-mode {
-    background: url("img/fondo-memoria-dark.png") !important;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover !important;
-    font-family: "Ubuntu", sans-serif;
-    color: #dcdcdc !important;
-    margin-bottom: 60px;
-}
-
-    .dark-mode .logo {
-        background: url("img/tribunal-de-cuentas-claro.png") !important;
-        background-position: center;
-        background-repeat: no-repeat !important;
-        width: 270px;
-        height: 110px;
-        left: 20px;
-    }
-
-    .dark-mode .nav-link {
-        color: #dcdcdc !important;
-    }
 
 .button-close {
     background: none;

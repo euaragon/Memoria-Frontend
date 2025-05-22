@@ -5233,11 +5233,7 @@ C:\Users\earagon.TRIBUNAL\Desktop\Memoria version Blazor\Memoria2024.BlazorApi\o
 C:\Users\earagon.TRIBUNAL\Desktop\Memoria version Blazor\Memoria2024.BlazorApi\obj\Debug\net8.0\ref\Memoria-2023.dll
 C:\Users\earagon.TRIBUNAL\Desktop\Memoria version Blazor\Memoria2024.BlazorApi\bin\Debug\net8.0\wwwroot\_framework\Microsoft.Extensions.Options.ConfigurationExtensions.wasm
 C:\Users\earagon.TRIBUNAL\Desktop\Memoria version Blazor\Memoria2024.BlazorApi\bin\Debug\net8.0\wwwroot\_framework\Microsoft.Extensions.Options.ConfigurationExtensions.wasm.gz
-C:\Users\earagon.TRIBUNAL\Desktop\Memoria version Blazor\Memoria2024.BlazorApi\bin\Debug\net8.0\MemoriaAPI.deps.json
-C:\Users\earagon.TRIBUNAL\Desktop\Memoria version Blazor\Memoria2024.BlazorApi\bin\Debug\net8.0\MemoriaAPI.runtimeconfig.json
-C:\Users\earagon.TRIBUNAL\Desktop\Memoria version Blazor\Memoria2024.BlazorApi\bin\Debug\net8.0\appsettings.Development.json
-C:\Users\earagon.TRIBUNAL\Desktop\Memoria version Blazor\Memoria2024.BlazorApi\bin\Debug\net8.0\MemoriaAPI.exe
-C:\Users\earagon.TRIBUNAL\Desktop\Memoria version Blazor\Memoria2024.BlazorApi\bin\Debug\net8.0\appsettings.json
 C:\Users\earagon.TRIBUNAL\Desktop\Memoria version Blazor\Memoria2024.BlazorApi\bin\Debug\net8.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
 C:\Users\earagon.TRIBUNAL\Desktop\Memoria version Blazor\Memoria2024.BlazorApi\obj\Debug\net8.0\webcil\Microsoft.Extensions.Options.ConfigurationExtensions.wasm
 C:\Users\earagon.TRIBUNAL\Desktop\Memoria version Blazor\Memoria2024.BlazorApi\obj\Debug\net8.0\compressed\lfwjv15fk2.gz
+C:\Users\earagon.TRIBUNAL\Desktop\Memoria version Blazor\Memoria2024.BlazorApi\bin\Debug\net8.0\appsettings.json

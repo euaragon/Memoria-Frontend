@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rpQzS4hUc9PeQ9H3M+uunC0jZKnpE3thfRj98KSaClw=",
+  "Hash": "tVpRHBwZ8IAj5brK0MCkYp8gQsrP1S0IBhk2GdgNxeA=",
   "Source": "Memoria-2023",
   "BasePath": "/",
   "Mode": "Root",
@@ -9287,44 +9287,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\sample-data\\audExt.json"
-    },
-    {
-      "Identity": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\sample-data\\Copia de cuentas.json",
-      "SourceId": "Memoria-2023",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "sample-data/Copia de cuentas.json",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\sample-data\\Copia de cuentas.json"
-    },
-    {
-      "Identity": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\sample-data\\cuentas.json",
-      "SourceId": "Memoria-2023",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\earagon.TRIBUNAL\\Desktop\\Memoria version Blazor\\Memoria2024.BlazorApi\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "sample-data/cuentas.json",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\sample-data\\cuentas.json"
     }
   ]
 }
