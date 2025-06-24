@@ -1,5 +1,6 @@
 ﻿@page "/auditorias-especiales"
 @inject HttpClient Http
+@inject IConfiguration Configuration
 
 <PageTitle>Auditorías Especiales</PageTitle>
 
@@ -27,19 +28,20 @@
     </tbody>
 </table>
 
-<NavLink type="button" class="text-black mt-md-5" href="/Memoria/2024/"> <img
-        class="me-2" width="32" height="32" src="https://img.icons8.com/windows/32/000000/return.png" alt="return" />
+<NavLink type="button" class="text-black mt-md-5" href="/Memoria/2024/"> <img class="me-2" width="32" height="32"
+        src="https://img.icons8.com/windows/32/000000/return.png" alt="return" />
     VOLVER</NavLink>
 
 
 
 @code {
     private audExt[]? auditorias;
-
+    private string? baseUrl;
     protected override async Task OnInitializedAsync()
     {
-        auditorias = await Http.GetFromJsonAsync<audExt[]>("sample-data/audExt.json");
-        Console.Write(auditorias);
+        baseUrl = Configuration["ApiBaseUrl"];
+        auditorias = await Http.GetFromJsonAsync<audExt[]>($"{baseUrl}audExt");
+        Console.WriteLine(auditorias);
     }
 
     public class audExt
@@ -48,6 +50,3 @@
         public string? Tema { get; set; }
     }
 }
-
-
-

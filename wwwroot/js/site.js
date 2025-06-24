@@ -1,5 +1,5 @@
 ﻿function abrirPdf(urlRecibida) {
-    const backendUrl = 'http://webprueba/MemoriaAPI/api/Fallos/pdf/';
+    const backendUrl = 'https://www.tribcuentasmendoza.gob.ar/MemoriaAPI/api/Fallos/pdf/';
     const digId = urlRecibida.split('/').pop(); // Intenta extraer el DigId de la URL recibida
     const urlBackendCompleta = backendUrl + digId;
     window.open(urlBackendCompleta, '_blank');
@@ -52,7 +52,7 @@ let chartInstanceIndex = null;
 
 
 window.cuadroFallosIndex = () => {
-    fetch('http://webprueba/MemoriaAPI/api/Fallos/fallos2024/cantidad-por-sector')
+    fetch('fallos2024/cantidad-por-sector')
         .then(response => {
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
@@ -103,7 +103,7 @@ window.cuadroFallosIndex = () => {
 };
 
 window.cuadroFallosCuentas = () => {
-    fetch('http://webprueba/MemoriaAPI/api/Fallos/fallos2024/cantidad-por-sector')
+    fetch('https://www.tribcuentasmendoza.gob.ar/MemoriaAPI/api/Fallos/fallos2024/cantidad-por-sector')
     .then(response => {
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);

@@ -9,6 +9,6 @@ namespace Memoria2024.Services
         Task<List<ResultadoDigestoDetalle>> GetDetalleFallo(int? nroFallo);
         Task DescargarPdf(int digId);
         Task CuadroFallos();
-        Task<List<CantidadFallosPorSectorUnificadoDTO>> GetCantidadFallosPorSectorUnificado2024(); // Asegúrate de tener este DTO
+        Task<List<CantidadFallosPorSectorUnificadoDTO>> GetCantidadFallosPorSectorUnificado2024(); 
     }
 }

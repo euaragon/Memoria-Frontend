@@ -11,7 +11,7 @@
         var path = window.location.pathname.split('/');
         var base = document.getElementsByTagName('base')[0];
         if (window.location.host.includes('localhost')) {
-            base.setAttribute('href', '/Memoria/2024/');
+            base.setAttribute('href', '/');
         } else if (window.location.host.includes('webprueba')) {   //en Prueba cambiar por 'webprueba' y en Produccion cambiar por 'www.tribcuentasmendoza.gob.ar'
             base.setAttribute('href', '/memoria/2024/');
         } else if (path.length > 2) {
